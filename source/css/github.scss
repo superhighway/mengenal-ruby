@@ -6,7 +6,7 @@ body {
   line-height: 1.6;
   padding-top: 10px;
   padding-bottom: 10px;
-  background: #eee;
+  background: #eee url('../img/gray_jean.png') repeat;
   @include text-shadow(0 1px 0 #fff);
   color: #333;
   padding: 30px; }
