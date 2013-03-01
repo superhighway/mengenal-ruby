@@ -1,0 +1,591 @@
+---
+title: Dasar-Dasar Pemrograman Ruby
+bodyClasses: executable
+---
+
+<h1>Bagian 1: Dasar-Dasar Pemrograman Ruby</h1>
+
+<h2>Sekilas Ruby</h2>
+
+<p>Ruby merupakan interpreted dan strongly-typed programming language.
+Kalau mau coba-coba, klik tombol "Jalankan" pada contoh-contoh kode Ruby di bawah.</p>
+
+<% code("ruby") { File.read "source/snippets/b1-01_sekilas-ruby.rb" } %>
+
+<h2>Konstanta dan Variabel</h2>
+
+<% code("ruby") { File.read "source/snippets/b1-02_konstanta-dan-variabel.rb" } %>
+
+<h2>Tipe dan Struktur Data</h2>
+
+<p>Semua tipe data merupakan Object, termasuk tipe data primitif seperti Integer, Float, dan Boolean. Nil.</p>
+
+<% code("ruby") { File.read "source/snippets/b1-03_tipe-dan-struktur-data_sekilas.rb" } %>
+
+<h3>Symbol</h3>
+
+<p>Symbol kelihatan hampir seperti String, hanya saja karakter yang diperbolehkan adalah titik dua (:) dan sama seperti variabel. Bedanya, Symbol selalu ada di memory/tidak pernah dihapus dari memory setelah dibuat pertama kali.</p>
+
+<% code("ruby") { File.read "source/snippets/b1-03-1_tipe-dan-struktur-data_symbol.rb" } %>
+
+<p>Untuk mengetahui Symbol lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Symbol.html">dokumentasinya</a>.</p>
+
+<h3>Dapat Diiterasi: Array, Hash, Set, dan Range</h3>
+
+<h4>Array</h4>
+
+<% code("ruby") { File.read "source/snippets/b1-03-2_tipe-dan-struktur-data_array.rb" } %>
+
+<p>Untuk mengetahui Array lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Array.html">dokumentasinya</a>.</p>
+
+<h4>Hash</h4>
+
+<p>Hash mirip seperti sebuah tabel key-value, dengan key tidak berduplikat.</p>
+
+<% code("ruby") { File.read "source/snippets/b1-03-3_tipe-dan-struktur-data_hash.rb" } %>
+
+<p>Untuk mengetahui Hash lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Hash.html">dokumentasinya</a>.</p>
+
+<h4>Set</h4>
+
+<p>Set merupakan koleksi dengan elemen tak berurut tanpa duplikat. Set mirip dengan Array, tetapi kecepatan pencarian elemen mirip dengan Hash.</p>
+
+<% code("ruby") { File.read "source/snippets/b1-03-4_tipe-dan-struktur-data_set.rb" } %>
+
+<p>Untuk mengetahui Set lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/set/rdoc/Set.html">dokumentasinya</a>.</p>
+
+<h4>Range</h4>
+
+<p>Range merupakan jajaran dari Object yang memiliki elemen awal dan akhir.</p>
+
+<% code("ruby") { File.read "source/snippets/b1-03-5_tipe-dan-struktur-data_range.rb" } %>
+
+<p>Untuk mengetahui Range lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Range.html">dokumentasinya</a>.</p>
+
+<h3>Konversi Tipe Data</h3>
+
+<p>Hampir semua tipe data di atas dapat dikonversi ke tipe data lain. Berikut beberapa contoh cara mengkonversi tipe data.</p>
+
+<% code("ruby") { File.read "source/snippets/b1-03-x_tipe-dan-struktur-data_konversi-tipe-data.rb" } %>
+
+<h2>Operasi Logika dan Aritmatika</h2>
+
+<p>Ini sebagai info aja. Tidak harus hafal semua kok.</p>
+
+<p><code>+</code> tambah</p>
+
+<p><code>-</code> kurang</p>
+
+<p><code>*</code> kali</p>
+
+<p><code>/</code> bagi</p>
+
+<p><code>%</code> modulus</p>
+
+<p><code>**</code> pangkat</p>
+
+<p><code>&amp;</code> dan (untuk bilangan berbasis 2)</p>
+
+<p><code>|</code> atau (untuk bilangan berbasis 2)</p>
+
+<p><code>^</code> XOR (untuk bilangan berbasis 2)</p>
+
+<p><code>~</code> invert bit (untuk bilangan berbasis 2)</p>
+
+<p><code>&lt;&lt;</code> shift kiri (untuk bilangan berbasis 2)</p>
+
+<p><code>&gt;&gt;</code> shift kanan (untuk bilangan berbasis 2)</p>
+
+<p><code>&amp;&amp;</code> dan (untuk Boolean)</p>
+
+<p><code>and</code> dan (untuk Boolean), tetapi prioritas rendah</p>
+
+<p><code>||</code> atau (untuk Boolean)</p>
+
+<p><code>or</code> atau (untuk Boolean), tetapi prioritas rendah</p>
+
+<p><code>!</code> bukan (untuk Boolean)</p>
+
+<p><code>not</code> bukan (untuk Boolean)</p>
+
+<p><code>==</code> sama dengan</p>
+
+<p><code>&gt;</code> lebih dari</p>
+
+<p><code>&lt;</code> kurang dari</p>
+
+<p><code>&gt;=</code> lebih dari atau sama dengan</p>
+
+<p><code>&lt;=</code> kurang dari atau sama dengan</p>
+
+<% code("ruby") { File.read "source/snippets/b1-04_operasi-logika-dan-aritmatika.rb" } %>
+
+<p>Sumber-sumber:</p>
+<ul>
+  <li><a href="http://www.ruby-doc.org/core-1.9.3/Fixnum.html" target="_blank">Dokumentasi Fixnum</a></li>
+	<li><a href="http://www.techotopia.com/index.php/Ruby_Operators" target="_blank">Techotopia: Ruby Operators</a></li>
+	<li><a href="http://www.ruby-doc.org/docs/ProgrammingRuby/html/ref_c_fixnum.html" target="_blank">The Pragmatic Programmer's Guide</a></li>
+	<li><a href="http://hasno.info/ruby-gotchas-and-caveats" target="_blank">tech addict mark guzman's random musings: ruby gotchas and caveats</a></li>
+</ul>
+	
+<h2>Statement Controls</h2>
+
+<h3>Conditionals</h3>
+
+<p>if, else, dan unless</p>
+
+<% code("ruby") { File.read "source/snippets/b1-05-1_statement-controls_conditionals_if.rb" } %>
+
+<p>elsif</p>
+
+<% code("ruby") { File.read "source/snippets/b1-05-2_statement-controls_conditionals_elsif.rb" } %>
+
+<p>Ada juga case…when untuk mempersingkat if, elsif, dan else jika menggunakan <code>==</code></p>
+
+<% code("ruby") { File.read "source/snippets/b1-05-3_statement-controls_conditionals_case-when.rb" } %>
+
+<h3>Loop</h3>
+
+<% code("ruby") { File.read "source/snippets/b1-05-x_statement-controls_loop.rb" } %>
+
+<h2>Methods</h2>
+
+<% code("ruby") { File.read "source/snippets/b1-06-1_methods_1arg.rb" } %>
+
+<p>Kamu juga bisa buat method dengan lebih dari satu parameter</p>
+
+<% code("ruby") { File.read "source/snippets/b1-06-2_methods_lebih-dari-1arg.rb" } %>
+
+<h2>Proc</h2>
+
+<p>Proc disebut juga closures dalam ilmu komputer. Menurut saya, tipe data ini sangat spesial karena sifatnya seperti method atau sebuah snippet, tetapi dapat diassign seperti variabel.</p>
+
+<h3>Sekilas Proc</h3>
+
+<p>Kamu sebenarnya sudah melihat Proc pada bab Array. Berikut ini sekilas mengenai Proc yang merupakan block dan lambda.</p>
+
+<% code("ruby") { File.read "source/snippets/b1-07-1_proc_sekilas_proc.rb" } %>
+
+<h3>Perbedaan block dan lambda</h3>
+
+<p>block dan lambda terlihat seperti saudara kembar, walaupun secara syntax memang sudah terlihat berbeda. Pada dasarnya, lambda lebih bersifat seperti method, dan block lebih bersifat seperti snippet. Kamu juga perlu tahu 2 perbedaan besar antara keduanya.</p>
+
+<ol>
+	<li>lambda cek jumlah argumen (arity), proc tidak.
+<% code("ruby") { File.read "source/snippets/b1-07-2_proc_perbedaan-block-dan-lambda_arity.rb" } %>
+  </li>
+  <li>Jika ada return di dalam lambda, maka return akan terjadi di dalam lambda itu. Jika return ada di block, maka return akan terjadi di dalam block itu dan juga method yang memanggilnya.
+<% code("ruby") { File.read "source/snippets/b1-07-2_proc_perbedaan-block-dan-lambda_return.rb" } %>
+  </li>
+</ol>
+
+<h3>Mengenal Kemiripan block dan lambda</h3>
+
+<p>Pada umumnya, yang bisa kamu lakukan pada block dapat kamu lakukan juga pada lambda. Berikut ini beberapa contoh di mana cara kerja lambda dan proc sama saja.</p>
+
+<% code("ruby") { File.read "source/snippets/b1-07-3_mengenal-kemiripan-block-dan-lambda.rb" } %>
+
+<h3>Mari Bermain Bersama Proc!</h3>
+
+<% code("ruby") { File.read "source/snippets/b1-07-4_mari-bermain-bersama-proc.rb" } %>
+
+
+<p>Sumber-sumber:</p>
+<ul>
+  <li><a href="http://www.robertsosinski.com/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/" target="_blank">Understanding Ruby Blocks, Procs and Lambdas</a></li>
+	<li><a href="http://www.skorks.com/2010/05/ruby-procs-and-lambdas-and-the-difference-between-them/">SKORKS: Ruby Procs And Lambdas (And The Difference Between Them)</a></li>
+	<li><a href="http://stackoverflow.com/questions/1740046/whats-the-difference-between-a-proc-and-a-lambda-in-ruby">StackOverflow: What's the difference between a proc and a lambda in Ruby?</a></li>
+	<li><a href="http://www.ruby-doc.org/core/Proc.html" target="_blank">Dokumentasi Proc</a></li>
+</ul>
+
+<h2>Class</h2>
+
+<p>Ruby biasanya cukup object oriented, walaupun functional dan yang lain juga bisa. Ruby punya garbage collector, jadi tidak perlu atur2 alokasi seperti pada C/C++.</p>
+
+<h3>Deklarasi, Setter dan Getter</h3>
+
+<% code("ruby") { File.read "source/snippets/b1-08-1_class_deklarasi-setter-dan-getter.rb" } %>
+
+<h3>Access Modifiers</h3>
+
+<p>Secara default, semua method public dan instance variable protected.
+Kamu bisa mengubah method menjadi <code>private</code> atau <code>protected</code>, tetapi kamu tidak bisa mengubah instance variable seperti itu.</p>
+
+<% code("ruby") { File.read "source/snippets/b1-08-2_class_access-modifiers.rb" } %>
+
+<h3>Inheritance</h3>
+
+<% code("ruby") { File.read "source/snippets/b1-08-3_class_inheritance.rb" } %>
+
+<h3>Callback</h3>
+
+<% code("ruby") do %>
+# self.inherited
+class Kendaraan
+  def self.inherited(subclass)
+    puts "Subclass baru: #{subclass}"
+  end
+end
+
+class Mobil < Kendaraan
+end
+
+class Motor < Kendaraan
+end
+<% end %>
+
+<h3>Patching</h3>
+
+<p>Kamu bisa ubah-ubah kelas yang sudah define. Teknik ini disebut juga monkey patching.</p>
+
+<% code("ruby") { File.read "source/snippets/b1-08-4_class_patching.rb" } %>
+
+
+<p>Untuk mengenal Class lebih jauh, kunjungi <a href="http://www.ruby-doc.org/core/Class.html" target="_blank">dokumentasi Class</a> dan <a href="http://www.ruby-doc.org/core/Object.html">Object</a>.</p>
+
+<h2>Module</h2>
+
+<p>Module merupakan kumpulan methods dan konstanta. Module mirip class, hanya saja dia bisa di-include atau di-extend ke modul atau kelas lain.</p>
+
+<% code("ruby") { File.read "source/snippets/b1-09-1_module_sekilas.rb" } %>
+
+<h3>Callback</h3>
+
+<% code("ruby") do %>
+# self.included dan self.extended
+module PakaiSeragam
+  def self.included(a)
+    puts "#{self} included di #{a}"
+  end
+  def self.extended(a)
+    puts "#{self} extended di #{a}"
+  end
+end
+
+class Murid
+  extend PakaiSeragam
+  include PakaiSeragam
+end
+<% end %>
+
+<p>Sebagai info, trik di atas dipermudah jika menggunakan <a href="http://api.rubyonrails.org/classes/ActiveSupport/Concern.html" target="_blank">ActiveSupport::Concern</a>. Lihat contoh pada <a href="http://api.rubyonrails.org/classes/ActiveSupport/Concern.html" target="_blank">dokumentasinya</a> untuk mengetahui lebih lanjut.</p>
+
+<% code("ruby") do %>
+# self.method_removed dan self.method_added
+module PakaiSeragam
+  def self.method_removed(method_name)
+    puts "Hapus method #{method_name.inspect}"
+  end
+
+  def self.method_added(method_name)
+    puts "Tambah method #{method_name.inspect}"
+  end
+
+  def self.some_class_method() end
+
+  def some_instance_method() end
+  class << self
+    remove_method :some_class_method
+  end
+  remove_method :some_instance_method
+end
+<% end %>
+
+<h3>Patching</h3>
+
+<p>Seperti Class, kamu bisa monkey patch module yang sudah define.</p>
+
+<% code("ruby") do %>
+module PakaiSeragam
+  def warna
+    puts "Hijau"
+  end
+end
+
+module PakaiSeragam
+  def motif
+    puts "Kotak-kotak"
+  end
+end
+<% end %>
+
+<p>Untuk mengenal Module lebih jauh, kunjungi <a href="http://www.ruby-doc.org/core/Module.html" target="_blank">dokumentasinya</a>.</p>
+
+<h2>Exceptions</h2>
+
+<% code("ruby") do %>
+class MyException < Exception
+end
+
+begin
+  raise MyException.new
+  raise Exception
+rescue MyException => e1
+  puts e1.inspect
+rescue Exception
+  puts "Dapat Exception"
+else
+  puts "Tidak dapat Exception"
+ensure
+  puts "Ensure"
+end
+<% end %>
+
+<p>Untuk mengenal Exception lebih jauh, kunjungi <a href="http://www.ruby-doc.org/core/Exception.html" target="_blank">dokumentasinya</a>.</p>
+
+<h2>Throw dan Catch</h2>
+
+<p>Throw dan Catch pada Ruby bukanlah untuk exceptions. Mereka adalah cara untuk memberhentikan eksekusi program terlebih dahulu ketika program tidak perlu berjalan lagi.</p>
+
+<% code("ruby") do %>
+catch :stop do
+  puts "Aku mau jalan"
+  throw :stop
+end
+
+def udahan
+  for i in (1..10)
+    print "#{i} "
+    throw :udahan if i == 8
+  end
+end
+
+catch :udahan do
+  udahan
+end
+puts
+
+throw :halo
+<% end %>
+
+<p>Sumber-sumber:</p>
+<ul>
+  <li><a href="http://rubylearning.com/blog/2011/07/12/throw-catch-raise-rescue-im-so-confused/">RubyLearning Blog: Throw, Catch, Raise, Rescue… I’m so confused!</a></li>
+</ul>
+
+<h2>Mengenal Metaprogramming</h2>
+
+<p>Metaprogramming adalah membuat program yang dapat membuat code dalam runtime. Metaprogramming mudah dilakukan pada Ruby, sehingga menjadi saat umum dipakai.</p>
+
+<h3>Eval</h3>
+
+<p>Ada 3 macam method untuk meng-evaluate sebuah snippet pada Ruby secara dinamis, yakni <code>Kernel#eval</code>, <code>Object#instance_eval</code>, dan <code>Module#class_eval</code>.</p>
+
+<h4>Kernel#eval</h4>
+
+<p>Kamu bisa evaluate Ruby dengan menggunakan Kernel#eval walaupun kamu cuma kasih String. Fitur ini biasanya ada pada bahasa yang tidak perlu dicompile seperti PHP.</p>
+
+<% code("ruby") do %>
+eval "puts 'Halo Ruby!'"
+a = eval "8943 + 4278932"
+puts a
+<% end %>
+
+<h4>Object#instance_eval</h4>
+
+<p>Dengan instance_eval, kamu bisa menambah method atau variabel instance sendiri. Ini sangat mirip dengan patching, tetapi instance_eval cukup umum digunakan untuk membuat Domain-Specific Language (DSL).</p>
+
+<% code("ruby") do %>
+class Baju
+  def nama(nama)
+    @nama = nama
+  end
+
+  def deskripsi
+    "Nama baju ini adalah #{@nama}"
+  end
+  
+  def self.buat(&blok)
+    baju = Baju.new
+    baju.instance_eval &blok # Untuk membuat Domain-Specific Language (DSL)
+    baju
+  end
+end
+
+Baju.instance_eval do
+  def nomor_rak
+    puts "Baju adalah instance dari Class, karena itu di sini kita menambah method class"
+    10
+  end
+end
+
+puts Baju.nomor_rak
+
+puts <<-EOL
+
+Kamu bisa buat DSL sendiri hanya dengan instance_eval.
+Cukup panggil instance_eval pada sebuah object yang sudah diinisialisasi, dan
+kamu dapat akses ke method instance pada object itu.
+===
+EOL
+baju = Baju.buat do
+  puts "Kamu bisa mengakses method dan variabel instance di sini.\n---"
+  nama "Kostum Badut"
+end
+puts baju.deskripsi
+
+<% end %>
+
+
+<h4>Module#class_eval</h4>
+
+<p><code>class_eval</code> hampir sama dengan <code>instance_eval</code>, hanya saja <code>class_eval</code> hanya dapat digunakan pada class atau module saja. Dengan <code>class_eval</code> kamu bisa menambah method atau variabel instance. Ini juga sangat mirip dengan patching.</p>
+
+<% code("ruby") do %>
+class Baju
+  def nama(nama)
+    @nama = nama
+  end
+
+  def deskripsi
+    "Nama baju ini adalah #{@nama}"
+  end
+end
+
+Baju.class_eval do
+  attr_accessor :ukuran
+
+  def gambaran
+    puts "#{self.deskripsi}. Ukurannya #{ukuran}"
+  end
+end
+
+baju = Baju.new
+baju.nama "Kostum Badut"
+baju.ukuran = "XL"
+baju.gambaran; puts
+
+baju.class_eval do
+  def ups_gagal
+    puts "Jadi error deh"
+  end
+end
+
+<% end %>
+
+<h3>Variabel Instance</h3>
+
+<p>Kamu dapat dengan mudah mengakses, mengubah, atau mendefine variabel instance secara dinamis.</p>
+
+<% code("ruby") do %>
+class Baju
+end
+
+puts Baju.instance_variables.inspect
+Baju.instance_variable_set(:@kode, "BJ")
+puts Baju.instance_variable_get(:@kode)
+puts Baju.instance_variables.inspect
+puts "---"
+baju = Baju.new
+puts baju.instance_variables.inspect
+baju.instance_variable_set(:@nama, "Kostum Badut")
+puts baju.instance_variable_get(:@nama)
+puts baju.instance_variables.inspect
+<% end %>
+
+<h3>Variabel Class</h3>
+
+<p>Kamu dapat dengan mudah mengakses, mengubah, atau mendefine variabel class secara dinamis.</p>
+
+<% code("ruby") do %>
+class Baju
+end
+
+puts; puts "Ubah variabel class"
+puts Baju.class_variables.inspect
+Baju.class_variable_set(:@@kode, "BJ")
+puts Baju.class_variable_get(:@@kode)
+puts Baju.class_variables.inspect
+
+baju = Baju.new
+puts baju.class_variables # error
+<% end %>
+
+<h3>Konstanta</h3>
+
+<p>Kamu juga bisa dengan mudah mengakses, mengubah, atau mendefine konstanta secara dinamis.</p>
+
+<% code("ruby") do %>
+class Baju
+end
+
+Baju.const_set(:WARNA_DEFAULT, "Hitam")
+puts Baju.const_get(:WARNA_DEFAULT)
+puts Baju.constants.inspect
+
+puts Baju.new.constants.inspect # error
+<% end %>
+
+<h3>Method</h3>
+
+<p>Kamu juga dapat dengan mudah mengakses, mengubah, atau mendefine method secara dinamis.</p>
+
+<% code("ruby") do %>
+class Baju
+  def warna
+    @warna || "Hitam"
+  end
+  
+  define_method(:beli) do
+    puts "Beli baju"
+  end
+  
+  private
+
+  def kain
+    "Katun"
+  end
+end
+
+Baju.class_eval do
+  define_method(:jual) do |harga|
+    puts "Jual baju dengan harga Rp #{harga}"
+  end
+  
+  define_method(:warna=) do |warna="Hitam"|
+    puts "Warna baju #{warna.inspect}"
+    @warna = warna
+  end
+end
+
+baju = Baju.new
+# puts baju.kain # tidak bisa panggil method yang private
+puts baju.send(:kain)
+baju.warna = # default warna hitam
+puts baju.warna.inspect
+baju.warna = "Putih"
+puts baju.warna.inspect
+baju.jual 399900
+
+Baju.class_eval do
+  remove_method(:warna)
+  undef_method(:beli)
+end
+# baju.warna # error
+# puts baju.beli # error
+
+class Baju
+  def method_missing(*args)
+    puts "Oalah methodnya ngga ada: #{args.inspect}"
+  end
+end
+
+puts; puts "Panggil method yang ga ada"
+puts baju.ngasal
+<% end %>
+
+<p>Perbedaan dari undef_method dan remove_method sangat sedikit. undef_method menghapus method dari class yang bersangkutan. Apabila method yang dihapus dipanggil, exception NoMethodError akan muncul. remove_method juga menghapus method dari class yang bersangkutan. Hanya saja, jika method yang dihapus dipangx gil, Ruby akan mencari superclass yang mengimplementasi method itu dan memanggilnya.</p>
+
+<p>Sumber-sumber:</p>
+<ul>
+  <li><a href="http://ruby-metaprogramming.rubylearning.com/" target="_blank">Ruby Metaprogramming</a></li>
+  <li><a href="http://www.jimmycuadra.com/posts/metaprogramming-ruby-class-eval-and-instance-eval" target="_blank">Metaprogramming Ruby: class_eval and instance_eval</a></li>
+  <li><a href="http://gdakram.com/past/2010/11/20/simple_academia_dsl_in_ruby_tutorial/" target="_blank">musings on intarwebz: Simple Academia DSL in Ruby Tutorial</a></li>
+  <li><a href="http://reference.jumpingmonkey.org/programming_languages/ruby/ruby-metaprogramming.html" target="_blank">Ruby Metaprogramming</a></li>
+  <li><a href="http://yonkeltron.com/blog/2010/05/13/creating-a-ruby-dsl/" target="_blank">yonkeltron.com: Creating a Ruby DSL</a></li>
+  <li><a href="http://www.nach-vorne.de/2008/2/28/undef_method-remove_method/index.html" target="_blank">The Ruby Ahead: undef_method != remove_method</a></li>
+</ul>
+
+<hr/>
+
+<p><a class="next-chapter-button" href="/coba-coba-sendiri.html">>> Bab selanjutnya -- Bagian 2: Coba-Coba Sendiri</a></p>

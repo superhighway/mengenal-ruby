@@ -1,0 +1,248 @@
+---
+title: Coba-Coba Sendiri
+---
+
+<h1>Bagian 2: Coba-Coba Sendiri</h1>
+
+<p>Ruby bahasa yang menarik bukan? Apakah kamu sudah mulai tertarik? Bagaimana kalau kamu coba instalasi Ruby dan coba-coba sendiri di komputermu?</p>
+
+<h2>Install Ruby</h2>
+
+<p>Jika kamu menggunakan sistem operasi Windows, Linux, atau Mac, cara install paling mudah adalah dengan menggunakan <a href="http://railsinstaller.org" target="_blank">Rails Installer</a>. Akan tetapi, installer tersebut menginstal Ruby dan Rails, juga membutuhkan bandwidth cukup kuat.</p>
+
+<p>Berikut ini beberapa cara lain untuk instal Ruby pada Windows, Linux, dan Mac.</p>
+
+<h3>Windows</h3>
+
+<p>Kamu bisa download dan gunakan <a href="http://rubyinstaller.org/" target="_blank">RubyInstaller</a>.</p>
+
+<h3>Linux</h3>
+
+<p>Biasanya, package manager pada distro yang kamu pakai menyediakan Ruby. Jika kamu pakai Ubuntu, jalankan Terminal dan perintah berikut.</p>
+
+<% code("bash") do %>
+apt-get install ruby
+<% end %>
+
+<h3>MacOS</h3>
+
+<p>Biasanya Mac sudah punya Ruby sendiri. Jika kamu ingin install versi lain dari yang sudah kamu punya, kamu perlu <a href="http://mxcl.github.com/homebrew/" target="_blank">install Homebrew</a> terlebih dahulu. Setelah menginstal brew, jalankan Terminal dan perintah berikut.</p>
+
+<% code("bash") do %>
+brew install ruby
+<% end %>
+
+<h2>Menggunakan Ruby di Terminal</h2>
+
+<p>Jika kamu sudah selesai menginstal Ruby, kamu dapat menjalankannya di Terminal. Kamu dapat menggunakan Interactive Ruby Shell (irb) jika kamu ingin coba-coba kode dan langsung lihat hasilnya.</p>
+
+<% code("bash") do %>
+# Ketik irb di Terminal
+irb
+<% end %>
+
+<p>Setelah itu, kamu dapat mengetik apapun dalam bahasa pemrograman Ruby, termasuk yang sudah kita pelajari pada bab sebelum ini. Sebagai info, berikut contoh penggunaan irb.</p>
+
+<p><img src="/img/irb-screenshot.png" /></p>
+
+<p>Cara lain adalah kamu tulis dulu code Ruby kamu di sebuah file, lalu jalankan filenya. Caranya seperti di bawah.</p>
+
+<% code("ruby") do %>
+# Isi file halo.rb
+puts "Hore instalasi Ruby selesai! :D"
+<% end %>
+
+<% code("bash") do %>
+# Jalankan halo.rb di Terminal
+ruby halo.rb
+<% end %>
+
+<p>Jika kamu akan terus membaca bab ini, kamu akan perlu menggunakan kedua teknik di atas untuk menjalankan Ruby.</p>
+
+<h2>Mengenal RubyGems: Ruby Dependency Manager</h2>
+
+<p>RubyGem, atau singkatnya Gem, merupakan dependency manager untuk Ruby. Ini sangat berguna jika kamu ingin melakukan sesuatu seperti membuat permintaan HTTP dengan mudah. Kamu bisa dengan mudah menginstal dengan membuka Terminal dan menjalankan sebuah command. Berikut ini contoh cara menginstal Gem.</p>
+
+<% code("bash") do %>
+gem install httparty # Install sebuah Gem untuk melakukan permintaan HTTP
+gem install yajl-ruby devise # Install 2 Gem, untuk parse JSON dan authentikasi
+<% end %>
+
+<p>Gem bisa kamu anggap seperti library, plugin, template, atau apapun yang sudah dibuat komunitas dan kemungkinan dipakai orang banyak. Kamu menggunakan Gem untuk menyelesaikan masalah yang ada pada program yang kamu buat dan masalah tersebut sudah dipecahkan orang lain.</p>
+
+<p>Sebagai informasi, kamu dapat mengujungi dokumentasi <a href="http://httparty.rubyforge.org/" target="_blank">HTTParty</a>, <a href="https://github.com/brianmario/yajl-ruby" target="_blank">Yajl Ruby</a>, dan <a href="http://devise.plataformatec.com.br/" target="_blank">Devise</a>. Informasi tersebut sebenarnya dapat dicari melalui Google.</p>
+
+<p>Ada banyak gem untuk menyelesaikan satu masalah. Contohnya, jika kamu ingin membuat aplikasi web, kamu dapat menggunakan Gem Rails, Sinatra, Padrino, dan banyak pilihan. Pilih saja yang kamu suka, dan pastikan kamu mengerti kelebihan dan kekurangan masing-masing Gem sebelum menggunakannya. Kalau sulit menentukan pilihan, pilih yang populer dan cukup aktif diupdate. Kalau kamu masih bingung dan penasaran pilih Gem, baca saja source codenya. Gem biasanya open source dan dihost di <a href="https://github.com/" target="_blank">GitHub</a>.</p>
+
+<p>Untuk mengetahui Gem apa saja yang bagus, berikut ini beberapa situs yang dapat kamu kunjungi.</p>
+
+<ul>
+	<li><a href="https://rubygems.org/" target="_blank">RubyGems</a>: Tempat hosting Gem.</li>
+	<li><a href="https://www.ruby-toolbox.com/" target="_blank">Ruby Toolbox</a>: Listing Gem dengan kategori dan statistik masing-masing. Bisa digunakan untuk membandingkan opsi Gem yang ingin kamu gunakan.</li>
+	<li><a href="http://ruby5.envylabs.com/" target="_blank">Ruby5</a>: Podcast mengenai Ruby dan Rails.</li>
+	<li><a href="http://thechangelog.com/tagged/ruby/" target="_blank">The ChangeLog</a>: Beberapa informasi open source terbaru.</li>
+	<li><a href="http://railscasts.com/?type=free">RailsCasts</a>: Screencast mengenari Ruby dan Rails.</li>
+</ul>
+
+<h2>Coba di Terminal</h2>
+
+<p>Berikut ini beberapa latihan untuk kamu coba-coba di Terminal. Kamu bisa menggunakan irb, atau buat file Ruby kemudian run di Terminal.</p>
+
+<h3>Tulis/Baca File (Bahasa Elit: File I/O)</h3>
+
+<p>Tujuan dari bab ini adalah untuk mengenal dokumentasi Ruby.</p>
+
+<% code("ruby") do %>
+# Tulis File
+File.open('coba-coba.txt', 'w') do |file|
+  file.write("halo ruby!")
+  file.write(" hmmmmm\n")
+end
+
+# Baca File
+isi_file = File.open('coba-coba.txt', 'r')
+puts isi_file
+<% end %>
+
+<p>Coba Sendiri: Ada banyak mode untuk membuka file. Coba append sebuah kalimat ke file "coba-coba.txt". Coba juga gabungkan isi 2 text file.</p>
+
+<p>Lihat <a href="http://www.ruby-doc.org/core-1.9.3/File.html" target="_blank">dokumentasi File</a> dan <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/tempfile/rdoc/Tempfile.html" target="_blank">TempFile</a> untuk lebih lanjutnya.</p>
+
+<h3>Waktu dan Tanggal</h3>
+
+<p>Ruby memiliki 1 class (Date) untuk merepresentasikan tanggal dan 2 class (Time dan DateTime) untuk waktu dan tanggal.</p>
+
+<p>Time dan DateTime terlihat seperti kembaran, tetapi mereka sebenarnya berbeda. Time adalah wrapper untuk Unix-Epoch. Date dan DateTime menggunakan bilangan rasional dan "hari ke nol" untuk menyimpan data. Jadi, performance Time lebih cepat, namun batas atas dan bawah terikat pada waktu epoch (1970-2040 untuk integer 32 bit). Sementara, Date dan DateTime memiliki kisaran hampir tak terbatas, tetapi performancenya lebih lambat. Sebagai info, Ruby on Rails menggunakan DateTime supaya bisa me-wrap standar SQL DATETIME.</p>
+
+<h4>Date</h4>
+
+<% code("ruby") do %>
+require 'date'
+
+puts Date.new(2010,2,3)
+puts Date.parse('2010-02-03')
+puts Date.strptime('03-02-2010', '%d-%m-%Y')
+puts Time.new(2010,2,3).to_date
+<% end %>
+
+<h4>Time</h4>
+
+<% code("ruby") do %>
+puts "Time"
+t = Time.now
+puts t.to_i # berdasarkan Unix-Epoch
+puts t.mday
+puts t.day
+puts t.hour
+puts t.min
+puts t.mon
+puts t.month
+puts t.strftime("Sekarang tanggal %m/%d/%Y")
+puts t.getgm
+puts t.getutc
+puts t.getlocal; puts
+
+puts Time.at(0)
+puts Time.at(Time.at(0))
+puts Time.utc(2000,"jan",1,20,15,1)
+puts Time.gm(2000,"jan",1,20,15,1)
+puts Time.local(2000,"jan",1,20,15,1)
+
+puts Time.new(2012,11,1,15,25,0, "+07:00")
+puts Time.new(2012,11,6,17,10,0, "+08:00")
+puts Time.new(2012,11,1,13,25,0, "-05:00")
+
+puts "Aritmatika"
+t = Time.now
+puts t + (60 * 60 * 24)
+t2 = t + 2592000
+puts t2
+puts t2 - t
+puts t2 - 2592000
+<% end %>
+
+<h4>DateTime</h4>
+
+<% code("ruby") do %>
+puts DateTime.now
+puts DateTime.new(2001,2,3)
+puts DateTime.new(2001,2,3,4,5,6,'+7')
+puts DateTime.new(2001,-11,-26,-20,-55,-54,'+7')
+puts DateTime.strptime('2001-02-03T04:05:06+07:00', '%Y-%m-%dT%H:%M:%S%z')
+puts
+puts DateTime.parse('2001-02-03T04:05:06+07:00')
+puts DateTime.parse('20010203T040506+0700')
+puts DateTime.parse('3rd Feb 2001 04:05:06 PM')
+puts
+puts DateTime.httpdate('Sat, 03 Feb 2001 04:05:06 GMT')
+puts DateTime.iso8601('2001-02-03T04:05:06+07:00')
+puts DateTime.iso8601('20010203T040506+0700')
+puts DateTime.iso8601('2001-W05-6T04:05:06+07:00')
+puts DateTime.rfc3339('2001-02-03T04:05:06+07:00')
+puts DateTime.rfc2822('Sat, 3 Feb 2001 04:05:06 +0700')
+puts DateTime.xmlschema('2001-02-03T04:05:06+07:00')
+<% end %>
+
+<ul>
+  <li><a href="http://www.ruby-doc.org/core/Time.html" target="_blank">Dokumentasi Time</a></li>
+  <li><a href="http://ruby-doc.org/stdlib/libdoc/date/rdoc/Date.html" target="_blank">Dokumentasi Date</a></li>
+  <li><a href="http://www.ruby-doc.org/stdlib/libdoc/date/rdoc/DateTime.html" target="_blank">Dokumentasi DateTime</a></li>
+</ul>
+
+<h3>Membuat Permintaan HTTP dan Memparse Respons HTTP</h3>
+
+<p>Berguna untuk interaksi dengan API seperti Facebook, Twitter...</p>
+
+<% code("bash") do %>
+# Instal Gem HTTParty
+gem install httparty
+<% end %>
+
+<p>Mari kita coba melakukan permintaan HTTP ke Google.</p>
+
+<% code("ruby") do %>
+# Pakai HTTParty
+require 'httparty'
+
+response = HTTParty.get('http://www.google.com')
+puts "\nResponse body\n======"
+puts response.body
+puts "\nResponse status code\n======"
+puts response.code
+puts "\nResponse headers\n======"
+puts response.headers.inspect
+puts "\nResponse message\n======"
+puts response.message
+<% end %>
+
+<p>Sekarang, mari kita coba melakukan permintaan HTTP ke Facebook API. Sebelumnya, kunjungi <a href="http://developers.facebook.com/tools/explorer" target="_blank">Facebook Graph Explorer</a> untuk mendapatkan access tokenmu.</p>
+
+<% code("ruby") do %>
+require 'httparty'
+require 'json' # untuk parse format JSON
+require 'pp' # untuk pretty_inspect
+
+access_token = 'paste access tokenmu di sini'
+response = HTTParty.get("https://graph.facebook.com/me/friends?fields=id,name,username&access_token=#{access_token}")
+puts response.body
+puts JSON.parse(response.body).pretty_inspect
+<% end %>
+
+<p>Seru bukan? Sekarang coba buat permintaan HTTP untuk membuat listing foto yang diupload salah satu temanmu. Cek dokumentasi Facebook untuk mencari URL yang dapat memberimu data tersebut.</p>
+
+<h3>Membuat Domain-Specific Language</h3>
+
+<p>Domain-Specific Language (DSL) sangat berguna untuk mendefinisikan konfigurasi supaya mudah dibaca. Kamu akan menemui banyak DSL pada Gem seperti Rails atau Sinatra. Kunci dari pembuatan DSL adalah Metaprogramming.</p>
+
+<% code("ruby") { File.read "source/snippets/b2-membuat-dsl.rb" } %>
+
+<p>Bagaimana? Mudah bukan? Coba buat method <code>tambah_*</code> supaya bisa menerima argumen berjumlah variabel. Coba juga buat method <code>listing_bernomor</code> dibuat secara dinamis oleh method <code>yang_dibutuhkan</code>.</p>
+
+<p>Sumber-sumber:</p>
+<ul>
+  <li><a href="http://rubylearning.com/blog/2010/11/30/how-do-i-build-dsls-with-yield-and-instance_eval/" target="_blank">RubyLearning Blog: How do I build DSLs with yield and instance_eval?</a></li>
+  <li><a href="http://gdakram.com/past/2010/11/20/simple_academia_dsl_in_ruby_tutorial/" target="_blank">music on intarwebz: Simple Academia DSL in Ruby Tutorial</a></li>
+</ul>
+
+<p><a class="next-chapter-button" href="/appendix.html">>> Bab selanjutnya -- Bagian 3: Appendix</a></p>
+<p><a class="next-chapter-button" href="/"><< Bab sebelumnya -- Bagian 1: Dasar-Dasar Pemrograman Ruby</a></p>

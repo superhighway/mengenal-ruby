@@ -1,0 +1,50 @@
+<h1>Appendix</h1>
+
+<h2>Terus Ruby Buat Apa?</h2>
+
+<p>Biasanya web apps atau static site generator. Frameworknya cukup banyak tapi yang paling populer adalah <a href="http://rubyonrails.org/" target="_blank">Rails</a>. Framework populer lain adalah <a href="http://www.sinatrarb.com/" target="_blank">Sinatra</a> dan <a href="http://www.padrinorb.com/" target="_blank">Padrino</a>. Situs ini menggunakan <a href="http://middlemanapp.com/" target="_blank">Middleman</a>.</p>
+
+<h2>Install Ruby Multiversi</h2>
+
+<p>Biasanya kalau sudah ada project besar dan mau upgrade, perlu coba-coba sendiri dulu bagaimana versi baru mempengaruhi code project yang sudah ada. Karena itulah, install Ruby Multiversi diperlukan.</p>
+
+<p>Untuk mengatur instalasi Ruby multiversi, kamu bisa menggunakan <a href="https://rvm.io/" target="_blank">RVM</a> atau <a href="https://github.com/sstephenson/rbenv" target="_blank">rbenv</a>. Selama ini saya masih pake RVM, jadi sejujurnya masih kurang tahu rbenv seperti apa. Kalau kamu mau pakai RVM, kamu tinggal ikuti instruksi dari <a href="https://rvm.io/" target="_blank">website RVM</a>. Kalau kamu instal Ruby pakai RailsInstaller, RVM sudah termasuk dalam instalasi juga.</p>
+
+<p>Kalau pakai RVM, ini beberapa cara install Ruby beda versi.</p>
+
+<% code("bash") do %>
+# Terminal
+rvm install ruby-1.9.3 # tidak pakai nomor patch
+rvm install ruby-1.9.3-p194 # pakai nomor patch
+rvm install ruby-2.0.0
+<% end %>
+
+<p>Berikut ini cara untuk memilih versi Ruby yang akan dipakai di Terminal.</p>
+
+<% code("bash") do %>
+# Terminal
+rvm use 2.0.0
+rvm use 1.9.3-p194
+<% end %>
+
+<h2>Tempat Lain untuk Belajar Ruby</h2>
+
+<p>Kalau mau belajar Ruby lebih mendalam, coba buat side project, bisa sendiri atau bersama teman-teman. Kalau kehabisan ide, kamu bisa buat TODO, aplikasi Sosial Media, e-commerce, atau main-main dengan API sosial media seperti Facebook Graph atau Twitter.</p>
+
+<p>Berikut ini beberapa buku atau screencast bagus dalam Bahasa Inggris.</p>
+
+<ul>
+	<li><a href="http://tryruby.org" target="_blank">Try Ruby</a></li>
+	<li><a href="http://www.codeschool.com/paths/ruby" target="_blank">Code School</a></li>
+  <li><a href="http://www.manning.com/black2/" target="_blank">[Buku] The Well-Grounded Rubyist</a></li>
+	<li><a href="http://www.amazon.com/Design-Patterns-Ruby-Russ-Olsen/dp/0321490452/ref=pd_bxgy_b_img_y" target="_blank">[Buku] Design Patterns in Ruby</a></li>
+	<li><a href="http://railscasts.com/" target="_blank">Rails Casts</a></li>
+</ul>
+
+<p>Kamu bisa datang ke meetup Ruby di kota kamu dan tanya2. Ruby community juga cukup sering mengadakan yearly conference. Coba cek Ruby conference terdekat di daerahmu.</p>
+
+<h2>Ruby 2.0</h2>
+
+<p><a href="http://www.ruby-lang.org/en/news/2013/02/24/ruby-2-0-0-p0-is-released/" target="_blank">Ruby 2.0 baru keluar lho!</a> Perbedaannya tidak begitu banyak, tetapi mungkin kamu perlu tahu beberapa perubahan syntax dan API yang bisa mempermudah kamu. Temukan info selengkapnya <a href="http://www.ruby-lang.org/en/news/2013/02/24/ruby-2-0-0-p0-is-released/" target="_blank">di situs ini</a>.</p>
+
+<p><a class="next-chapter-button" href="/"><< Bab sebelumnya -- Bagian 2: Coba-Coba Sendiri</a></p>
