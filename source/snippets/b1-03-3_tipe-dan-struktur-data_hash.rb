@@ -17,3 +17,6 @@ puts hash["besok"]
 hash.each_pair do |key, value|
   puts "#{key.to_s} jajan #{value} ribu"
 end
+
+puts hash.merge(kemarin: 30)
+puts hash[:kemarin]
