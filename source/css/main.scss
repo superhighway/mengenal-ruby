@@ -170,6 +170,7 @@ textarea {
 }
 
 #snippet-runner-code-content {
+  @include text-shadow(0 0 0 #fff);
 	margin: 0;
 	text-align: left;
 	max-width: 650px;
