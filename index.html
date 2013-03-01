@@ -37,8 +37,9 @@
 
 <h2>Sekilas Ruby</h2>
 
-<p>Ruby merupakan interpreted dan strongly-typed programming language.
-Kalau mau coba-coba, klik tombol "Jalankan" pada contoh-contoh kode Ruby di bawah.</p>
+<p>Ruby merupakan interpreted dan strongly-typed programming language. Ruby mensupport multiparadigma: berorientasi objek, imperatif, reflektif, dan fungsional.</p>
+
+<p>Pada bagian ini, kamu dapat mencoba-coba kode di bawah dengan mengklik tombol "Jalankan".</p>
 
 <div class="highlight"><pre><span class="nb">puts</span> <span class="s2">&quot;Halo Ruby!&quot;</span>
 
@@ -203,6 +204,9 @@ Kalau mau coba-coba, klik tombol "Jalankan" pada contoh-contoh kode Ruby di bawa
 <span class="nb">hash</span><span class="o">.</span><span class="n">each_pair</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">key</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2"> jajan </span><span class="si">#{</span><span class="n">value</span><span class="si">}</span><span class="s2"> ribu&quot;</span>
 <span class="k">end</span>
+
+<span class="nb">puts</span> <span class="nb">hash</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="ss">kemarin</span><span class="p">:</span> <span class="mi">30</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="nb">hash</span><span class="o">[</span><span class="ss">:kemarin</span><span class="o">]</span>
 </pre></div>
 <p>Untuk mengetahui Hash lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Hash.html">dokumentasinya</a>.</p>
 
