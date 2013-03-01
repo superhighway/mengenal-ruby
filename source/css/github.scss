@@ -6,7 +6,9 @@ body {
   line-height: 1.6;
   padding-top: 10px;
   padding-bottom: 10px;
-  background: #fff url('../img/bg.jpg') repeat;
+  background: #eee;
+  @include text-shadow(0 1px 0 #fff);
+  color: #333;
   padding: 30px; }
 
 body > *:first-child {
