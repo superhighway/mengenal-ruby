@@ -80,6 +80,6 @@ activate :syntax, linenos: 'inline', anchorlinenos: true, linenostart: 2
 
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.remote = "https://github.com/catcyborg/catcyborg.github.com.git"
+  deploy.remote = "https://github.com/catcyborg/mengenal-ruby-site.git"
   deploy.branch = "gh-pages"
 end
