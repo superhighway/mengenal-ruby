@@ -21,8 +21,8 @@
 	}
 
 	var $body = $('body'),
-	    // evalURL = 'http://mengenal-ruby-eval.herokuapp.com',
-			evalURL = 'http://localhost:4000',
+      evalURL = 'http://mengenal-ruby-eval.herokuapp.com',
+      // evalURL = 'http://localhost:4000',
 	    snippetRequestError = $('#snippet-request-error-template').html(),
 			$runner = $('#snippet-runner');
 	$('#snippet-request-error-template').remove();
