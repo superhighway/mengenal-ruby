@@ -64,7 +64,8 @@
 
 	if ($body.hasClass('executable')) {
 
-		$('.highlight').append($('#snippet-actions-template').html());
+    var tombolJalankan = $('#snippet-actions-template').html();
+		$('.highlight').append(tombolJalankan).prepend(tombolJalankan);
 		$('#snippet-actions-template').remove();
 		
 		$('.snippet-action-run').click(function() {

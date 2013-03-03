@@ -96,7 +96,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#hero, #toc {
+#hero {
+  text-align: center;
+  border-bottom: #804c00 dashed 2px;
+  h1 {
+    margin: 5px 0;
+    a {
+      color: #804c00;
+      background-color: transparent;
+    }
+  }
+}
+
+#toc {
   background: #fff;
   padding: 5px 30px 15px 30px;
   @include box-shadow(0 1px 8px #888);
@@ -256,9 +268,9 @@ body.fixed-toc-visible {
 
 .snippet-action-run {
 	@include border-radius(3px);
-	@include background-image(linear-gradient(top, #eee, #ddd, #ccc));
+	@include background-image(linear-gradient(top, #eee, #ccc, #bbb));
 	&:active {
-		@include background-image(linear-gradient(top, #ccc, #ddd, #eee));
+		@include background-image(linear-gradient(top, #bbb, #ccc, #ddd));
 		@include box-shadow(inset 0 0 8px #888);
 	}
 	border: #888 1px solid;
