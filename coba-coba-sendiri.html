@@ -36,29 +36,29 @@
 
 <p>Ruby bahasa yang menarik bukan? Apakah kamu sudah mulai tertarik? Bagaimana kalau kamu coba instalasi Ruby dan coba-coba sendiri di komputermu?</p>
 
-<h2>Install Ruby</h2>
+<h2 id="install-ruby">Install Ruby</h2>
 
 <p>Jika kamu menggunakan sistem operasi Windows, Linux, atau Mac, cara install paling mudah adalah dengan menggunakan <a href="http://railsinstaller.org" target="_blank">Rails Installer</a>. Akan tetapi, installer tersebut menginstal Ruby dan Rails, juga membutuhkan bandwidth cukup kuat.</p>
 
 <p>Berikut ini beberapa cara lain untuk instal Ruby pada Windows, Linux, dan Mac.</p>
 
-<h3>Windows</h3>
+<h3 id="install-ruby-windows">Windows</h3>
 
 <p>Kamu bisa download dan gunakan <a href="http://rubyinstaller.org/" target="_blank">RubyInstaller</a>.</p>
 
-<h3>Linux</h3>
+<h3 id="install-ruby-linux">Linux</h3>
 
 <p>Biasanya, package manager pada distro yang kamu pakai menyediakan Ruby. Jika kamu pakai Ubuntu, jalankan Terminal dan perintah berikut.</p>
 
 <div class="highlight"><pre>apt-get install ruby
 </pre></div>
-<h3>MacOS</h3>
+<h3 id="install-ruby-macos">MacOS</h3>
 
 <p>Biasanya Mac sudah punya Ruby sendiri. Jika kamu ingin install versi lain dari yang sudah kamu punya, kamu perlu <a href="http://mxcl.github.com/homebrew/" target="_blank">install Homebrew</a> terlebih dahulu. Setelah menginstal brew, jalankan Terminal dan perintah berikut.</p>
 
 <div class="highlight"><pre>brew install ruby
 </pre></div>
-<h2>Menggunakan Ruby di Terminal</h2>
+<h2 id="menggunakan-ruby-di-terminal">Menggunakan Ruby di Terminal</h2>
 
 <p>Jika kamu sudah selesai menginstal Ruby, kamu dapat menjalankannya di Terminal. Kamu dapat menggunakan Interactive Ruby Shell (irb) jika kamu ingin coba-coba kode dan langsung lihat hasilnya.</p>
 
@@ -79,7 +79,7 @@ ruby halo.rb
 </pre></div>
 <p>Jika kamu akan terus membaca bab ini, kamu akan perlu menggunakan kedua teknik di atas untuk menjalankan Ruby.</p>
 
-<h2>Mengenal RubyGems: Ruby Dependency Manager</h2>
+<h2 id="mengenal-rubygems-ruby-dependency-manager">Mengenal RubyGems: Ruby Dependency Manager</h2>
 
 <p>RubyGem, atau singkatnya Gem, merupakan dependency manager untuk Ruby. Ini sangat berguna jika kamu ingin melakukan sesuatu seperti membuat permintaan HTTP dengan mudah. Kamu bisa dengan mudah menginstal dengan membuka Terminal dan menjalankan sebuah command. Berikut ini contoh cara menginstal Gem.</p>
 
@@ -102,11 +102,11 @@ gem install yajl-ruby devise <span class="c"># Install 2 Gem, untuk parse JSON d
 	<li><a href="http://railscasts.com/?type=free">RailsCasts</a>: Screencast mengenari Ruby dan Rails.</li>
 </ul>
 
-<h2>Coba di Terminal</h2>
+<h2 id="coba-di-terminal">Coba di Terminal</h2>
 
 <p>Berikut ini beberapa latihan untuk kamu coba-coba di Terminal. Kamu bisa menggunakan irb, atau buat file Ruby kemudian run di Terminal.</p>
 
-<h3>Tulis/Baca File (Bahasa Elit: File I/O)</h3>
+<h3 id="tulis-baca-file">Tulis/Baca File (Bahasa Elit: File I/O)</h3>
 
 <p>Tujuan dari bab ini adalah untuk mengenal dokumentasi Ruby.</p>
 
@@ -124,13 +124,13 @@ gem install yajl-ruby devise <span class="c"># Install 2 Gem, untuk parse JSON d
 
 <p>Lihat <a href="http://www.ruby-doc.org/core-1.9.3/File.html" target="_blank">dokumentasi File</a> dan <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/tempfile/rdoc/Tempfile.html" target="_blank">TempFile</a> untuk lebih lanjutnya.</p>
 
-<h3>Waktu dan Tanggal</h3>
+<h3 id="waktu-dan-tanggal">Waktu dan Tanggal</h3>
 
 <p>Ruby memiliki 1 class (Date) untuk merepresentasikan tanggal dan 2 class (Time dan DateTime) untuk waktu dan tanggal.</p>
 
 <p>Time dan DateTime terlihat seperti kembaran, tetapi mereka sebenarnya berbeda. Time adalah wrapper untuk Unix-Epoch. Date dan DateTime menggunakan bilangan rasional dan "hari ke nol" untuk menyimpan data. Jadi, performance Time lebih cepat, namun batas atas dan bawah terikat pada waktu epoch (1970-2040 untuk integer 32 bit). Sementara, Date dan DateTime memiliki kisaran hampir tak terbatas, tetapi performancenya lebih lambat. Sebagai info, Ruby on Rails menggunakan DateTime supaya bisa me-wrap standar SQL DATETIME.</p>
 
-<h4>Date</h4>
+<h4 id="date">Date</h4>
 
 <div class="highlight"><pre><span class="nb">require</span> <span class="s1">&#39;date&#39;</span>
 
@@ -139,7 +139,7 @@ gem install yajl-ruby devise <span class="c"># Install 2 Gem, untuk parse JSON d
 <span class="nb">puts</span> <span class="no">Date</span><span class="o">.</span><span class="n">strptime</span><span class="p">(</span><span class="s1">&#39;03-02-2010&#39;</span><span class="p">,</span> <span class="s1">&#39;%d-%m-%Y&#39;</span><span class="p">)</span>
 <span class="nb">puts</span> <span class="no">Time</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">2010</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">to_date</span>
 </pre></div>
-<h4>Time</h4>
+<h4 id="time">Time</h4>
 
 <div class="highlight"><pre><span class="nb">puts</span> <span class="s2">&quot;Time&quot;</span>
 <span class="n">t</span> <span class="o">=</span> <span class="no">Time</span><span class="o">.</span><span class="n">now</span>
@@ -173,7 +173,7 @@ gem install yajl-ruby devise <span class="c"># Install 2 Gem, untuk parse JSON d
 <span class="nb">puts</span> <span class="n">t2</span> <span class="o">-</span> <span class="n">t</span>
 <span class="nb">puts</span> <span class="n">t2</span> <span class="o">-</span> <span class="mi">2592000</span>
 </pre></div>
-<h4>DateTime</h4>
+<h4 id="datetime">DateTime</h4>
 
 <div class="highlight"><pre><span class="nb">puts</span> <span class="no">DateTime</span><span class="o">.</span><span class="n">now</span>
 <span class="nb">puts</span> <span class="no">DateTime</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="mi">2001</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
@@ -199,7 +199,7 @@ gem install yajl-ruby devise <span class="c"># Install 2 Gem, untuk parse JSON d
   <li><a href="http://www.ruby-doc.org/stdlib/libdoc/date/rdoc/DateTime.html" target="_blank">Dokumentasi DateTime</a></li>
 </ul>
 
-<h3>Membuat Permintaan HTTP dan Memparse Respons HTTP</h3>
+<h3 id="membuat-permintaan-http-dan-memparse-respons-http">Membuat Permintaan HTTP dan Memparse Respons HTTP</h3>
 
 <p>Berguna untuk interaksi dengan API seperti Facebook, Twitter...</p>
 
@@ -234,7 +234,7 @@ gem install httparty
 </pre></div>
 <p>Seru bukan? Sekarang coba buat permintaan HTTP untuk membuat listing foto yang diupload salah satu temanmu. Cek dokumentasi Facebook untuk mencari URL yang dapat memberimu data tersebut.</p>
 
-<h3>Membuat Domain-Specific Language</h3>
+<h3 id="membuat-domain-specific-language">Membuat Domain-Specific Language</h3>
 
 <p>Domain-Specific Language (DSL) sangat berguna untuk mendefinisikan konfigurasi supaya mudah dibaca. Kamu akan menemui banyak DSL pada Gem seperti Rails atau Sinatra. Kunci dari pembuatan DSL adalah Metaprogramming.</p>
 
@@ -347,7 +347,8 @@ gem install httparty
 <p><a class="next-chapter-button" href="."><< Bab sebelumnya -- Bagian 1: Dasar-Dasar Pemrograman Ruby</a></p>
 				</div>
         <div id="fixed-menu">
-          <a href="." class="logo"></a><a href="javascript:void(0);" class="fixed-menu-item toggle-fixed-toc">Daftar Isi</a><a href="javascript:void(0);" class="fixed-menu-item toggle-snippet-runner">Coba Ruby</a><a href="coba-coba-sendiri.html" class="fixed-menu-item">Install Ruby</a><a href="kontak.html" class="fixed-menu-item">Kontak</a>
+          <div class="wide"><a href="." class="logo"></a><a href="javascript:void(0);" class="fixed-menu-item toggle-fixed-toc">Daftar Isi</a><a href="javascript:void(0);" class="fixed-menu-item toggle-snippet-runner">Coba Ruby</a><a href="coba-coba-sendiri.html" class="fixed-menu-item">Install Ruby</a><a href="kontak.html" class="fixed-menu-item">Kontak</a></div>
+          <div class="narrow"><a href="." class="logo"></a><a href="javascript:void(0);" class="fixed-menu-item toggle-fixed-toc">Daftar Isi</a><a href="javascript:void(0);" class="fixed-menu-item toggle-snippet-runner">Coba</a><a href="coba-coba-sendiri.html" class="fixed-menu-item">Install</a><a href="kontak.html" class="fixed-menu-item">@</a></div>
         </div>
 				
 				<div id="toc">
@@ -356,39 +357,32 @@ gem install httparty
 						<li>
 							<a href=".">Bagian 1: Dasar-Dasar Pemrograman Ruby</a>
 							<ul>
-								<li>Sekilas Ruby</li>
-								<li>Konstanta dan Variabel</li>
-								<li>Tipe dan Struktur Data</li>
-								<li>Operasi Logika dan Aritmatika</li>
-								<li>Statement Controls (if, elsif, else, while)</li>
-								<li>Methods</li>
-								<li>Proc</li>
-								<li>Class</li>
-								<li>Module</li>
-								<li>Exceptions</li>
-								<li>Throw dan Catch</li>
-								<li>Mengenal Metaprogramming</li>
+								<li><a href=".#sekilas-ruby">Sekilas Ruby</a></li>
+								<li><a href=".#konstanta-dan-variabel">Konstanta dan Variabel</a></li>
+								<li><a href=".#tipe-dan-struktur-data">Tipe dan Struktur Data</a></li>
+								<li><a href=".#operasi-logika-dan-matematika">Operasi Logika dan Aritmatika</a></li>
+								<li><a href=".#statement-controls">Statement Controls (if, elsif, else, while)</a></li>
+								<li><a href=".#methods">Methods</a></li>
+								<li><a href=".#proc">Proc</a></li>
+								<li><a href=".#class">Class</a></li>
+								<li><a href=".#module">Module</a></li>
+								<li><a href=".#exceptions">Exceptions</a></li>
+								<li><a href=".#throw-dan-catch">Throw dan Catch</a></li>
+								<li><a href=".#mengenal-metaprogramming">Mengenal Metaprogramming</a></li>
 							</ul>
 						</li>
 						<li>
 							<a href="coba-coba-sendiri.html">Bagian 2: Coba-Coba Sendiri</a>
 							<ul>
-								<li>
-									Install Ruby
-								</li>
-								<li>
-									Menggunakan Ruby di Terminal
-								</li>
-								<li>
-									Mengenal RubyGems: Ruby Dependency Manager
-								</li>
-								<li>
-									Coba di Terminal
+								<li><a href="coba-coba-sendiri.html#install-ruby">Install Ruby</a></li>
+								<li><a href="coba-coba-sendiri.html#menggunakan-ruby-di-terminal">Menggunakan Ruby di Terminal</a></li>
+								<li><a href="coba-coba-sendiri.html#mengenal-rubygems-ruby-dependency-manager">Mengenal RubyGems: Ruby Dependency Manager</a></li>
+								<li><a href="coba-coba-sendiri.html#coba-di-terminal">Coba di Terminal</a>
 									<ul>
-										<li>Tulis/Baca File</li>
-										<li>Tanggal dan Waktu</li>
-										<li>Membuat Permintaan HTTP dan Memparse Respons HTTP</li>
-										<li>Membuat Domain-Specific Language</li>
+										<li><a href="coba-coba-sendiri.html#tulis-baca-file">Tulis/Baca File</a></li>
+										<li><a href="coba-coba-sendiri.html#waktu-dan-tanggal">Waktu dan Tanggal</a></li>
+										<li><a href="coba-coba-sendiri.html#membuat-permintaan-http-dan-memparse-respons-http">Membuat Permintaan HTTP dan Memparse Respons HTTP</a></li>
+										<li><a href="coba-coba-sendiri.html#membuat-domain-specific-language">Membuat Domain-Specific Language</li>
 									</ul>
 								</li>
 							</ul>
@@ -396,9 +390,10 @@ gem install httparty
 						<li>
 							<a href="appendix.html">Appendix</a>
 							<ul>
-								<li>Terus Ruby Buat Apa?</li>
-								<li>Install Ruby Multiversi</li>
-								<li>Tempat Lain untuk Belajar Ruby</li>
+								<li><a href="appendix.html#terus-ruby-buat-apa">Terus Ruby Buat Apa?</a></li>
+								<li><a href="appendix.html#install-ruby-multiversi">Install Ruby Multiversi</a></li>
+								<li><a href="appendix.html#tempat-lain-untuk-belajar-ruby">Tempat Lain untuk Belajar Ruby</a></li>
+                <li><a href="appendix.html#ruby-2">Ruby 2.0</a></li>
 							</ul>
 						</li>
 					</ol>
