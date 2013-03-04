@@ -1,4 +1,23 @@
 (function() {
+  var opts = {
+    lines: 17, // The number of lines to draw
+    length: 12, // The length of each line
+    width: 4, // The line thickness
+    radius: 40, // The radius of the inner circle
+    corners: 1, // Corner roundness (0..1)
+    rotate: 0, // The rotation offset
+    color: '#888', // #rgb or #rrggbb
+    speed: 1, // Rounds per second
+    trail: 60, // Afterglow percentage
+    shadow: true, // Whether to render a shadow
+    hwaccel: false, // Whether to use hardware acceleration
+    className: 'spinner', // The CSS class to assign to the spinner
+    zIndex: 2e9, // The z-index (defaults to 2000000000)
+    top: '50px', // Top position relative to parent in px
+    left: 'auto' // Left position relative to parent in px
+  }, spinner = new Spinner(opts),
+  spinnerEl = document.getElementById('snippet-runner-running-indicator');
+
 	var editor = null;
 	if (window.ace) {
     editor = ace.edit("snippet-runner-code-content");
@@ -23,18 +42,21 @@
 	var $body = $('body'),
       evalURL = 'http://mengenal-ruby-eval.herokuapp.com',
       // evalURL = 'http://localhost:4000',
-      snippetRequestError = $('#snippet-request-error-template').html(),
+      snippetRequestError = $('#snippet-request-error-template').text(),
 			$runner = $('#snippet-runner');
 	$('#snippet-request-error-template').remove();
 	
 	$('.snippet-runner-code-action-run').click(function() {
 		var $outputTarget = $runner.find('.snippet-runner-output'),
 				snippet = getEditorValue();
+    spinner.spin(spinnerEl);
 
 		$.post(evalURL, { snippet: snippet }, function(data, textStatus, xhr) {
+      spinner.stop(spinnerEl);
 			$outputTarget.text(data);
 		}).fail(function() {
-			$outputTarget.html(snippetRequestError);
+      spinner.stop(spinnerEl);
+			$outputTarget.text(snippetRequestError);
 		});
 	});
 
@@ -76,5 +98,5 @@
 			if (!$body.hasClass(className)) { $body.addClass(className); }
 			$('.snippet-runner-code-action-run').click();
 		});
-	}
+	}  
 })();
