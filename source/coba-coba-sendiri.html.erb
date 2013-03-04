@@ -6,17 +6,17 @@ title: Coba-Coba Sendiri
 
 <p>Ruby bahasa yang menarik bukan? Apakah kamu sudah mulai tertarik? Bagaimana kalau kamu coba instalasi Ruby dan coba-coba sendiri di komputermu?</p>
 
-<h2>Install Ruby</h2>
+<h2 id="install-ruby">Install Ruby</h2>
 
 <p>Jika kamu menggunakan sistem operasi Windows, Linux, atau Mac, cara install paling mudah adalah dengan menggunakan <a href="http://railsinstaller.org" target="_blank">Rails Installer</a>. Akan tetapi, installer tersebut menginstal Ruby dan Rails, juga membutuhkan bandwidth cukup kuat.</p>
 
 <p>Berikut ini beberapa cara lain untuk instal Ruby pada Windows, Linux, dan Mac.</p>
 
-<h3>Windows</h3>
+<h3 id="install-ruby-windows">Windows</h3>
 
 <p>Kamu bisa download dan gunakan <a href="http://rubyinstaller.org/" target="_blank">RubyInstaller</a>.</p>
 
-<h3>Linux</h3>
+<h3 id="install-ruby-linux">Linux</h3>
 
 <p>Biasanya, package manager pada distro yang kamu pakai menyediakan Ruby. Jika kamu pakai Ubuntu, jalankan Terminal dan perintah berikut.</p>
 
@@ -24,7 +24,7 @@ title: Coba-Coba Sendiri
 apt-get install ruby
 <% end %>
 
-<h3>MacOS</h3>
+<h3 id="install-ruby-macos">MacOS</h3>
 
 <p>Biasanya Mac sudah punya Ruby sendiri. Jika kamu ingin install versi lain dari yang sudah kamu punya, kamu perlu <a href="http://mxcl.github.com/homebrew/" target="_blank">install Homebrew</a> terlebih dahulu. Setelah menginstal brew, jalankan Terminal dan perintah berikut.</p>
 
@@ -32,7 +32,7 @@ apt-get install ruby
 brew install ruby
 <% end %>
 
-<h2>Menggunakan Ruby di Terminal</h2>
+<h2 id="menggunakan-ruby-di-terminal">Menggunakan Ruby di Terminal</h2>
 
 <p>Jika kamu sudah selesai menginstal Ruby, kamu dapat menjalankannya di Terminal. Kamu dapat menggunakan Interactive Ruby Shell (irb) jika kamu ingin coba-coba kode dan langsung lihat hasilnya.</p>
 
@@ -59,7 +59,7 @@ ruby halo.rb
 
 <p>Jika kamu akan terus membaca bab ini, kamu akan perlu menggunakan kedua teknik di atas untuk menjalankan Ruby.</p>
 
-<h2>Mengenal RubyGems: Ruby Dependency Manager</h2>
+<h2 id="mengenal-rubygems-ruby-dependency-manager">Mengenal RubyGems: Ruby Dependency Manager</h2>
 
 <p>RubyGem, atau singkatnya Gem, merupakan dependency manager untuk Ruby. Ini sangat berguna jika kamu ingin melakukan sesuatu seperti membuat permintaan HTTP dengan mudah. Kamu bisa dengan mudah menginstal dengan membuka Terminal dan menjalankan sebuah command. Berikut ini contoh cara menginstal Gem.</p>
 
@@ -84,11 +84,11 @@ gem install yajl-ruby devise # Install 2 Gem, untuk parse JSON dan authentikasi
 	<li><a href="http://railscasts.com/?type=free">RailsCasts</a>: Screencast mengenari Ruby dan Rails.</li>
 </ul>
 
-<h2>Coba di Terminal</h2>
+<h2 id="coba-di-terminal">Coba di Terminal</h2>
 
 <p>Berikut ini beberapa latihan untuk kamu coba-coba di Terminal. Kamu bisa menggunakan irb, atau buat file Ruby kemudian run di Terminal.</p>
 
-<h3>Tulis/Baca File (Bahasa Elit: File I/O)</h3>
+<h3 id="tulis-baca-file">Tulis/Baca File (Bahasa Elit: File I/O)</h3>
 
 <p>Tujuan dari bab ini adalah untuk mengenal dokumentasi Ruby.</p>
 
@@ -108,13 +108,13 @@ puts isi_file
 
 <p>Lihat <a href="http://www.ruby-doc.org/core-1.9.3/File.html" target="_blank">dokumentasi File</a> dan <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/tempfile/rdoc/Tempfile.html" target="_blank">TempFile</a> untuk lebih lanjutnya.</p>
 
-<h3>Waktu dan Tanggal</h3>
+<h3 id="waktu-dan-tanggal">Waktu dan Tanggal</h3>
 
 <p>Ruby memiliki 1 class (Date) untuk merepresentasikan tanggal dan 2 class (Time dan DateTime) untuk waktu dan tanggal.</p>
 
 <p>Time dan DateTime terlihat seperti kembaran, tetapi mereka sebenarnya berbeda. Time adalah wrapper untuk Unix-Epoch. Date dan DateTime menggunakan bilangan rasional dan "hari ke nol" untuk menyimpan data. Jadi, performance Time lebih cepat, namun batas atas dan bawah terikat pada waktu epoch (1970-2040 untuk integer 32 bit). Sementara, Date dan DateTime memiliki kisaran hampir tak terbatas, tetapi performancenya lebih lambat. Sebagai info, Ruby on Rails menggunakan DateTime supaya bisa me-wrap standar SQL DATETIME.</p>
 
-<h4>Date</h4>
+<h4 id="date">Date</h4>
 
 <% code("ruby") do %>
 require 'date'
@@ -125,7 +125,7 @@ puts Date.strptime('03-02-2010', '%d-%m-%Y')
 puts Time.new(2010,2,3).to_date
 <% end %>
 
-<h4>Time</h4>
+<h4 id="time">Time</h4>
 
 <% code("ruby") do %>
 puts "Time"
@@ -161,7 +161,7 @@ puts t2 - t
 puts t2 - 2592000
 <% end %>
 
-<h4>DateTime</h4>
+<h4 id="datetime">DateTime</h4>
 
 <% code("ruby") do %>
 puts DateTime.now
@@ -189,7 +189,7 @@ puts DateTime.xmlschema('2001-02-03T04:05:06+07:00')
   <li><a href="http://www.ruby-doc.org/stdlib/libdoc/date/rdoc/DateTime.html" target="_blank">Dokumentasi DateTime</a></li>
 </ul>
 
-<h3>Membuat Permintaan HTTP dan Memparse Respons HTTP</h3>
+<h3 id="membuat-permintaan-http-dan-memparse-respons-http">Membuat Permintaan HTTP dan Memparse Respons HTTP</h3>
 
 <p>Berguna untuk interaksi dengan API seperti Facebook, Twitter...</p>
 
@@ -230,7 +230,7 @@ puts JSON.parse(response.body).pretty_inspect
 
 <p>Seru bukan? Sekarang coba buat permintaan HTTP untuk membuat listing foto yang diupload salah satu temanmu. Cek dokumentasi Facebook untuk mencari URL yang dapat memberimu data tersebut.</p>
 
-<h3>Membuat Domain-Specific Language</h3>
+<h3 id="membuat-domain-specific-language">Membuat Domain-Specific Language</h3>
 
 <p>Domain-Specific Language (DSL) sangat berguna untuk mendefinisikan konfigurasi supaya mudah dibaca. Kamu akan menemui banyak DSL pada Gem seperti Rails atau Sinatra. Kunci dari pembuatan DSL adalah Metaprogramming.</p>
 

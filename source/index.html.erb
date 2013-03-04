@@ -5,7 +5,7 @@ bodyClasses: executable
 
 <h1>Bagian 1: Dasar-Dasar Pemrograman Ruby</h1>
 
-<h2>Sekilas Ruby</h2>
+<h2 id="sekilas-ruby">Sekilas Ruby</h2>
 
 <p>Ruby merupakan interpreted dan strongly-typed programming language. Ruby mensupport multiparadigma: berorientasi objek, imperatif, reflektif, dan fungsional.</p>
 
@@ -13,17 +13,17 @@ bodyClasses: executable
 
 <% code("ruby") { File.read "source/snippets/b1-01_sekilas-ruby.rb" } %>
 
-<h2>Konstanta dan Variabel</h2>
+<h2 id="konstanta-dan-variabel">Konstanta dan Variabel</h2>
 
 <% code("ruby") { File.read "source/snippets/b1-02_konstanta-dan-variabel.rb" } %>
 
-<h2>Tipe dan Struktur Data</h2>
+<h2 id="tipe-dan-struktur-data">Tipe dan Struktur Data</h2>
 
 <p>Semua tipe data merupakan Object, termasuk tipe data primitif seperti Integer, Float, dan Boolean. Bahkan, nil dan Class pun merupakan Object.</p>
 
 <% code("ruby") { File.read "source/snippets/b1-03_tipe-dan-struktur-data_sekilas.rb" } %>
 
-<h3>Symbol</h3>
+<h3 id="symbol">Symbol</h3>
 
 <p>Symbol kelihatan hampir seperti String, hanya saja karakter yang diperbolehkan adalah titik dua (:) dan sama seperti variabel. Bedanya, Symbol selalu ada di memory/tidak pernah dihapus dari memory setelah dibuat pertama kali.</p>
 
@@ -31,15 +31,15 @@ bodyClasses: executable
 
 <p>Untuk mengetahui Symbol lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Symbol.html">dokumentasinya</a>.</p>
 
-<h3>Dapat Diiterasi: Array, Hash, Set, dan Range</h3>
+<h3 id="dapat-diiterasi-array-hash-set-dan-range">Dapat Diiterasi: Array, Hash, Set, dan Range</h3>
 
-<h4>Array</h4>
+<h4 id="array">Array</h4>
 
 <% code("ruby") { File.read "source/snippets/b1-03-2_tipe-dan-struktur-data_array.rb" } %>
 
 <p>Untuk mengetahui Array lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Array.html">dokumentasinya</a>.</p>
 
-<h4>Hash</h4>
+<h4 id="hash">Hash</h4>
 
 <p>Hash mirip seperti sebuah tabel key-value, dengan key tidak berduplikat.</p>
 
@@ -47,7 +47,7 @@ bodyClasses: executable
 
 <p>Untuk mengetahui Hash lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Hash.html">dokumentasinya</a>.</p>
 
-<h4>Set</h4>
+<h4 id="set">Set</h4>
 
 <p>Set merupakan koleksi dengan elemen tak berurut tanpa duplikat. Set mirip dengan Array, tetapi kecepatan pencarian elemen mirip dengan Hash.</p>
 
@@ -55,7 +55,7 @@ bodyClasses: executable
 
 <p>Untuk mengetahui Set lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/set/rdoc/Set.html">dokumentasinya</a>.</p>
 
-<h4>Range</h4>
+<h4 id="range">Range</h4>
 
 <p>Range merupakan jajaran dari Object yang memiliki elemen awal dan akhir.</p>
 
@@ -63,13 +63,13 @@ bodyClasses: executable
 
 <p>Untuk mengetahui Range lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Range.html">dokumentasinya</a>.</p>
 
-<h3>Konversi Tipe Data</h3>
+<h3 id="konversi-tipe-data">Konversi Tipe Data</h3>
 
 <p>Hampir semua tipe data di atas dapat dikonversi ke tipe data lain. Berikut beberapa contoh cara mengkonversi tipe data.</p>
 
 <% code("ruby") { File.read "source/snippets/b1-03-x_tipe-dan-struktur-data_konversi-tipe-data.rb" } %>
 
-<h2>Operasi Logika dan Aritmatika</h2>
+<h2 id="operasi-logika-dan-matematika">Operasi Logika dan Aritmatika</h2>
 
 <p>Ini sebagai info aja. Tidak harus hafal semua kok.</p>
 
@@ -129,9 +129,9 @@ bodyClasses: executable
 	<li><a href="http://hasno.info/ruby-gotchas-and-caveats" target="_blank">tech addict mark guzman's random musings: ruby gotchas and caveats</a></li>
 </ul>
 	
-<h2>Statement Controls</h2>
+<h2 id="statement-controls">Statement Controls</h2>
 
-<h3>Conditionals</h3>
+<h3 id="conditionals">Conditionals</h3>
 
 <p>if, else, dan unless</p>
 
@@ -145,11 +145,11 @@ bodyClasses: executable
 
 <% code("ruby") { File.read "source/snippets/b1-05-3_statement-controls_conditionals_case-when.rb" } %>
 
-<h3>Loop</h3>
+<h3 id="loop">Loop</h3>
 
 <% code("ruby") { File.read "source/snippets/b1-05-x_statement-controls_loop.rb" } %>
 
-<h2>Methods</h2>
+<h2 id="methods">Methods</h2>
 
 <% code("ruby") { File.read "source/snippets/b1-06-1_methods_1arg.rb" } %>
 
@@ -157,17 +157,17 @@ bodyClasses: executable
 
 <% code("ruby") { File.read "source/snippets/b1-06-2_methods_lebih-dari-1arg.rb" } %>
 
-<h2>Proc</h2>
+<h2 id="proc">Proc</h2>
 
 <p>Proc disebut juga closures dalam ilmu komputer. Menurut saya, tipe data ini sangat spesial karena sifatnya seperti method atau sebuah snippet, tetapi dapat diassign seperti variabel.</p>
 
-<h3>Sekilas Proc</h3>
+<h3 id="sekilas-proc">Sekilas Proc</h3>
 
 <p>Kamu sebenarnya sudah melihat Proc pada bab Array. Berikut ini sekilas mengenai Proc yang merupakan block dan lambda.</p>
 
 <% code("ruby") { File.read "source/snippets/b1-07-1_proc_sekilas_proc.rb" } %>
 
-<h3>Perbedaan block dan lambda</h3>
+<h3 id="perbedaan-block-dan-lambda">Perbedaan block dan lambda</h3>
 
 <p>block dan lambda terlihat seperti saudara kembar, walaupun secara syntax memang sudah terlihat berbeda. Pada dasarnya, lambda lebih bersifat seperti method, dan block lebih bersifat seperti snippet. Kamu juga perlu tahu 2 perbedaan besar antara keduanya.</p>
 
@@ -180,13 +180,13 @@ bodyClasses: executable
   </li>
 </ol>
 
-<h3>Mengenal Kemiripan block dan lambda</h3>
+<h3 id="mengenal-kemiripan-block-dan-lambda">Mengenal Kemiripan block dan lambda</h3>
 
 <p>Pada umumnya, yang bisa kamu lakukan pada block dapat kamu lakukan juga pada lambda. Berikut ini beberapa contoh di mana cara kerja lambda dan proc sama saja.</p>
 
 <% code("ruby") { File.read "source/snippets/b1-07-3_mengenal-kemiripan-block-dan-lambda.rb" } %>
 
-<h3>Mari Bermain Bersama Proc!</h3>
+<h3 id="mari-bermain-bersama-proc">Mari Bermain Bersama Proc!</h3>
 
 <% code("ruby") { File.read "source/snippets/b1-07-4_mari-bermain-bersama-proc.rb" } %>
 
@@ -199,7 +199,7 @@ bodyClasses: executable
 	<li><a href="http://www.ruby-doc.org/core/Proc.html" target="_blank">Dokumentasi Proc</a></li>
 </ul>
 
-<h2>Class</h2>
+<h2 id="class">Class</h2>
 
 <p>Ruby biasanya cukup object oriented, walaupun functional dan yang lain juga bisa. Ruby punya garbage collector, jadi tidak perlu atur2 alokasi seperti pada C/C++.</p>
 
@@ -207,18 +207,18 @@ bodyClasses: executable
 
 <% code("ruby") { File.read "source/snippets/b1-08-1_class_deklarasi-setter-dan-getter.rb" } %>
 
-<h3>Access Modifiers</h3>
+<h3 id="access-modifiers">Access Modifiers</h3>
 
 <p>Secara default, semua method public dan instance variable protected.
 Kamu bisa mengubah method menjadi <code>private</code> atau <code>protected</code>, tetapi kamu tidak bisa mengubah instance variable seperti itu.</p>
 
 <% code("ruby") { File.read "source/snippets/b1-08-2_class_access-modifiers.rb" } %>
 
-<h3>Inheritance</h3>
+<h3 id="inheritance">Inheritance</h3>
 
 <% code("ruby") { File.read "source/snippets/b1-08-3_class_inheritance.rb" } %>
 
-<h3>Callback</h3>
+<h3 id="class-callback">Callback</h3>
 
 <% code("ruby") do %>
 # self.inherited
@@ -235,7 +235,7 @@ class Motor < Kendaraan
 end
 <% end %>
 
-<h3>Patching</h3>
+<h3 id="patching">Patching</h3>
 
 <p>Kamu bisa ubah-ubah kelas yang sudah define. Teknik ini disebut juga monkey patching.</p>
 
@@ -244,13 +244,13 @@ end
 
 <p>Untuk mengenal Class lebih jauh, kunjungi <a href="http://www.ruby-doc.org/core/Class.html" target="_blank">dokumentasi Class</a> dan <a href="http://www.ruby-doc.org/core/Object.html">Object</a>.</p>
 
-<h2>Module</h2>
+<h2 id="module">Module</h2>
 
 <p>Module merupakan kumpulan methods dan konstanta. Module mirip class, hanya saja dia bisa di-include atau di-extend ke modul atau kelas lain.</p>
 
 <% code("ruby") { File.read "source/snippets/b1-09-1_module_sekilas.rb" } %>
 
-<h3>Callback</h3>
+<h3 id="module-callback">Callback</h3>
 
 <% code("ruby") do %>
 # self.included dan self.extended
@@ -292,7 +292,7 @@ module PakaiSeragam
 end
 <% end %>
 
-<h3>Patching</h3>
+<h3 id="patching">Patching</h3>
 
 <p>Seperti Class, kamu bisa monkey patch module yang sudah define.</p>
 
@@ -312,7 +312,7 @@ end
 
 <p>Untuk mengenal Module lebih jauh, kunjungi <a href="http://www.ruby-doc.org/core/Module.html" target="_blank">dokumentasinya</a>.</p>
 
-<h2>Exceptions</h2>
+<h2 id="exceptions">Exceptions</h2>
 
 <% code("ruby") do %>
 class MyException < Exception
@@ -334,7 +334,7 @@ end
 
 <p>Untuk mengenal Exception lebih jauh, kunjungi <a href="http://www.ruby-doc.org/core/Exception.html" target="_blank">dokumentasinya</a>.</p>
 
-<h2>Throw dan Catch</h2>
+<h2 id="throw-dan-catch">Throw dan Catch</h2>
 
 <p>Throw dan Catch pada Ruby bukanlah untuk exceptions. Mereka adalah cara untuk memberhentikan eksekusi program terlebih dahulu ketika program tidak perlu berjalan lagi.</p>
 
@@ -364,15 +364,15 @@ throw :halo
   <li><a href="http://rubylearning.com/blog/2011/07/12/throw-catch-raise-rescue-im-so-confused/">RubyLearning Blog: Throw, Catch, Raise, Rescue… I’m so confused!</a></li>
 </ul>
 
-<h2>Mengenal Metaprogramming</h2>
+<h2 id="mengenal-metaprogramming">Mengenal Metaprogramming</h2>
 
 <p>Metaprogramming adalah membuat program yang dapat membuat code dalam runtime. Metaprogramming mudah dilakukan pada Ruby, sehingga menjadi saat umum dipakai.</p>
 
-<h3>Eval</h3>
+<h3 id="eval">Eval</h3>
 
 <p>Ada 3 macam method untuk meng-evaluate sebuah snippet pada Ruby secara dinamis, yakni <code>Kernel#eval</code>, <code>Object#instance_eval</code>, dan <code>Module#class_eval</code>.</p>
 
-<h4>Kernel#eval</h4>
+<h4 id="kernel-eval">Kernel#eval</h4>
 
 <p>Kamu bisa evaluate Ruby dengan menggunakan Kernel#eval walaupun kamu cuma kasih String. Fitur ini biasanya ada pada bahasa yang tidak perlu dicompile seperti PHP.</p>
 
@@ -382,7 +382,7 @@ a = eval "8943 + 4278932"
 puts a
 <% end %>
 
-<h4>Object#instance_eval</h4>
+<h4 id="object-instance_eval">Object#instance_eval</h4>
 
 <p>Dengan instance_eval, kamu bisa menambah method atau variabel instance sendiri. Ini sangat mirip dengan patching, tetapi instance_eval cukup umum digunakan untuk membuat Domain-Specific Language (DSL).</p>
 
@@ -428,7 +428,7 @@ puts baju.deskripsi
 <% end %>
 
 
-<h4>Module#class_eval</h4>
+<h4 id="module-class_eval">Module#class_eval</h4>
 
 <p><code>class_eval</code> hampir sama dengan <code>instance_eval</code>, hanya saja <code>class_eval</code> hanya dapat digunakan pada class atau module saja. Dengan <code>class_eval</code> kamu bisa menambah method atau variabel instance. Ini juga sangat mirip dengan patching.</p>
 
@@ -464,7 +464,7 @@ end
 
 <% end %>
 
-<h3>Variabel Instance</h3>
+<h3 id="mp-variabel-instance">Variabel Instance</h3>
 
 <p>Kamu dapat dengan mudah mengakses, mengubah, atau mendefine variabel instance secara dinamis.</p>
 
@@ -484,7 +484,7 @@ puts baju.instance_variable_get(:@nama)
 puts baju.instance_variables.inspect
 <% end %>
 
-<h3>Variabel Class</h3>
+<h3 id="mp-variabel-class">Variabel Class</h3>
 
 <p>Kamu dapat dengan mudah mengakses, mengubah, atau mendefine variabel class secara dinamis.</p>
 
@@ -502,7 +502,7 @@ baju = Baju.new
 puts baju.class_variables # error
 <% end %>
 
-<h3>Konstanta</h3>
+<h3 id="mp-konstanta">Konstanta</h3>
 
 <p>Kamu juga bisa dengan mudah mengakses, mengubah, atau mendefine konstanta secara dinamis.</p>
 
@@ -517,7 +517,7 @@ puts Baju.constants.inspect
 puts Baju.new.constants.inspect # error
 <% end %>
 
-<h3>Method</h3>
+<h3 id="mp-method">Method</h3>
 
 <p>Kamu juga dapat dengan mudah mengakses, mengubah, atau mendefine method secara dinamis.</p>
 

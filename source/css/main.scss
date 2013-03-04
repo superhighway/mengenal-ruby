@@ -116,6 +116,12 @@ textarea {
 
 #toc {
 	@include text-shadow(0 1px 0 #fff);
+  a {
+    background-color: transparent;
+    &:hover {
+      background-color: #ddd;
+    }
+  }
 }
 
 %hovered-fixed-menu-item {
