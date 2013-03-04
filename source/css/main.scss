@@ -138,6 +138,11 @@ textarea {
   @include box-shadow(0 1px 8px #222);
   @include text-shadow(0 -1px 0 #000);
 
+  .narrow, .wide { margin: 0; padding: 0; }
+  .narrow {
+    display: none;
+  }
+
   a {
 		background-color: transparent;
     margin: 0;
@@ -212,12 +217,6 @@ textarea {
 	top: 0;
 }
 
-@media only screen and (min-width: 813px) {
-	.snippet-runner-output-container {
-		left: 650px;
-	}
-}
-
 .snippet-runner-code-action-run {
 	display: block;
 	padding: 13px;
@@ -283,6 +282,29 @@ body.fixed-toc-visible {
   color: green;
   line-height: 3;
   font-weight: bold;
+}
+
+@media only screen and (min-width: 813px) {
+	.snippet-runner-output-container {
+		left: 650px;
+	}
+}
+
+@media only screen and (max-width: 660px) {
+  #fixed-menu {
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #fixed-menu {
+    .wide {
+      display: none;
+    }
+    .narrow {
+      display: block;
+    }
+  }
 }
 
 /* ==========================================================================
