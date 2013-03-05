@@ -314,6 +314,15 @@ body.fixed-toc-visible {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  #fixed-menu {
+    padding-left: 8px;
+    a {
+      padding: 5px 12px 0 8px;
+    }
+  }
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
