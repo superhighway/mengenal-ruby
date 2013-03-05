@@ -84,6 +84,10 @@
 		}
 	});
 
+  $('#toc a').click(function() {
+    $body.removeClass('fixed-toc-visible');
+  });
+
 	if ($body.hasClass('executable')) {
 
     var tombolJalankan = $('#snippet-actions-template').html();
