@@ -1,0 +1,274 @@
+---
+title: Coba-Coba Sendiri
+---
+
+<h1>Ruby vs Bash</h1>
+
+<p>Ruby is really robust, yet sometimes it is overkill just to install or use it for scripting. With Ruby, there is tendency to make scripts heavy due to requiring dependencies. If I have a ‘super economical’ Linux server that only has less than 1GB RAM, I like to keep scripts as lightweight as possible. Bash really serves that purpose.</p>
+
+<p>Of course, if some required dependencies are in Rubygems, there is not much choice other than using some Ruby scripting. In the end that really depends on the purpose and resources available.</p>
+
+<p>It is great that Bash does have similarities with Ruby in scripting. In this post, I would like to share some of their similarities in their basics and data structures.</p>
+
+<h2>Hash Bang</h2>
+
+<div class="vs">
+  <div class="vs-left">
+    <p>Ruby</p>
+
+<% code("ruby") do %>
+#!/usr/bin/env ruby
+puts "Hello world"
+<% end %>
+  </div>
+
+  <div class="vs-right">
+    <p>Bash</p>
+
+<% code("bash") do %>
+#!/bin/bash
+echo Hello world
+<% end %>
+  </div>
+</div>
+
+<h2>Membuat Script Executable yang Memiliki Argumen</h2>
+
+<div class="vs">
+  <div class="vs-left">
+    <p>Ruby</p>
+
+<% code("ruby") do %>
+vim my_ruby_script
+#!/usr/bin/env ruby
+puts ARGV[0]
+puts ARGV[1]
+chmod +x my_ruby_script
+./my_ruby_script Hello world
+<% end %>
+  </div>
+
+  <div class="vs-right">
+    <p>Bash</p>
+
+<% code("bash") do %>
+vim my_bash_script
+#!/bin/bash
+echo $1
+echo $2
+chmod +x my_bash_script
+./my_bash_script Hello world
+<% end %>
+  </div>
+</div>
+
+<h2>Variabel dan Tipe Data</h2>
+
+<h3>Tipe Data Primitif</h3>
+
+<p>Ruby mensupport banyak tipe data primitif seperti Integer, Float, BigNum, String, dsb. Bash hanya mensupport String dan Integer. Supaya Bash dapat mengenal float, instal <code>bc</code>.</p>
+
+<div class="vs">
+  <div class="vs-left">
+    <p>Ruby</p>
+
+<% code("ruby") do %>
+# space characters are allowed
+# before and after equal sign
+my_var=ARGV[0]
+my_var=Hello world # This does not work
+my_var="Hello world"
+my_var = "This works"
+my_float = 9.9
+my_int = 89
+<% end %>
+  </div>
+  <div class="vs-right">
+    <p>Bash</p>
+
+<% code("bash") do %>
+# space characters are not allowed
+# before and after equal sign
+my_var=$1
+my_var=Hello world
+my_var="Hello world"
+my_var = "This does not work"
+my_float=9.9 # This does not work
+my_float="9.9"
+my_int=89
+<% end %>
+  </div>
+</div>
+
+
+<h3>Menyimpan Nilai Variabel</h3>
+
+<p>In Ruby, values can be stored in local variables, instance variables, constants, etc. We have so many choices because Ruby is multiparadigm. In Bash, we can store values in constants and local variables only.</p>
+
+<div class="vs">
+  <div class="vs-left">
+    <p>Ruby</p>
+
+<% code("ruby") do %>
+MY_CONST = "I AM"
+my_var="i am"
+<% end %>
+  </div>
+  <div class="vs-right">
+    <p>Bash</p>
+
+<% code("bash") do %>
+MY_CONST="I AM"
+my_var="i am"
+<% end %>
+  </div>
+</div>
+
+<h3>Print Nilai Variabel</h3>
+
+<div class="vs">
+  <div class="vs-left">
+    <p>Ruby</p>
+
+<% code("ruby") do %>
+# plain
+my_var = "cool"
+puts "I am #{my_var}"
+puts 'I am ' + my_var
+puts "I am " + my_var
+printf "I am %s\n" % my_var
+print "I am " + my_var + "\n"
+<% end %>
+  </div>
+  <div class="vs-right">
+    <p>Bash</p>
+
+<% code("bash") do %>
+# need a dollar sign in front
+# of the variable
+my_var="cool"
+echo "I am $my_var"
+echo 'I am $my_var'
+echo I am $my_var
+echo 'I am' $my_var
+printf "I am %s\n" $my_var
+<% end %>
+  </div>
+</div>
+
+
+<h2>Fungsi atau Method</h2>
+
+<div class="vs">
+  <div class="vs-left">
+    <p>Ruby</p>
+
+<% code("ruby") do %>
+def do_something
+  puts "I did something"
+end
+
+def with_arguments(arg_a, arg_b)
+  puts "#{arg_a}, #{arg_b}"
+end
+
+# Calling methods
+do_something
+with_arguments(1, 2)
+with_arguments 1, 2
+<% end %>
+  </div>
+  <div class="vs-right">
+    <p>Bash</p>
+
+<% code("bash") do %>
+do_something() {
+  echo "I did something"
+}
+
+with_arguments() {
+  echo "$1, $2"
+}
+
+# Calling functions
+`do_something`
+$(do_something)
+`with_arguments 1 2`
+$(with_arguments 1 2)
+<% end %>
+  </div>
+</div>
+
+
+<h3>Menyimpan Hasil Method</h3>
+
+<div class="vs">
+  <div class="vs-left">
+    <p>Ruby</p>
+
+<% code("ruby") do %>
+my_var = do_something
+puts my_var # "I did something"
+<% end %>
+  </div>
+  <div class="vs-right">
+    <p>Bash</p>
+
+<% code("bash") do %>
+my_var=`do_something`
+echo $my_var # "I did something"
+<% end %>
+  </div>
+</div>
+
+
+<h2>File I/O</h2>
+
+<div class="vs">
+  <div class="vs-left">
+    <p>Ruby</p>
+
+<% code("ruby") do %>
+<% end %>
+  </div>
+  <div class="vs-right">
+    <p>Bash</p>
+
+<% code("bash") do %>
+<% end %>
+  </div>
+</div>
+
+<h2>Statement Controls</h2>
+
+<div class="vs">
+  <div class="vs-left">
+    <p>Ruby</p>
+
+<% code("ruby") do %>
+<% end %>
+  </div>
+  <div class="vs-right">
+    <p>Bash</p>
+
+<% code("bash") do %>
+<% end %>
+  </div>
+</div>
+
+<h2></h2>
+
+<div class="vs">
+  <div class="vs-left">
+    <p>Ruby</p>
+
+<% code("ruby") do %>
+<% end %>
+  </div>
+  <div class="vs-right">
+    <p>Bash</p>
+
+<% code("bash") do %>
+<% end %>
+  </div>
+</div>

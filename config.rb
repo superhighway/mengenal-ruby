@@ -83,3 +83,9 @@ activate :deploy do |deploy|
   deploy.remote = "https://github.com/catcyborg/mengenal-ruby.git"
   deploy.branch = "gh-pages"
 end
+
+activate :gzip
+activate :minify_html
+
+ignore 'vs-bash.html.erb'
+ignore 'snippets/*'
