@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://nyan.catcyb.org/mengenal-ruby/</loc>
+    <priority>0.7</priority>
+    <lastmod>2013-03-13T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://nyan.catcyb.org/mengenal-ruby/coba-coba-sendiri.html</loc>
+    <priority>0.7</priority>
+    <lastmod>2013-03-13T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>http://nyan.catcyb.org/mengenal-ruby/appendix.html</loc>
+    <priority>0.7</priority>
+    <lastmod>2013-03-13T00:00:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+</urlset>
