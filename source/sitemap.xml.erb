@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<% pages = ['', 'coba-coba-sendiri.html', 'appendix.html'] %>
+<% pages.each do |p| %>
+  <url>
+    <loc>http://nyan.catcyb.org/mengenal-ruby/<%= p %></loc>
+    <priority>0.7</priority>
+    <lastmod><%= Date.today.to_time.iso8601 %></lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+<% end %>
+</urlset>

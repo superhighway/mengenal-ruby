@@ -89,3 +89,4 @@ activate :minify_html
 
 ignore 'vs-bash.html.erb'
 ignore 'snippets/*'
+page "/sitemap.xml", :layout => false
