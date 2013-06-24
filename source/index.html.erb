@@ -11,23 +11,31 @@ bodyClasses: executable
 
 <p>Pada bagian ini, kamu dapat mencoba-coba kode di bawah dengan mengklik tombol "Jalankan".</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-01_sekilas-ruby.rb" } %>
+<%= bottom_run_button %>
 
 <h2 id="konstanta-dan-variabel">Konstanta dan Variabel</h2>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-02_konstanta-dan-variabel.rb" } %>
+<%= bottom_run_button %>
 
 <h2 id="tipe-dan-struktur-data">Tipe dan Struktur Data</h2>
 
 <p>Semua tipe data merupakan Object, termasuk tipe data primitif seperti Integer, Float, dan Boolean. Bahkan, nil dan Class pun merupakan Object.</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-03_tipe-dan-struktur-data_sekilas.rb" } %>
+<%= bottom_run_button %>
 
 <h3 id="symbol">Symbol</h3>
 
 <p>Symbol kelihatan hampir seperti String, hanya saja karakter yang diperbolehkan adalah titik dua (:) dan sama seperti variabel. Bedanya, Symbol selalu ada di memory/tidak pernah dihapus dari memory setelah dibuat pertama kali.</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-03-1_tipe-dan-struktur-data_symbol.rb" } %>
+<%= bottom_run_button %>
 
 <p>Untuk mengetahui Symbol lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Symbol.html">dokumentasinya</a>.</p>
 
@@ -35,7 +43,9 @@ bodyClasses: executable
 
 <h4 id="array">Array</h4>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-03-2_tipe-dan-struktur-data_array.rb" } %>
+<%= bottom_run_button %>
 
 <p>Untuk mengetahui Array lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Array.html">dokumentasinya</a>.</p>
 
@@ -43,7 +53,9 @@ bodyClasses: executable
 
 <p>Hash mirip seperti sebuah tabel key-value, dengan key tidak berduplikat.</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-03-3_tipe-dan-struktur-data_hash.rb" } %>
+<%= bottom_run_button %>
 
 <p>Untuk mengetahui Hash lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Hash.html">dokumentasinya</a>.</p>
 
@@ -51,7 +63,9 @@ bodyClasses: executable
 
 <p>Set merupakan koleksi dengan elemen tak berurut tanpa duplikat. Set mirip dengan Array, tetapi kecepatan pencarian elemen mirip dengan Hash.</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-03-4_tipe-dan-struktur-data_set.rb" } %>
+<%= bottom_run_button %>
 
 <p>Untuk mengetahui Set lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/stdlib-1.9.3/libdoc/set/rdoc/Set.html">dokumentasinya</a>.</p>
 
@@ -59,7 +73,9 @@ bodyClasses: executable
 
 <p>Range merupakan jajaran dari Object yang memiliki elemen awal dan akhir.</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-03-5_tipe-dan-struktur-data_range.rb" } %>
+<%= bottom_run_button %>
 
 <p>Untuk mengetahui Range lebih lanjut, kunjungi <a href="http://www.ruby-doc.org/core-1.9.3/Range.html">dokumentasinya</a>.</p>
 
@@ -67,7 +83,9 @@ bodyClasses: executable
 
 <p>Hampir semua tipe data di atas dapat dikonversi ke tipe data lain. Berikut beberapa contoh cara mengkonversi tipe data.</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-03-x_tipe-dan-struktur-data_konversi-tipe-data.rb" } %>
+<%= bottom_run_button %>
 
 <h2 id="operasi-logika-dan-matematika">Operasi Logika dan Aritmatika</h2>
 
@@ -119,7 +137,9 @@ bodyClasses: executable
 
 <p><code>&lt;=</code> kurang dari atau sama dengan</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-04_operasi-logika-dan-aritmatika.rb" } %>
+<%= bottom_run_button %>
 
 <p>Sumber-sumber:</p>
 <ul>
@@ -135,27 +155,39 @@ bodyClasses: executable
 
 <p>if, else, dan unless</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-05-1_statement-controls_conditionals_if.rb" } %>
+<%= bottom_run_button %>
 
 <p>elsif</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-05-2_statement-controls_conditionals_elsif.rb" } %>
+<%= bottom_run_button %>
 
 <p>Ada juga case…when untuk mempersingkat if, elsif, dan else jika menggunakan <code>==</code></p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-05-3_statement-controls_conditionals_case-when.rb" } %>
+<%= bottom_run_button %>
 
 <h3 id="loop">Loop</h3>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-05-x_statement-controls_loop.rb" } %>
+<%= bottom_run_button %>
 
 <h2 id="methods">Methods</h2>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-06-1_methods_1arg.rb" } %>
+<%= bottom_run_button %>
 
 <p>Kamu juga bisa buat method dengan lebih dari satu parameter</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-06-2_methods_lebih-dari-1arg.rb" } %>
+<%= bottom_run_button %>
 
 <h2 id="proc">Proc</h2>
 
@@ -165,7 +197,9 @@ bodyClasses: executable
 
 <p>Kamu sebenarnya sudah melihat Proc pada bab Array. Berikut ini sekilas mengenai Proc yang merupakan block dan lambda.</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-07-1_proc_sekilas_proc.rb" } %>
+<%= bottom_run_button %>
 
 <h3 id="perbedaan-block-dan-lambda">Perbedaan block dan lambda</h3>
 
@@ -173,10 +207,14 @@ bodyClasses: executable
 
 <ol>
 	<li>lambda cek jumlah argumen (arity), proc tidak.
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-07-2_proc_perbedaan-block-dan-lambda_arity.rb" } %>
+<%= bottom_run_button %>
   </li>
   <li>Jika ada return di dalam lambda, maka return akan terjadi di dalam lambda itu. Jika return ada di block, maka return akan terjadi di dalam block itu dan juga method yang memanggilnya.
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-07-2_proc_perbedaan-block-dan-lambda_return.rb" } %>
+<%= bottom_run_button %>
   </li>
 </ol>
 
@@ -184,11 +222,15 @@ bodyClasses: executable
 
 <p>Pada umumnya, yang bisa kamu lakukan pada block dapat kamu lakukan juga pada lambda. Berikut ini beberapa contoh di mana cara kerja lambda dan proc sama saja.</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-07-3_mengenal-kemiripan-block-dan-lambda.rb" } %>
+<%= bottom_run_button %>
 
 <h3 id="mari-bermain-bersama-proc">Mari Bermain Bersama Proc!</h3>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-07-4_mari-bermain-bersama-proc.rb" } %>
+<%= bottom_run_button %>
 
 
 <p>Sumber-sumber:</p>
@@ -205,21 +247,28 @@ bodyClasses: executable
 
 <h3>Deklarasi, Setter dan Getter</h3>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-08-1_class_deklarasi-setter-dan-getter.rb" } %>
+<%= bottom_run_button %>
 
 <h3 id="access-modifiers">Access Modifiers</h3>
 
 <p>Secara default, semua method public dan instance variable protected.
 Kamu bisa mengubah method menjadi <code>private</code> atau <code>protected</code>, tetapi kamu tidak bisa mengubah instance variable seperti itu.</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-08-2_class_access-modifiers.rb" } %>
+<%= bottom_run_button %>
 
 <h3 id="inheritance">Inheritance</h3>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-08-3_class_inheritance.rb" } %>
+<%= bottom_run_button %>
 
 <h3 id="class-callback">Callback</h3>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 # self.inherited
 class Kendaraan
@@ -234,12 +283,15 @@ end
 class Motor < Kendaraan
 end
 <% end %>
+<%= bottom_run_button %>
 
 <h3 id="patching">Patching</h3>
 
 <p>Kamu bisa ubah-ubah kelas yang sudah define. Teknik ini disebut juga monkey patching.</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-08-4_class_patching.rb" } %>
+<%= bottom_run_button %>
 
 
 <p>Untuk mengenal Class lebih jauh, kunjungi <a href="http://www.ruby-doc.org/core/Class.html" target="_blank">dokumentasi Class</a> dan <a href="http://www.ruby-doc.org/core/Object.html">Object</a>.</p>
@@ -248,10 +300,13 @@ end
 
 <p>Module merupakan kumpulan methods dan konstanta. Module mirip class, hanya saja dia bisa di-include atau di-extend ke modul atau kelas lain.</p>
 
+<%= top_run_button %>
 <% code("ruby") { File.read "source/snippets/b1-09-1_module_sekilas.rb" } %>
+<%= bottom_run_button %>
 
 <h3 id="module-callback">Callback</h3>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 # self.included dan self.extended
 module PakaiSeragam
@@ -268,9 +323,11 @@ class Murid
   include PakaiSeragam
 end
 <% end %>
+<%= bottom_run_button %>
 
 <p>Sebagai info, trik di atas dipermudah jika menggunakan <a href="http://api.rubyonrails.org/classes/ActiveSupport/Concern.html" target="_blank">ActiveSupport::Concern</a>. Lihat contoh pada <a href="http://api.rubyonrails.org/classes/ActiveSupport/Concern.html" target="_blank">dokumentasinya</a> untuk mengetahui lebih lanjut.</p>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 # self.method_removed dan self.method_added
 module PakaiSeragam
@@ -291,11 +348,13 @@ module PakaiSeragam
   remove_method :some_instance_method
 end
 <% end %>
+<%= bottom_run_button %>
 
 <h3 id="patching">Patching</h3>
 
 <p>Seperti Class, kamu bisa monkey patch module yang sudah define.</p>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 module PakaiSeragam
   def warna
@@ -309,11 +368,13 @@ module PakaiSeragam
   end
 end
 <% end %>
+<%= bottom_run_button %>
 
 <p>Untuk mengenal Module lebih jauh, kunjungi <a href="http://www.ruby-doc.org/core/Module.html" target="_blank">dokumentasinya</a>.</p>
 
 <h2 id="exceptions">Exceptions</h2>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 class MyException < Exception
 end
@@ -331,6 +392,7 @@ ensure
   puts "Ensure"
 end
 <% end %>
+<%= bottom_run_button %>
 
 <p>Untuk mengenal Exception lebih jauh, kunjungi <a href="http://www.ruby-doc.org/core/Exception.html" target="_blank">dokumentasinya</a>.</p>
 
@@ -338,6 +400,7 @@ end
 
 <p>Throw dan Catch pada Ruby bukanlah untuk exceptions. Mereka adalah cara untuk memberhentikan eksekusi program terlebih dahulu ketika program tidak perlu berjalan lagi.</p>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 catch :stop do
   puts "Aku mau jalan"
@@ -358,6 +421,7 @@ puts
 
 throw :halo
 <% end %>
+<%= bottom_run_button %>
 
 <p>Sumber-sumber:</p>
 <ul>
@@ -376,16 +440,19 @@ throw :halo
 
 <p>Kamu bisa evaluate Ruby dengan menggunakan Kernel#eval walaupun kamu cuma kasih String. Fitur ini biasanya ada pada bahasa yang tidak perlu dicompile seperti PHP.</p>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 eval "puts 'Halo Ruby!'"
 a = eval "8943 + 4278932"
 puts a
 <% end %>
+<%= bottom_run_button %>
 
 <h4 id="object-instance_eval">Object#instance_eval</h4>
 
 <p>Dengan instance_eval, kamu bisa menambah method atau variabel instance sendiri. Ini sangat mirip dengan patching, tetapi instance_eval cukup umum digunakan untuk membuat Domain-Specific Language (DSL).</p>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 class Baju
   def nama(nama)
@@ -426,12 +493,14 @@ end
 puts baju.deskripsi
 
 <% end %>
+<%= bottom_run_button %>
 
 
 <h4 id="module-class_eval">Module#class_eval</h4>
 
 <p><code>class_eval</code> hampir sama dengan <code>instance_eval</code>, hanya saja <code>class_eval</code> hanya dapat digunakan pada class atau module saja. Dengan <code>class_eval</code> kamu bisa menambah method atau variabel instance. Ini juga sangat mirip dengan patching.</p>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 class Baju
   def nama(nama)
@@ -463,11 +532,13 @@ baju.class_eval do
 end
 
 <% end %>
+<%= bottom_run_button %>
 
 <h3 id="mp-variabel-instance">Variabel Instance</h3>
 
 <p>Kamu dapat dengan mudah mengakses, mengubah, atau mendefine variabel instance secara dinamis.</p>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 class Baju
 end
@@ -483,11 +554,13 @@ baju.instance_variable_set(:@nama, "Kostum Badut")
 puts baju.instance_variable_get(:@nama)
 puts baju.instance_variables.inspect
 <% end %>
+<%= bottom_run_button %>
 
 <h3 id="mp-variabel-class">Variabel Class</h3>
 
 <p>Kamu dapat dengan mudah mengakses, mengubah, atau mendefine variabel class secara dinamis.</p>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 class Baju
 end
@@ -501,11 +574,13 @@ puts Baju.class_variables.inspect
 baju = Baju.new
 puts baju.class_variables # error
 <% end %>
+<%= bottom_run_button %>
 
 <h3 id="mp-konstanta">Konstanta</h3>
 
 <p>Kamu juga bisa dengan mudah mengakses, mengubah, atau mendefine konstanta secara dinamis.</p>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 class Baju
 end
@@ -516,11 +591,13 @@ puts Baju.constants.inspect
 
 puts Baju.new.constants.inspect # error
 <% end %>
+<%= bottom_run_button %>
 
 <h3 id="mp-method">Method</h3>
 
 <p>Kamu juga dapat dengan mudah mengakses, mengubah, atau mendefine method secara dinamis.</p>
 
+<%= top_run_button %>
 <% code("ruby") do %>
 class Baju
   def warna
@@ -574,6 +651,7 @@ end
 puts; puts "Panggil method yang ga ada"
 puts baju.ngasal
 <% end %>
+<%= bottom_run_button %>
 
 <p>Perbedaan dari undef_method dan remove_method sangat sedikit. undef_method menghapus method dari class yang bersangkutan. Apabila method yang dihapus dipanggil, exception NoMethodError akan muncul. remove_method juga menghapus method dari class yang bersangkutan. Hanya saja, jika method yang dihapus dipangx gil, Ruby akan mencari superclass yang mengimplementasi method itu dan memanggilnya.</p>
 

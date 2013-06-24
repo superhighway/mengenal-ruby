@@ -1,8 +1,9 @@
-source :rubygems
+source "http://rubygems.org"
 
-gem "middleman", "~>3.0.11"
 gem "redcarpet"
+gem "middleman", "3.0.14"
+gem "middleman-deploy", "~> 0.0.12"
+gem "middleman-imageoptim", "~> 0.0.4"
 gem "middleman-syntax"
-gem "middleman-smusher"
-gem "middleman-deploy"
 gem "middleman-minify-html"
+

@@ -40,12 +40,25 @@
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def top_run_button
+    <<-EOB
+    <div>
+      <div class='snippet-actions'>
+      	<a class='snippet-action-run' href='javascript:void(0);'>Jalankan</a>
+      </div>
+    EOB
+  end
+
+  def bottom_run_button
+    <<-EOB
+      <div class='snippet-actions'>
+      	<a class='snippet-action-run' href='javascript:void(0);'>Jalankan</a>
+      </div>
+    </div>
+    EOB
+  end
+end
 
 set :css_dir, 'css'
 
@@ -66,17 +79,11 @@ configure :build do
 
   # Use relative URLs
   # activate :relative_assets
-
-  # Compress PNGs after build
-  # First: gem install middleman-smusher
-  require "middleman-smusher"
-  activate :smusher
+  activate :image_optim
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
 end
-
-activate :syntax, linenos: 'inline', anchorlinenos: true, linenostart: 2
 
 activate :deploy do |deploy|
   deploy.method = :git
@@ -90,3 +97,7 @@ activate :minify_html
 ignore 'vs-bash.html.erb'
 ignore 'snippets/*'
 page "/sitemap.xml", :layout => false
+
+set :markdown_engine, :redcarpet
+activate :syntax, linenos: 'inline', anchorlinenos: true, linenostart: 1
+set :markdown, :tables => true, :autolink => true, :gh_blockcode => true, :fenced_code_blocks => true

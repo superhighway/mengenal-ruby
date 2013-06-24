@@ -108,11 +108,6 @@ if (!(window.console && console.log)) {
   });
 
 	if ($body.hasClass('executable')) {
-
-    var tombolJalankan = $('#snippet-actions-template').html();
-		$('.highlight').append(tombolJalankan).prepend(tombolJalankan);
-		$('#snippet-actions-template').remove();
-		
 		$('.snippet-action-run').click(function() {
 			var $t = $(this),
 					snippet = $t.parent().siblings('pre:first').text();
