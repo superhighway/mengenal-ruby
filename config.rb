@@ -87,7 +87,7 @@ end
 
 activate :deploy do |deploy|
   deploy.method = :git
-  deploy.remote = "https://github.com/catcyborg/mengenal-ruby.git"
+  deploy.remote = "git@github.com:catcyborg/mengenal-ruby.git"
   deploy.branch = "gh-pages"
 end
 
