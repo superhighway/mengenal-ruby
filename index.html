@@ -1,36 +1,35 @@
-<!DOCTYPE html> <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--> <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--> <!--[if IE 8]><html class="no-js lt-ie9"><![endif]--> <!--[if gt IE 8]><!--> <html class=no-js> <!--<![endif]--> <head> <meta charset=utf-8 /> <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"/> <meta name=google-site-verification content=JaCx1AeGRSl4Z4vWLuNuwbA-2m0l4v0S_vjfY88gDh4 /> <title> Dasar-Dasar Pemrograman Ruby | Jalan Pintas: Mengenal Pemrograman Ruby </title> <meta name=description content="Jalan Pintas: Mengenal Pemrograman Ruby. Tutorial Ruby dalam Bahasa Indonesia."/> <meta name=viewport content="width=device-width"/> <link rel=stylesheet href="css/main.css"/> <script src="js/vendor/modernizr-2.6.1.min.js"></script> </head> <body class=executable> <!--[if lt IE 7]><p class=chromeframe>You are using an outdated browser. <a href="//browsehappy.com/">Upgrade your browser today</a> or <a href="//www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p><![endif]--> <div id=hero> <h1><a href=".">Jalan Pintas: Mengenal Pemrograman Ruby</a></h1> </div> <div id=content> <h1>Bagian 1: Dasar-Dasar Pemrograman Ruby</h1> <h2 id=sekilas-ruby>Sekilas Ruby</h2> <p>Ruby merupakan bahasa pemrograman yang interpreted, dinamis, dan open source. Ruby berfokus pada kesederhanaan dan produktivitas, sehingga Ruby merupakan sahabat baik programmer. Ruby mensupport multiparadigma: berorientasi objek, imperatif, reflektif, dan fungsional.</p> <p>Pada bagian ini, kamu dapat mencoba-coba kode di bawah dengan mengklik tombol "Jalankan".</p> <div class=highlight><pre><span class="nb">puts</span> <span class="s2">&quot;Halo Ruby!&quot;</span>
+<!DOCTYPE html> <!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"><![endif]--> <!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"><![endif]--> <!--[if IE 8]><html class="no-js lt-ie9"><![endif]--> <!--[if gt IE 8]><!--> <html class=no-js> <!--<![endif]--> <head> <meta charset=utf-8 /> <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"/> <meta name=google-site-verification content=JaCx1AeGRSl4Z4vWLuNuwbA-2m0l4v0S_vjfY88gDh4 /> <title> Dasar-Dasar Pemrograman Ruby | Jalan Pintas: Mengenal Pemrograman Ruby </title> <meta name=description content="Jalan Pintas: Mengenal Pemrograman Ruby. Tutorial Ruby dalam Bahasa Indonesia."/> <meta name=viewport content="width=device-width"/> <link rel=stylesheet href="css/main.css"/> <script src="js/vendor/modernizr-2.6.1.min.js"></script> </head> <body class=executable> <!--[if lt IE 7]><p class=chromeframe>You are using an outdated browser. <a href="//browsehappy.com/">Upgrade your browser today</a> or <a href="//www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p><![endif]--> <div id=hero> <h1><a href=".">Jalan Pintas: Mengenal Pemrograman Ruby</a></h1> </div> <div id=content> <h1>Bagian 1: Dasar-Dasar Pemrograman Ruby</h1> <h2 id=sekilas-ruby>Sekilas Ruby</h2> <p>Ruby merupakan bahasa pemrograman yang interpreted, dinamis, dan open source. Ruby berfokus pada kesederhanaan dan produktivitas, sehingga Ruby merupakan sahabat baik programmer. Ruby mensupport multiparadigma: berorientasi objek, imperatif, reflektif, dan fungsional.</p> <p>Pada bagian ini, kamu dapat mencoba-coba kode di bawah dengan mengklik tombol "Jalankan".</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="nb">puts</span> <span class="s2">&quot;Halo Ruby!&quot;</span>
 
 <span class="c1"># Ini komentar</span>
 
 <span class="nb">puts</span> <span class="mi">3</span><span class="o">+</span><span class="mi">6</span><span class="o">.</span><span class="mi">0</span> <span class="c1"># 9.0</span>
 
-<span class="cm">=begin</span>
-<span class="cm">  Ini komentar untuk banyak baris</span>
-<span class="cm">=end</span>
+<span class="cm">=begin
+  Ini komentar untuk banyak baris
+=end</span>
 
 <span class="n">total_partisipasi</span> <span class="o">=</span> <span class="mi">30</span>
 <span class="nb">puts</span> <span class="n">total_partisipasi</span>
 <span class="nb">puts</span> <span class="s2">&quot;Total orang yang hadir adalah </span><span class="si">#{</span><span class="n">total_partisipasi</span><span class="si">}</span><span class="s2">&quot;</span>
 
-<span class="k">def</span> <span class="nf">print_halo</span> <span class="c1"># ini method tanpa argumen</span>
+<span class="k">def </span><span class="nf">print_halo</span> <span class="c1"># ini method tanpa argumen</span>
   <span class="nb">puts</span> <span class="s2">&quot;halo&quot;</span>
 <span class="k">end</span>
 
 <span class="n">print_halo</span> <span class="c1"># jalankan method print_halo</span>
 
-<span class="k">def</span> <span class="nf">kali_dua</span><span class="p">(</span><span class="n">angka</span><span class="p">)</span> <span class="c1"># ini method dengan argumen</span>
+<span class="k">def </span><span class="nf">kali_dua</span><span class="p">(</span><span class="n">angka</span><span class="p">)</span> <span class="c1"># ini method dengan argumen</span>
   <span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">angka</span><span class="o">+</span><span class="n">angka</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="k">end</span>
 
 <span class="n">kali_dua</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 <span class="n">kali_dua</span> <span class="mi">5</span> <span class="c1"># boleh tidak pakai kurung</span>
 
-<span class="nb">puts</span> <span class="o">&lt;&lt;-</span><span class="no">EOL</span>
-<span class="sh">Bisa print</span>
-<span class="sh">banyak baris</span>
-<span class="sh">lho!</span>
-<span class="no">EOL</span>
-</pre></div> <h2 id=konstanta-dan-variabel>Konstanta dan Variabel</h2> <div class=highlight><pre><span class="no">JEDA_TAHUN</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># konstanta</span>
+<span class="nb">puts</span> <span class="o">&lt;&lt;-</span><span class="no">EOL</span><span class="sh">
+Bisa print
+banyak baris
+lho!
+</span><span class="no">EOL</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h2 id=konstanta-dan-variabel>Konstanta dan Variabel</h2> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="no">JEDA_TAHUN</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># konstanta</span>
 <span class="c1"># JEDA_TAHUN = 10 # error karena sudah diassign</span>
 
 <span class="vg">$tahun_ini</span> <span class="o">=</span> <span class="mi">2013</span> <span class="c1"># variabel global</span>
@@ -39,27 +38,26 @@
 <span class="n">umur</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># variabel lokal</span>
 <span class="nb">puts</span> <span class="s2">&quot;Sekarang umur saya </span><span class="si">#{</span><span class="n">umur</span><span class="si">}</span><span class="s2">. Ngga deng becanda.&quot;</span>
 
-<span class="k">class</span> <span class="nc">Mobil</span>
+<span class="k">class </span><span class="nc">Mobil</span>
   <span class="vc">@@sim</span> <span class="o">=</span> <span class="s2">&quot;A&quot;</span> <span class="c1"># variabel kelas</span>
 
-  <span class="k">def</span> <span class="nf">nama</span>
+  <span class="k">def </span><span class="nf">nama</span>
     <span class="vi">@nama</span> <span class="c1"># variabel object</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nf">nama</span><span class="o">=</span><span class="p">(</span><span class="n">nama</span><span class="p">)</span>
+  <span class="k">def </span><span class="nf">nama</span><span class="o">=</span><span class="p">(</span><span class="n">nama</span><span class="p">)</span>
     <span class="vi">@nama</span> <span class="o">=</span> <span class="n">nama</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">sim</span> <span class="c1"># class method</span>
+  <span class="k">def </span><span class="nc">self</span><span class="o">.</span><span class="nf">sim</span> <span class="c1"># class method</span>
     <span class="vc">@@sim</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="nb">puts</span> <span class="s2">&quot;Mobil biasanya pakai SIM </span><span class="si">#{</span><span class="no">Mobil</span><span class="o">.</span><span class="n">sim</span><span class="si">}</span><span class="s2">.&quot;</span>
-<span class="n">mobilku</span> <span class="o">=</span> <span class="no">Mobil</span><span class="o">.</span><span class="n">new</span>
-<span class="n">mobilku</span><span class="o">.</span><span class="n">nama</span> <span class="o">=</span> <span class="s2">&quot;Mobil Balap&quot;</span>
-<span class="nb">puts</span> <span class="s2">&quot;Mobilku </span><span class="si">#{</span><span class="n">mobilku</span><span class="o">.</span><span class="n">nama</span><span class="si">}</span><span class="s2">. Jadi aku pake SIM </span><span class="si">#{</span><span class="no">Mobil</span><span class="o">.</span><span class="n">sim</span><span class="si">}</span><span class="s2">.&quot;</span>
-</pre></div> <h2 id=tipe-dan-struktur-data>Tipe dan Struktur Data</h2> <p>Semua tipe data merupakan Object, termasuk tipe data primitif seperti Integer, Float, dan Boolean. Bahkan, nil dan Class pun merupakan Object.</p> <div class=highlight><pre><span class="n">umur</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># Integer</span>
+<span class="nb">puts</span> <span class="s2">&quot;Mobil biasanya pakai SIM </span><span class="si">#{</span><span class="no">Mobil</span><span class="nf">.sim</span><span class="si">}</span><span class="s2">.&quot;</span>
+<span class="n">mobilku</span> <span class="o">=</span> <span class="no">Mobil</span><span class="nf">.new</span>
+<span class="n">mobilku</span><span class="nf">.nama</span> <span class="o">=</span> <span class="s2">&quot;Mobil Balap&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;Mobilku </span><span class="si">#{</span><span class="n">mobilku</span><span class="nf">.nama</span><span class="si">}</span><span class="s2">. Jadi aku pake SIM </span><span class="si">#{</span><span class="no">Mobil</span><span class="nf">.sim</span><span class="si">}</span><span class="s2">.&quot;</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h2 id=tipe-dan-struktur-data>Tipe dan Struktur Data</h2> <p>Semua tipe data merupakan Object, termasuk tipe data primitif seperti Integer, Float, dan Boolean. Bahkan, nil dan Class pun merupakan Object.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="n">umur</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># Integer</span>
 <span class="nb">puts</span> <span class="n">umur</span>
 <span class="n">suhu</span> <span class="o">=</span> <span class="mi">2</span><span class="o">.</span><span class="mi">98</span> <span class="c1"># Float</span>
 <span class="nb">puts</span> <span class="n">suhu</span>
@@ -71,120 +69,114 @@
 
 <span class="c1"># puts nama # error karena belum diassign</span>
 <span class="n">nama</span> <span class="o">=</span> <span class="kp">nil</span> <span class="c1"># NilClass</span>
-<span class="nb">puts</span> <span class="n">nama</span>
-</pre></div> <h3 id=symbol>Symbol</h3> <p>Symbol kelihatan hampir seperti String, hanya saja karakter yang diperbolehkan adalah titik dua (:) dan sama seperti variabel. Bedanya, Symbol selalu ada di memory/tidak pernah dihapus dari memory setelah dibuat pertama kali.</p> <div class=highlight><pre><span class="n">nama_konfigurasi</span> <span class="o">=</span> <span class="ss">:rute</span> <span class="c1"># :rute adalah Symbol</span>
+<span class="nb">puts</span> <span class="n">nama</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=symbol>Symbol</h3> <p>Symbol kelihatan hampir seperti String, hanya saja karakter yang diperbolehkan adalah titik dua (:) dan sama seperti variabel. Bedanya, Symbol selalu ada di memory/tidak pernah dihapus dari memory setelah dibuat pertama kali.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="n">nama_konfigurasi</span> <span class="o">=</span> <span class="ss">:rute</span> <span class="c1"># :rute adalah Symbol</span>
 <span class="nb">puts</span> <span class="n">nama_konfigurasi</span>
 
 <span class="c1"># kalau diprint saja tidak kelihatannya tidak ada bedanya dengan string</span>
 <span class="nb">puts</span> <span class="ss">:rata_kanan</span>
 <span class="nb">puts</span> <span class="s2">&quot;rata_kanan&quot;</span>
 
-<span class="nb">puts</span> <span class="ss">:&quot;ini_string&quot;</span><span class="o">.</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="ss">:RataKiri</span><span class="o">.</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="s2">&quot;RataKiri&quot;</span><span class="o">.</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="s2">&quot;nenek moyangku seorang pelaut&quot;</span><span class="o">.</span><span class="n">to_sym</span><span class="o">.</span><span class="n">inspect</span>
-<span class="c1"># :suka%suka # error</span>
-</pre></div> <p>Untuk mengetahui Symbol lebih lanjut, kunjungi <a href="//www.ruby-doc.org/core-1.9.3/Symbol.html">dokumentasinya</a>.</p> <h3 id=dapat-diiterasi-array-hash-set-dan-range>Dapat Diiterasi: Array, Hash, Set, dan Range</h3> <h4 id=array>Array</h4> <div class=highlight><pre><span class="n">tinggi_murid</span> <span class="o">=</span> <span class="o">[</span><span class="mi">156</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="mi">149</span><span class="o">]</span>
+<span class="nb">puts</span> <span class="ss">:&quot;ini_string&quot;</span><span class="nf">.inspect</span>
+<span class="nb">puts</span> <span class="ss">:RataKiri</span><span class="nf">.inspect</span>
+<span class="nb">puts</span> <span class="s2">&quot;RataKiri&quot;</span><span class="nf">.inspect</span>
+<span class="nb">puts</span> <span class="s2">&quot;nenek moyangku seorang pelaut&quot;</span><span class="nf">.to_sym.inspect</span>
+<span class="c1"># :suka%suka # error</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Untuk mengetahui Symbol lebih lanjut, kunjungi <a href="//www.ruby-doc.org/core-1.9.3/Symbol.html">dokumentasinya</a>.</p> <h3 id=dapat-diiterasi-array-hash-set-dan-range>Dapat Diiterasi: Array, Hash, Set, dan Range</h3> <h4 id=array>Array</h4> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="n">tinggi_murid</span> <span class="o">=</span> <span class="o">[</span><span class="mi">156</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="mi">149</span><span class="o">]</span>
 <span class="n">tinggi_murid</span> <span class="o">&lt;&lt;</span> <span class="mi">189</span> <span class="c1"># tambahkan 189 ke akhir Array tinggi_murid</span>
-<span class="nb">puts</span> <span class="n">tinggi_murid</span><span class="o">.</span><span class="n">inspect</span>
+<span class="nb">puts</span> <span class="n">tinggi_murid</span><span class="nf">.inspect</span>
 
 <span class="n">nama_singkat</span> <span class="o">=</span> <span class="sx">%w{andi budi nani}</span> <span class="c1"># Array berisi String</span>
 <span class="n">nama_singkat</span> <span class="o">=</span> <span class="o">[</span><span class="s2">&quot;andi&quot;</span><span class="p">,</span> <span class="s2">&quot;budi&quot;</span><span class="p">,</span> <span class="s2">&quot;nani&quot;</span><span class="o">]</span> <span class="c1"># sama dengan di atas</span>
 
 <span class="c1"># Iterasi</span>
-<span class="n">nama_singkat</span><span class="o">.</span><span class="n">each</span> <span class="k">do</span> <span class="o">|</span><span class="n">nama</span><span class="o">|</span>
+<span class="n">nama_singkat</span><span class="nf">.each</span> <span class="k">do</span> <span class="o">|</span><span class="n">nama</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="s2">&quot;Halo </span><span class="si">#{</span><span class="n">nama</span><span class="si">}</span><span class="s2">!&quot;</span>
 <span class="k">end</span><span class="p">;</span> <span class="nb">puts</span>
-<span class="n">nama_singkat</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">nama</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">&quot;Halo </span><span class="si">#{</span><span class="n">nama</span><span class="si">}</span><span class="s2">!&quot;</span> <span class="p">}</span>
+<span class="n">nama_singkat</span><span class="nf">.each</span> <span class="p">{</span> <span class="o">|</span><span class="n">nama</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">&quot;Halo </span><span class="si">#{</span><span class="n">nama</span><span class="si">}</span><span class="s2">!&quot;</span> <span class="p">}</span>
 <span class="nb">puts</span>
-<span class="n">nama_singkat</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">nama</span><span class="o">|</span>
+<span class="n">nama_singkat</span><span class="nf">.each</span> <span class="p">{</span> <span class="o">|</span><span class="n">nama</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="s2">&quot;Halo </span><span class="si">#{</span><span class="n">nama</span><span class="si">}</span><span class="s2">!&quot;</span>
 <span class="p">}</span>
 
 <span class="nb">puts</span>
-<span class="nb">puts</span> <span class="n">nama_singkat</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">nama</span><span class="o">|</span> <span class="s2">&quot;Halo </span><span class="si">#{</span><span class="n">nama</span><span class="si">}</span><span class="s2">&quot;</span> <span class="p">}</span><span class="o">.</span><span class="n">inspect</span>
+<span class="nb">puts</span> <span class="n">nama_singkat</span><span class="nf">.map</span> <span class="p">{</span> <span class="o">|</span><span class="n">nama</span><span class="o">|</span> <span class="s2">&quot;Halo </span><span class="si">#{</span><span class="n">nama</span><span class="si">}</span><span class="s2">&quot;</span> <span class="p">}</span><span class="nf">.inspect</span>
 
 <span class="c1"># Iterasi dengan Index</span>
 
-<span class="n">nama_singkat</span><span class="o">.</span><span class="n">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">nama</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
+<span class="n">nama_singkat</span><span class="nf">.each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">nama</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="s2">&quot;Tinggi </span><span class="si">#{</span><span class="n">nama</span><span class="si">}</span><span class="s2"> adalah </span><span class="si">#{</span><span class="n">tinggi_murid</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="k">end</span><span class="p">;</span> <span class="nb">puts</span>
 
-<span class="n">nama_singkat</span><span class="o">.</span><span class="n">each_with_index</span> <span class="p">{</span> <span class="o">|</span><span class="n">nama</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">&quot;Tinggi </span><span class="si">#{</span><span class="n">nama</span><span class="si">}</span><span class="s2"> adalah </span><span class="si">#{</span><span class="n">tinggi_murid</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="si">}</span><span class="s2">&quot;</span> <span class="p">}</span>
+<span class="n">nama_singkat</span><span class="nf">.each_with_index</span> <span class="p">{</span> <span class="o">|</span><span class="n">nama</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">&quot;Tinggi </span><span class="si">#{</span><span class="n">nama</span><span class="si">}</span><span class="s2"> adalah </span><span class="si">#{</span><span class="n">tinggi_murid</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="si">}</span><span class="s2">&quot;</span> <span class="p">}</span>
 <span class="nb">puts</span>
-<span class="n">nama_singkat</span><span class="o">.</span><span class="n">each_with_index</span> <span class="p">{</span> <span class="o">|</span><span class="n">nama</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
+<span class="n">nama_singkat</span><span class="nf">.each_with_index</span> <span class="p">{</span> <span class="o">|</span><span class="n">nama</span><span class="p">,</span> <span class="n">index</span><span class="o">|</span>
   <span class="nb">puts</span> <span class="s2">&quot;Tinggi </span><span class="si">#{</span><span class="n">nama</span><span class="si">}</span><span class="s2"> adalah </span><span class="si">#{</span><span class="n">tinggi_murid</span><span class="o">[</span><span class="n">index</span><span class="o">]</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="p">}</span>
-</pre></div> <p>Untuk mengetahui Array lebih lanjut, kunjungi <a href="//www.ruby-doc.org/core-1.9.3/Array.html">dokumentasinya</a>.</p> <h4 id=hash>Hash</h4> <p>Hash mirip seperti sebuah tabel key-value, dengan key tidak berduplikat.</p> <div class=highlight><pre><span class="n">h</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">key</span><span class="p">:</span> <span class="s2">&quot;value&quot;</span> <span class="p">}</span>
+<span class="p">}</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Untuk mengetahui Array lebih lanjut, kunjungi <a href="//www.ruby-doc.org/core-1.9.3/Array.html">dokumentasinya</a>.</p> <h4 id=hash>Hash</h4> <p>Hash mirip seperti sebuah tabel key-value, dengan key tidak berduplikat.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="n">h</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">key: </span><span class="s2">&quot;value&quot;</span> <span class="p">}</span>
 <span class="nb">puts</span> <span class="n">h</span>
-<span class="nb">puts</span> <span class="ss">key</span><span class="p">:</span> <span class="s2">&quot;value&quot;</span>
-<span class="nb">puts</span> <span class="s2">&quot;key&quot;</span> <span class="o">=&gt;</span> <span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="ss">x</span><span class="p">:</span> <span class="s2">&quot;y&quot;</span>
+<span class="nb">puts</span> <span class="ss">key: </span><span class="s2">&quot;value&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;key&quot;</span> <span class="o">=&gt;</span> <span class="s2">&quot;value&quot;</span><span class="p">,</span> <span class="ss">x: </span><span class="s2">&quot;y&quot;</span>
 <span class="nb">puts</span> <span class="ss">:hihi</span> <span class="o">=&gt;</span> <span class="mi">8</span>
 <span class="nb">puts</span> <span class="no">Hash</span><span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="mi">200</span><span class="o">]</span>
 <span class="nb">puts</span> <span class="no">Hash</span><span class="o">[</span> <span class="o">[</span> <span class="o">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="o">]</span><span class="p">,</span> <span class="o">[</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="mi">200</span><span class="o">]</span> <span class="o">]</span> <span class="o">]</span>
 <span class="nb">puts</span> <span class="no">Hash</span><span class="o">[</span><span class="s2">&quot;a&quot;</span> <span class="o">=&gt;</span> <span class="mi">100</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span> <span class="o">=&gt;</span> <span class="mi">200</span><span class="o">]</span>
 
-<span class="nb">hash</span> <span class="o">=</span> <span class="p">{</span> <span class="n">hari_ini</span><span class="p">:</span> <span class="mi">19</span><span class="p">,</span> <span class="s2">&quot;besok&quot;</span> <span class="o">=&gt;</span> <span class="mi">10</span> <span class="p">}</span>
-<span class="nb">puts</span> <span class="nb">hash</span><span class="o">.</span><span class="n">keys</span><span class="o">.</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="nb">hash</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">inspect</span>
+<span class="nb">hash</span> <span class="o">=</span> <span class="p">{</span> <span class="ss">hari_ini: </span><span class="mi">19</span><span class="p">,</span> <span class="s2">&quot;besok&quot;</span> <span class="o">=&gt;</span> <span class="mi">10</span> <span class="p">}</span>
+<span class="nb">puts</span> <span class="nb">hash</span><span class="nf">.keys.inspect</span>
+<span class="nb">puts</span> <span class="nb">hash</span><span class="nf">.values.inspect</span>
 <span class="nb">puts</span> <span class="nb">hash</span><span class="o">[</span><span class="s2">&quot;kemarin&quot;</span><span class="o">]</span> <span class="c1"># nil kalau diprint jadi string kosong</span>
 <span class="nb">puts</span> <span class="nb">hash</span><span class="o">[</span><span class="ss">:hari_ini</span><span class="o">]</span>
 <span class="nb">puts</span> <span class="nb">hash</span><span class="o">[</span><span class="s2">&quot;besok&quot;</span><span class="o">]</span>
 <span class="c1"># Iterasi</span>
-<span class="nb">hash</span><span class="o">.</span><span class="n">each_pair</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
-  <span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">key</span><span class="o">.</span><span class="n">to_s</span><span class="si">}</span><span class="s2"> jajan </span><span class="si">#{</span><span class="n">value</span><span class="si">}</span><span class="s2"> ribu&quot;</span>
+<span class="nb">hash</span><span class="nf">.each_pair</span> <span class="k">do</span> <span class="o">|</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="o">|</span>
+  <span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">key</span><span class="nf">.to_s</span><span class="si">}</span><span class="s2"> jajan </span><span class="si">#{</span><span class="n">value</span><span class="si">}</span><span class="s2"> ribu&quot;</span>
 <span class="k">end</span>
 
-<span class="nb">hash</span><span class="o">.</span><span class="n">merge!</span><span class="p">(</span><span class="ss">kemarin</span><span class="p">:</span> <span class="mi">30</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="nb">hash</span><span class="o">[</span><span class="ss">:kemarin</span><span class="o">]</span>
-</pre></div> <p>Untuk mengetahui Hash lebih lanjut, kunjungi <a href="//www.ruby-doc.org/core-1.9.3/Hash.html">dokumentasinya</a>.</p> <h4 id=set>Set</h4> <p>Set merupakan koleksi dengan elemen tak berurut tanpa duplikat. Set mirip dengan Array, tetapi kecepatan pencarian elemen mirip dengan Hash.</p> <div class=highlight><pre><span class="n">s1</span> <span class="o">=</span> <span class="no">Set</span><span class="o">.</span><span class="n">new</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">]</span>
-<span class="n">s2</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">].</span><span class="n">to_set</span>
+<span class="nb">hash</span><span class="nf">.merge!</span><span class="p">(</span><span class="ss">kemarin: </span><span class="mi">30</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="nb">hash</span><span class="o">[</span><span class="ss">:kemarin</span><span class="o">]</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Untuk mengetahui Hash lebih lanjut, kunjungi <a href="//www.ruby-doc.org/core-1.9.3/Hash.html">dokumentasinya</a>.</p> <h4 id=set>Set</h4> <p>Set merupakan koleksi dengan elemen tak berurut tanpa duplikat. Set mirip dengan Array, tetapi kecepatan pencarian elemen mirip dengan Hash.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="n">s1</span> <span class="o">=</span> <span class="no">Set</span><span class="nf">.new</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">]</span>
+<span class="n">s2</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="o">]</span><span class="nf">.to_set</span>
 <span class="nb">puts</span> <span class="n">s1</span> <span class="o">==</span> <span class="n">s2</span>
-<span class="n">s1</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;foo&quot;</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="n">s1</span><span class="o">.</span><span class="n">inspect</span>
-<span class="n">s1</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="o">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="o">]</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="n">s1</span><span class="o">.</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="n">s1</span><span class="o">.</span><span class="n">subset?</span> <span class="n">s2</span>
-<span class="nb">puts</span> <span class="n">s2</span><span class="o">.</span><span class="n">subset?</span> <span class="n">s1</span>
-</pre></div> <p>Untuk mengetahui Set lebih lanjut, kunjungi <a href="//www.ruby-doc.org/stdlib-1.9.3/libdoc/set/rdoc/Set.html">dokumentasinya</a>.</p> <h4 id=range>Range</h4> <p>Range merupakan jajaran dari Object yang memiliki elemen awal dan akhir.</p> <div class=highlight><pre><span class="n">range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">3</span><span class="p">)</span>  <span class="c1"># Termasuk elemen terakhir</span>
-<span class="nb">puts</span> <span class="n">range</span><span class="o">.</span><span class="n">to_a</span><span class="o">.</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">to_a</span><span class="o">.</span><span class="n">inspect</span> <span class="c1"># Tidak termasuk elemen terakhir</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_a</span><span class="o">.</span><span class="n">inspect</span> <span class="c1"># -1 adalah element ke n-1</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">to_a</span><span class="o">.</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="o">.</span><span class="n">.</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">.</span><span class="n">to_a</span><span class="o">.</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="o">.</span><span class="n">.</span><span class="s1">&#39;e&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">to_a</span><span class="o">.</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="s1">&#39;e&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">to_a</span><span class="o">.</span><span class="n">inspect</span>
+<span class="n">s1</span><span class="nf">.add</span><span class="p">(</span><span class="s2">&quot;foo&quot;</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">s1</span><span class="nf">.inspect</span>
+<span class="n">s1</span><span class="nf">.merge</span><span class="p">(</span><span class="o">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">6</span><span class="o">]</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">s1</span><span class="nf">.inspect</span>
+<span class="nb">puts</span> <span class="n">s1</span><span class="nf">.subset?</span> <span class="n">s2</span>
+<span class="nb">puts</span> <span class="n">s2</span><span class="nf">.subset?</span> <span class="n">s1</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Untuk mengetahui Set lebih lanjut, kunjungi <a href="//www.ruby-doc.org/stdlib-1.9.3/libdoc/set/rdoc/Set.html">dokumentasinya</a>.</p> <h4 id=range>Range</h4> <p>Range merupakan jajaran dari Object yang memiliki elemen awal dan akhir.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="n">range</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="nf">..</span><span class="mi">3</span><span class="p">)</span>  <span class="c1"># Termasuk elemen terakhir</span>
+<span class="nb">puts</span> <span class="n">range</span><span class="nf">.to_a.inspect</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="mi">1</span><span class="nf">..</span><span class="o">.</span><span class="mi">3</span><span class="p">)</span><span class="nf">.to_a.inspect</span> <span class="c1"># Tidak termasuk elemen terakhir</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="mi">0</span><span class="nf">..</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="nf">.to_a.inspect</span> <span class="c1"># -1 adalah element ke n-1</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="nf">..</span><span class="o">-</span><span class="mi">5</span><span class="p">)</span><span class="nf">.to_a.inspect</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="nf">..</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="nf">.to_a.inspect</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="nf">..</span><span class="s1">&#39;e&#39;</span><span class="p">)</span><span class="nf">.to_a.inspect</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="nf">..</span><span class="o">.</span><span class="s1">&#39;e&#39;</span><span class="p">)</span><span class="nf">.to_a.inspect</span>
 
 <span class="nb">puts</span>
 <span class="nb">puts</span> <span class="s2">&quot;Berat Badanku...&quot;</span>
 <span class="n">berat_badanku_tiap_hari</span> <span class="o">=</span> <span class="o">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">52</span><span class="o">]</span>
-<span class="nb">puts</span> <span class="n">berat_badanku_tiap_hari</span><span class="o">[</span><span class="mi">2</span><span class="o">.</span><span class="n">.</span><span class="mi">3</span><span class="o">].</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="n">berat_badanku_tiap_hari</span><span class="o">[</span><span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="o">-</span><span class="mi">1</span><span class="o">].</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="n">berat_badanku_tiap_hari</span><span class="o">[</span><span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="n">-</span><span class="mi">1</span><span class="o">].</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="n">berat_badanku_tiap_hari</span><span class="o">[-</span><span class="mi">5</span><span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="n">-</span><span class="mi">1</span><span class="o">].</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="n">berat_badanku_tiap_hari</span><span class="o">[-</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="n">-</span><span class="mi">5</span><span class="o">].</span><span class="n">inspect</span>
+<span class="nb">puts</span> <span class="n">berat_badanku_tiap_hari</span><span class="o">[</span><span class="mi">2</span><span class="nf">..</span><span class="mi">3</span><span class="o">]</span><span class="nf">.inspect</span>
+<span class="nb">puts</span> <span class="n">berat_badanku_tiap_hari</span><span class="o">[</span><span class="mi">0</span><span class="nf">..</span><span class="o">-</span><span class="mi">1</span><span class="o">]</span><span class="nf">.inspect</span>
+<span class="nb">puts</span> <span class="n">berat_badanku_tiap_hari</span><span class="o">[</span><span class="mi">0</span><span class="nf">...-</span><span class="mi">1</span><span class="o">]</span><span class="nf">.inspect</span>
+<span class="nb">puts</span> <span class="n">berat_badanku_tiap_hari</span><span class="o">[-</span><span class="mi">5</span><span class="nf">...-</span><span class="mi">1</span><span class="o">]</span><span class="nf">.inspect</span>
+<span class="nb">puts</span> <span class="n">berat_badanku_tiap_hari</span><span class="o">[-</span><span class="mi">1</span><span class="nf">...-</span><span class="mi">5</span><span class="o">]</span><span class="nf">.inspect</span>
 
 <span class="nb">puts</span>
 <span class="n">nilai</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="k">case</span> <span class="n">nilai</span>
-<span class="k">when</span> <span class="p">(</span><span class="mi">9</span><span class="o">.</span><span class="n">.</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">when</span> <span class="p">(</span><span class="mi">9</span><span class="nf">..</span><span class="mi">10</span><span class="p">)</span>
   <span class="nb">puts</span> <span class="s2">&quot;Nilaimu A&quot;</span>
-<span class="k">when</span> <span class="p">(</span><span class="mi">8</span><span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="mi">9</span><span class="p">)</span>
+<span class="k">when</span> <span class="p">(</span><span class="mi">8</span><span class="nf">..</span><span class="o">.</span><span class="mi">9</span><span class="p">)</span>
   <span class="nb">puts</span> <span class="s2">&quot;Nilaimu B&quot;</span>
-<span class="k">when</span> <span class="p">(</span><span class="mi">7</span><span class="o">.</span><span class="n">.</span><span class="o">.</span><span class="mi">8</span><span class="p">)</span>
+<span class="k">when</span> <span class="p">(</span><span class="mi">7</span><span class="nf">..</span><span class="o">.</span><span class="mi">8</span><span class="p">)</span>
   <span class="nb">puts</span> <span class="s2">&quot;Nilaimu C&quot;</span>
 <span class="k">else</span>
   <span class="nb">puts</span> <span class="s2">&quot;Nilaimu D&quot;</span>
 <span class="k">end</span>
-</pre></div> <p>Untuk mengetahui Range lebih lanjut, kunjungi <a href="//www.ruby-doc.org/core-1.9.3/Range.html">dokumentasinya</a>.</p> <h3 id=konversi-tipe-data>Konversi Tipe Data</h3> <p>Hampir semua tipe data di atas dapat dikonversi ke tipe data lain. Berikut beberapa contoh cara mengkonversi tipe data.</p> <div class=highlight><pre><span class="nb">puts</span> <span class="mi">10</span><span class="o">.</span><span class="n">to_f</span>              <span class="c1"># Integer ke Float</span>
-<span class="nb">puts</span> <span class="mi">10</span><span class="o">.</span><span class="mi">4279</span><span class="o">.</span><span class="n">to_s</span>         <span class="c1"># Float ke String</span>
-<span class="nb">puts</span> <span class="o">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">].</span><span class="n">to_s</span>       <span class="c1"># Array ke String</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">8</span><span class="p">)</span><span class="o">.</span><span class="n">to_a</span><span class="o">.</span><span class="n">inspect</span>  <span class="c1"># Range ke Array</span>
-<span class="nb">puts</span> <span class="ss">:hewan</span><span class="o">.</span><span class="n">to_s</span>          <span class="c1"># Symbol ke String</span>
-<span class="nb">puts</span> <span class="s2">&quot;hewan&quot;</span><span class="o">.</span><span class="n">to_sym</span>       <span class="c1"># String ke Symbol</span>
-<span class="nb">puts</span> <span class="kp">nil</span><span class="o">.</span><span class="n">to_i</span>             <span class="c1"># NilClass ke Integer</span>
-<span class="nb">puts</span><span class="p">({</span> <span class="ss">key</span><span class="p">:</span> <span class="s2">&quot;value&quot;</span> <span class="p">}</span><span class="o">.</span><span class="n">to_a</span><span class="o">.</span><span class="n">inspect</span><span class="p">)</span>  <span class="c1"># Hash ke Array</span>
-</pre></div> <h2 id=operasi-logika-dan-matematika>Operasi Logika dan Aritmatika</h2> <p>Ini sebagai info aja. Tidak harus hafal semua kok.</p> <p><code>+</code> tambah</p> <p><code>-</code> kurang</p> <p><code>*</code> kali</p> <p><code>/</code> bagi</p> <p><code>%</code> modulus</p> <p><code>**</code> pangkat</p> <p><code>&amp;</code> dan (untuk bilangan berbasis 2)</p> <p><code>|</code> atau (untuk bilangan berbasis 2)</p> <p><code>^</code> XOR (untuk bilangan berbasis 2)</p> <p><code>~</code> invert bit (untuk bilangan berbasis 2)</p> <p><code>&lt;&lt;</code> shift kiri (untuk bilangan berbasis 2)</p> <p><code>&gt;&gt;</code> shift kanan (untuk bilangan berbasis 2)</p> <p><code>&amp;&amp;</code> dan (untuk Boolean)</p> <p><code>and</code> dan (untuk Boolean), tetapi prioritas rendah</p> <p><code>||</code> atau (untuk Boolean)</p> <p><code>or</code> atau (untuk Boolean), tetapi prioritas rendah</p> <p><code>!</code> bukan (untuk Boolean)</p> <p><code>not</code> bukan (untuk Boolean)</p> <p><code>==</code> sama dengan</p> <p><code>&gt;</code> lebih dari</p> <p><code>&lt;</code> kurang dari</p> <p><code>&gt;=</code> lebih dari atau sama dengan</p> <p><code>&lt;=</code> kurang dari atau sama dengan</p> <div class=highlight><pre><span class="nb">puts</span> <span class="mi">3</span><span class="o">+</span><span class="mi">8</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Untuk mengetahui Range lebih lanjut, kunjungi <a href="//www.ruby-doc.org/core-1.9.3/Range.html">dokumentasinya</a>.</p> <h3 id=konversi-tipe-data>Konversi Tipe Data</h3> <p>Hampir semua tipe data di atas dapat dikonversi ke tipe data lain. Berikut beberapa contoh cara mengkonversi tipe data.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="nb">puts</span> <span class="mi">10</span><span class="nf">.to_f</span>              <span class="c1"># Integer ke Float</span>
+<span class="nb">puts</span> <span class="mi">10</span><span class="o">.</span><span class="mi">4279</span><span class="nf">.to_s</span>         <span class="c1"># Float ke String</span>
+<span class="nb">puts</span> <span class="o">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="o">]</span><span class="nf">.to_s</span>       <span class="c1"># Array ke String</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="mi">1</span><span class="nf">..</span><span class="mi">8</span><span class="p">)</span><span class="nf">.to_a.inspect</span>  <span class="c1"># Range ke Array</span>
+<span class="nb">puts</span> <span class="ss">:hewan</span><span class="nf">.to_s</span>          <span class="c1"># Symbol ke String</span>
+<span class="nb">puts</span> <span class="s2">&quot;hewan&quot;</span><span class="nf">.to_sym</span>       <span class="c1"># String ke Symbol</span>
+<span class="nb">puts</span> <span class="kp">nil</span><span class="nf">.to_i</span>             <span class="c1"># NilClass ke Integer</span>
+<span class="nb">puts</span><span class="p">({</span> <span class="ss">key: </span><span class="s2">&quot;value&quot;</span> <span class="p">}</span><span class="nf">.to_a.inspect</span><span class="p">)</span>  <span class="c1"># Hash ke Array</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h2 id=operasi-logika-dan-matematika>Operasi Logika dan Aritmatika</h2> <p>Ini sebagai info aja. Tidak harus hafal semua kok.</p> <p><code>+</code> tambah</p> <p><code>-</code> kurang</p> <p><code>*</code> kali</p> <p><code>/</code> bagi</p> <p><code>%</code> modulus</p> <p><code>**</code> pangkat</p> <p><code>&amp;</code> dan (untuk bilangan berbasis 2)</p> <p><code>|</code> atau (untuk bilangan berbasis 2)</p> <p><code>^</code> XOR (untuk bilangan berbasis 2)</p> <p><code>~</code> invert bit (untuk bilangan berbasis 2)</p> <p><code>&lt;&lt;</code> shift kiri (untuk bilangan berbasis 2)</p> <p><code>&gt;&gt;</code> shift kanan (untuk bilangan berbasis 2)</p> <p><code>&amp;&amp;</code> dan (untuk Boolean)</p> <p><code>and</code> dan (untuk Boolean), tetapi prioritas rendah</p> <p><code>||</code> atau (untuk Boolean)</p> <p><code>or</code> atau (untuk Boolean), tetapi prioritas rendah</p> <p><code>!</code> bukan (untuk Boolean)</p> <p><code>not</code> bukan (untuk Boolean)</p> <p><code>==</code> sama dengan</p> <p><code>&gt;</code> lebih dari</p> <p><code>&lt;</code> kurang dari</p> <p><code>&gt;=</code> lebih dari atau sama dengan</p> <p><code>&lt;=</code> kurang dari atau sama dengan</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="nb">puts</span> <span class="mi">3</span><span class="o">+</span><span class="mi">8</span>
 <span class="nb">puts</span> <span class="mi">8</span><span class="o">*</span><span class="mi">9</span><span class="o">.</span><span class="mi">1</span>
 <span class="nb">puts</span> <span class="mi">8</span><span class="o">/</span><span class="mi">4</span><span class="o">+</span><span class="mi">10</span>
 <span class="nb">puts</span> <span class="mi">2</span><span class="o">**</span><span class="mi">3</span>
@@ -197,18 +189,18 @@
 <span class="nb">puts</span>
 <span class="n">x</span> <span class="o">=</span> <span class="mi">9</span>
 <span class="nb">puts</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="o">||</span> <span class="n">x</span> <span class="o">&gt;=</span> <span class="mi">10</span>
-<span class="nb">puts</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;9&#39;</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">9</span> <span class="c1"># prioritas or lebih rendah daripada ||</span>
-<span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;9&#39;</span> <span class="ow">or</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">9</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="nb">puts</span> <span class="n">x</span><span class="o">.</span><span class="n">is_a?</span><span class="p">(</span><span class="nb">Integer</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">29</span>
-<span class="nb">puts</span> <span class="n">x</span><span class="o">.</span><span class="n">is_a?</span><span class="p">(</span><span class="nb">Integer</span><span class="p">)</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">29</span>
+<span class="nb">puts</span> <span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;9&#39;</span> <span class="n">or</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">9</span> <span class="c1"># prioritas or lebih rendah daripada ||</span>
+<span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">x</span> <span class="o">==</span> <span class="s1">&#39;9&#39;</span> <span class="n">or</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">9</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nb">puts</span> <span class="n">x</span><span class="nf">.is_a?</span><span class="p">(</span><span class="nb">Integer</span><span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">29</span>
+<span class="nb">puts</span> <span class="n">x</span><span class="nf">.is_a?</span><span class="p">(</span><span class="nb">Integer</span><span class="p">)</span> <span class="n">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">29</span>
 
-<span class="nb">puts</span> <span class="p">(</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">]</span> <span class="o">-</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="o">]</span><span class="p">)</span><span class="o">.</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="o">]</span> <span class="o">+</span> <span class="o">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">8</span><span class="o">]</span><span class="p">)</span><span class="o">.</span><span class="n">inspect</span>
-<span class="nb">puts</span> <span class="p">(</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">]</span> <span class="o">*</span> <span class="mi">5</span><span class="p">)</span><span class="o">.</span><span class="n">inspect</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">]</span> <span class="o">-</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="o">]</span><span class="p">)</span><span class="nf">.inspect</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="o">]</span> <span class="o">+</span> <span class="o">[</span><span class="mi">9</span><span class="p">,</span><span class="mi">8</span><span class="o">]</span><span class="p">)</span><span class="nf">.inspect</span>
+<span class="nb">puts</span> <span class="p">(</span><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">]</span> <span class="o">*</span> <span class="mi">5</span><span class="p">)</span><span class="nf">.inspect</span>
 
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;Singkat assign variabel dan operasi aritmatika&quot;</span>
 <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">a</span> <span class="o">/=</span> <span class="mi">5</span>   <span class="c1"># a = a / 5</span>
+<span class="n">a</span> <span class="sr">/= 5   # a = a /</span> <span class="mi">5</span>
 <span class="nb">puts</span> <span class="n">a</span>
 <span class="n">a</span> <span class="o">+=</span> <span class="mi">19</span>  <span class="c1"># a = a + 19</span>
 <span class="nb">puts</span> <span class="n">a</span>
@@ -225,8 +217,7 @@
 <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="mi">9</span>
 <span class="nb">puts</span> <span class="s2">&quot;a=</span><span class="si">#{</span><span class="n">a</span><span class="si">}</span><span class="s2"> b=</span><span class="si">#{</span><span class="n">b</span><span class="si">}</span><span class="s2"> c=</span><span class="si">#{</span><span class="n">c</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span>
-<span class="nb">puts</span> <span class="s2">&quot;a=</span><span class="si">#{</span><span class="n">a</span><span class="si">}</span><span class="s2"> b=</span><span class="si">#{</span><span class="n">b</span><span class="si">}</span><span class="s2"> c=</span><span class="si">#{</span><span class="n">c</span><span class="si">}</span><span class="s2">&quot;</span>
-</pre></div> <p>Sumber-sumber:</p> <ul> <li><a href="//www.ruby-doc.org/core-1.9.3/Fixnum.html" target=_blank>Dokumentasi Fixnum</a></li> <li><a href="//www.techotopia.com/index.php/Ruby_Operators" target=_blank>Techotopia: Ruby Operators</a></li> <li><a href="//www.ruby-doc.org/docs/ProgrammingRuby/html/ref_c_fixnum.html" target=_blank>The Pragmatic Programmer's Guide</a></li> <li><a href="//hasno.info/ruby-gotchas-and-caveats" target=_blank>tech addict mark guzman's random musings: ruby gotchas and caveats</a></li> </ul> <h2 id=statement-controls>Statement Controls</h2> <h3 id=conditionals>Conditionals</h3> <p>if, else, dan unless</p> <div class=highlight><pre><span class="c1"># if dan else</span>
+<span class="nb">puts</span> <span class="s2">&quot;a=</span><span class="si">#{</span><span class="n">a</span><span class="si">}</span><span class="s2"> b=</span><span class="si">#{</span><span class="n">b</span><span class="si">}</span><span class="s2"> c=</span><span class="si">#{</span><span class="n">c</span><span class="si">}</span><span class="s2">&quot;</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Sumber-sumber:</p> <ul> <li><a href="//www.ruby-doc.org/core-1.9.3/Fixnum.html" target=_blank>Dokumentasi Fixnum</a></li> <li><a href="//www.techotopia.com/index.php/Ruby_Operators" target=_blank>Techotopia: Ruby Operators</a></li> <li><a href="//www.ruby-doc.org/docs/ProgrammingRuby/html/ref_c_fixnum.html" target=_blank>The Pragmatic Programmer's Guide</a></li> <li><a href="//hasno.info/ruby-gotchas-and-caveats" target=_blank>tech addict mark guzman's random musings: ruby gotchas and caveats</a></li> </ul> <h2 id=statement-controls>Statement Controls</h2> <h3 id=conditionals>Conditionals</h3> <p>if, else, dan unless</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="c1"># if dan else</span>
 
 <span class="nb">puts</span> <span class="s2">&quot;hore pake if&quot;</span> <span class="k">if</span> <span class="kp">true</span>
 <span class="nb">puts</span> <span class="s2">&quot;hore pake unless&quot;</span> <span class="k">unless</span> <span class="kp">false</span>
@@ -255,8 +246,7 @@
   <span class="nb">puts</span> <span class="s2">&quot;suka laba-laba&quot;</span>
 <span class="k">else</span>
   <span class="nb">puts</span> <span class="s2">&quot;suka kucing&quot;</span> <span class="c1"># Ini diprint</span>
-<span class="k">end</span>
-</pre></div> <p>elsif</p> <div class=highlight><pre><span class="c1"># elsif</span>
+<span class="k">end</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>elsif</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="c1"># elsif</span>
 <span class="n">nilai</span> <span class="o">=</span> <span class="mi">10</span>
 <span class="k">if</span> <span class="n">nilai</span> <span class="o">&gt;=</span> <span class="mi">9</span>
   <span class="nb">puts</span> <span class="s2">&quot;Nilaimu A&quot;</span>
@@ -278,7 +268,7 @@
 <span class="k">else</span>
   <span class="nb">puts</span> <span class="s2">&quot;Main sama kucing aja deh&quot;</span>
 <span class="k">end</span>
-</pre></div> <p>Ada juga case…when untuk mempersingkat if, elsif, dan else jika menggunakan <code>==</code></p> <div class=highlight><pre><span class="n">mood</span> <span class="o">=</span> <span class="ss">:pengen_gerak</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Ada juga case…when untuk mempersingkat if, elsif, dan else jika menggunakan <code>==</code></p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="n">mood</span> <span class="o">=</span> <span class="ss">:pengen_gerak</span>
 <span class="k">case</span> <span class="n">mood</span>
 <span class="k">when</span> <span class="ss">:pengen_belanja</span>
   <span class="nb">puts</span> <span class="s2">&quot;Cari baju ah&quot;</span>
@@ -288,8 +278,7 @@
   <span class="nb">puts</span> <span class="s2">&quot;Hibernasi seharian di rumah&quot;</span>
 <span class="k">else</span>
   <span class="nb">puts</span> <span class="s2">&quot;Main sama kucing aja deh&quot;</span>
-<span class="k">end</span>
-</pre></div> <h3 id=loop>Loop</h3> <div class=highlight><pre><span class="n">tinggi_badan</span> <span class="o">=</span> <span class="o">[</span><span class="mi">170</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">160</span><span class="o">]</span>
+<span class="k">end</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=loop>Loop</h3> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="n">tinggi_badan</span> <span class="o">=</span> <span class="o">[</span><span class="mi">170</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">160</span><span class="o">]</span>
 
 <span class="nb">puts</span> <span class="s2">&quot;for&quot;</span>
 <span class="k">for</span> <span class="n">tinggi</span> <span class="k">in</span> <span class="n">tinggi_badan</span>
@@ -298,12 +287,12 @@
 
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;each&quot;</span>
 <span class="c1"># yang di atas sama dengan .each pada Array dan Set</span>
-<span class="n">tinggi_badan</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">tinggi</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">&quot;Tinggi badanmu </span><span class="si">#{</span><span class="n">tinggi</span><span class="si">}</span><span class="s2"> cm.&quot;</span> <span class="p">}</span>
+<span class="n">tinggi_badan</span><span class="nf">.each</span> <span class="p">{</span> <span class="o">|</span><span class="n">tinggi</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">&quot;Tinggi badanmu </span><span class="si">#{</span><span class="n">tinggi</span><span class="si">}</span><span class="s2"> cm.&quot;</span> <span class="p">}</span>
 
 <span class="c1"># while: jalankan hingga kondisi tidak terpenuhi</span>
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;while&quot;</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">tinggi_badan</span><span class="o">.</span><span class="n">size</span>
+<span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">tinggi_badan</span><span class="nf">.size</span>
   <span class="nb">puts</span> <span class="n">tinggi_badan</span><span class="o">[</span><span class="n">n</span><span class="o">]</span>
   <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">end</span>
@@ -311,7 +300,7 @@
 <span class="c1"># until: jalankan hingga kondisi terpenuhi</span>
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;until&quot;</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">until</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="n">tinggi_badan</span><span class="o">.</span><span class="n">size</span>
+<span class="k">until</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="n">tinggi_badan</span><span class="nf">.size</span>
   <span class="nb">puts</span> <span class="n">tinggi_badan</span><span class="o">[</span><span class="n">n</span><span class="o">]</span>
   <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">end</span>
@@ -321,29 +310,28 @@
 <span class="k">begin</span>
   <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
   <span class="nb">puts</span> <span class="n">tinggi_badan</span><span class="o">[</span><span class="n">n</span><span class="o">]</span>
-<span class="k">end</span> <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">tinggi_badan</span><span class="o">.</span><span class="n">size</span>
+<span class="k">end</span> <span class="k">while</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="n">tinggi_badan</span><span class="nf">.size</span>
 
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;begin-end-until&quot;</span>
 <span class="n">n</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
 <span class="k">begin</span>
   <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
   <span class="nb">puts</span> <span class="n">tinggi_badan</span><span class="o">[</span><span class="n">n</span><span class="o">]</span>
-<span class="k">end</span> <span class="k">until</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="n">tinggi_badan</span><span class="o">.</span><span class="n">size</span>
+<span class="k">end</span> <span class="k">until</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="n">tinggi_badan</span><span class="nf">.size</span>
 
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;loop&quot;</span>
 <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="kp">loop</span> <span class="k">do</span> 
   <span class="nb">puts</span> <span class="n">tinggi_badan</span><span class="o">[</span><span class="n">n</span><span class="o">]</span>
   <span class="n">n</span> <span class="o">+=</span> <span class="mi">1</span>
-  <span class="k">break</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="n">tinggi_badan</span><span class="o">.</span><span class="n">size</span>
+  <span class="k">break</span> <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;=</span> <span class="n">tinggi_badan</span><span class="nf">.size</span>
 <span class="k">end</span>
 
 <span class="c1"># jalankan x kali</span>
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;10 kali tepuk tangan&quot;</span>
 <span class="n">people</span> <span class="o">=</span> <span class="o">[]</span>
-<span class="mi">10</span><span class="o">.</span><span class="n">times</span> <span class="p">{</span> <span class="nb">print</span> <span class="s2">&quot;plok &quot;</span> <span class="p">}</span>
-</pre></div> <h2 id=methods>Methods</h2> <div class=highlight><pre><span class="c1"># tanpa argumen</span>
-<span class="k">def</span> <span class="nf">mood_main_sama_kucing</span>
+<span class="mi">10</span><span class="nf">.times</span> <span class="p">{</span> <span class="nb">print</span> <span class="s2">&quot;plok &quot;</span> <span class="p">}</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h2 id=methods>Methods</h2> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="c1"># tanpa argumen</span>
+<span class="k">def </span><span class="nf">mood_main_sama_kucing</span>
   <span class="n">mood</span> <span class="o">=</span> <span class="ss">:main_sama_kucing</span>
   <span class="nb">puts</span> <span class="s2">&quot;Aku lagi mood </span><span class="si">#{</span><span class="n">mood</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="k">end</span>
@@ -352,7 +340,7 @@
 
 
 <span class="c1"># dengan satu argumen</span>
-<span class="k">def</span> <span class="nf">moodku</span><span class="p">(</span><span class="n">mood</span><span class="p">)</span>
+<span class="k">def </span><span class="nf">moodku</span><span class="p">(</span><span class="n">mood</span><span class="p">)</span>
   <span class="n">mood</span> <span class="o">=</span> <span class="ss">:main_sama_kucing</span> <span class="k">unless</span> <span class="n">mood</span>
   <span class="nb">puts</span> <span class="s2">&quot;Aku lagi mood </span><span class="si">#{</span><span class="n">mood</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="k">end</span>
@@ -362,15 +350,14 @@
 
 
 <span class="c1"># memberi nilai default pada argumen</span>
-<span class="k">def</span> <span class="nf">moodku</span><span class="p">(</span><span class="n">mood</span><span class="o">=</span><span class="ss">:tidur</span><span class="p">)</span>
+<span class="k">def </span><span class="nf">moodku</span><span class="p">(</span><span class="n">mood</span><span class="o">=</span><span class="ss">:tidur</span><span class="p">)</span>
   <span class="n">mood</span> <span class="o">=</span> <span class="ss">:main_sama_kucing</span> <span class="k">unless</span> <span class="n">mood</span>
   <span class="nb">puts</span> <span class="s2">&quot;Aku lagi mood </span><span class="si">#{</span><span class="n">mood</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="k">end</span>
 
 <span class="n">moodku</span> <span class="c1"># sama dengan suggest_ngapain(:tidur) karena defaultnya :tidur</span>
-<span class="n">moodku</span><span class="p">(</span><span class="ss">:pengen_tidur</span><span class="p">)</span>
-</pre></div> <p>Kamu juga bisa buat method dengan lebih dari satu parameter</p> <div class=highlight><pre><span class="c1"># lebih dari satu parameter</span>
-<span class="k">def</span> <span class="nf">moodku</span><span class="p">(</span><span class="n">mood1</span><span class="o">=</span><span class="kp">nil</span><span class="p">,</span> <span class="n">mood2</span><span class="p">)</span>
+<span class="n">moodku</span><span class="p">(</span><span class="ss">:pengen_tidur</span><span class="p">)</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Kamu juga bisa buat method dengan lebih dari satu parameter</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="c1"># lebih dari satu parameter</span>
+<span class="k">def </span><span class="nf">moodku</span><span class="p">(</span><span class="n">mood1</span><span class="o">=</span><span class="kp">nil</span><span class="p">,</span> <span class="n">mood2</span><span class="p">)</span>
   <span class="k">for</span> <span class="n">mood</span> <span class="k">in</span> <span class="o">[</span><span class="n">mood1</span><span class="p">,</span> <span class="n">mood2</span><span class="o">]</span>
     <span class="n">mood</span> <span class="o">=</span> <span class="ss">:main_sama_kucing</span> <span class="k">unless</span> <span class="n">mood</span>
     <span class="nb">puts</span> <span class="s2">&quot;Aku lagi mood </span><span class="si">#{</span><span class="n">mood</span><span class="si">}</span><span class="s2">&quot;</span>
@@ -382,7 +369,7 @@
 <span class="nb">puts</span>
 
 <span class="c1"># variabel argument, argument bisa terserah berapa aja</span>
-<span class="k">def</span> <span class="nf">moodku</span><span class="p">(</span><span class="o">*</span><span class="n">moods</span><span class="p">)</span>
+<span class="k">def </span><span class="nf">moodku</span><span class="p">(</span><span class="o">*</span><span class="n">moods</span><span class="p">)</span>
   <span class="k">for</span> <span class="n">mood</span> <span class="k">in</span> <span class="n">moods</span>
     <span class="n">mood</span> <span class="o">=</span> <span class="ss">:main_sama_kucing</span> <span class="k">unless</span> <span class="n">mood</span>
     <span class="nb">puts</span> <span class="s2">&quot;Aku lagi mood </span><span class="si">#{</span><span class="n">mood</span><span class="si">}</span><span class="s2">&quot;</span>
@@ -391,93 +378,90 @@
 
 <span class="n">moodku</span> <span class="kp">nil</span><span class="p">,</span> <span class="ss">:pengen_belanja</span><span class="p">,</span> <span class="ss">:pengen_gerak</span>
 <span class="nb">puts</span>
-</pre></div> <h2 id=proc>Proc</h2> <p>Proc disebut juga closures dalam ilmu komputer. Menurut saya, tipe data ini sangat spesial karena sifatnya seperti method atau sebuah snippet, tetapi dapat diassign seperti variabel.</p> <h3 id=sekilas-proc>Sekilas Proc</h3> <p>Kamu sebenarnya sudah melihat Proc pada bab Array. Berikut ini sekilas mengenai Proc yang merupakan block dan lambda.</p> <div class=highlight><pre><span class="c1"># Sudah pernah lihat?</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h2 id=proc>Proc</h2> <p>Proc disebut juga closures dalam ilmu komputer. Menurut saya, tipe data ini sangat spesial karena sifatnya seperti method atau sebuah snippet, tetapi dapat diassign seperti variabel.</p> <h3 id=sekilas-proc>Sekilas Proc</h3> <p>Kamu sebenarnya sudah melihat Proc pada bab Array. Berikut ini sekilas mengenai Proc yang merupakan block dan lambda.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="c1"># Sudah pernah lihat?</span>
 <span class="n">tinggi_badan</span> <span class="o">=</span> <span class="o">[</span><span class="mi">170</span><span class="p">,</span> <span class="mi">160</span><span class="p">,</span> <span class="mi">150</span><span class="o">]</span>
-<span class="n">tinggi_badan</span><span class="o">.</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">tinggi</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">&quot;Tinggi badanku </span><span class="si">#{</span><span class="n">tinggi</span><span class="si">}</span><span class="s2">cm.&quot;</span> <span class="p">}</span>
+<span class="n">tinggi_badan</span><span class="nf">.each</span> <span class="p">{</span> <span class="o">|</span><span class="n">tinggi</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">&quot;Tinggi badanku </span><span class="si">#{</span><span class="n">tinggi</span><span class="si">}</span><span class="s2">cm.&quot;</span> <span class="p">}</span>
 
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;--- block&quot;</span>
 <span class="n">blok</span> <span class="o">=</span> <span class="nb">proc</span> <span class="p">{</span> <span class="o">|</span><span class="n">tinggi</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">&quot;Tinggi badanku </span><span class="si">#{</span><span class="n">tinggi</span><span class="si">}</span><span class="s2">cm.&quot;</span> <span class="p">}</span>
 <span class="c1"># blok = Proc.new { |tinggi| puts &quot;Tinggi badanku #{tinggi}cm.&quot; } # sama dengan di atas</span>
-<span class="nb">puts</span> <span class="s2">&quot;block merupakan sebuah instance dari </span><span class="si">#{</span><span class="n">blok</span><span class="o">.</span><span class="n">class</span><span class="si">}</span><span class="s2">.&quot;</span>
-<span class="nb">puts</span> <span class="s2">&quot;Apakah block merupakan lambda? </span><span class="si">#{</span><span class="n">blok</span><span class="o">.</span><span class="n">lambda?</span> <span class="p">?</span> <span class="s2">&quot;Ya&quot;</span> <span class="p">:</span> <span class="s2">&quot;Tidak&quot;</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="n">tinggi_badan</span><span class="o">.</span><span class="n">each</span> <span class="o">&amp;</span><span class="n">blok</span>
+<span class="nb">puts</span> <span class="s2">&quot;block merupakan sebuah instance dari </span><span class="si">#{</span><span class="n">blok</span><span class="nf">.class</span><span class="si">}</span><span class="s2">.&quot;</span>
+<span class="nb">puts</span> <span class="s2">&quot;Apakah block merupakan lambda? </span><span class="si">#{</span><span class="n">blok</span><span class="nf">.lambda?</span> <span class="p">?</span> <span class="s2">&quot;Ya&quot;</span> <span class="p">:</span> <span class="s2">&quot;Tidak&quot;</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="n">tinggi_badan</span><span class="nf">.each</span> <span class="o">&amp;</span><span class="n">blok</span>
 
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;--- lambda&quot;</span>
 <span class="n">ld</span> <span class="o">=</span> <span class="nb">lambda</span> <span class="p">{</span> <span class="o">|</span><span class="n">tinggi</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">&quot;Tinggi badanku </span><span class="si">#{</span><span class="n">tinggi</span><span class="si">}</span><span class="s2">cm.&quot;</span> <span class="p">}</span>
 <span class="c1"># ld = -&gt;(tinggi) { puts &quot;Tinggi badanku #{tinggi}cm.&quot; } # sama dengan di atas</span>
-<span class="nb">puts</span> <span class="s2">&quot;lambda merupakan sebuah instance dari </span><span class="si">#{</span><span class="n">ld</span><span class="o">.</span><span class="n">class</span><span class="si">}</span><span class="s2">.&quot;</span>
-<span class="nb">puts</span> <span class="n">ld</span><span class="o">.</span><span class="n">lambda?</span>
-<span class="n">tinggi_badan</span><span class="o">.</span><span class="n">each</span> <span class="o">&amp;</span><span class="n">ld</span>
+<span class="nb">puts</span> <span class="s2">&quot;lambda merupakan sebuah instance dari </span><span class="si">#{</span><span class="n">ld</span><span class="nf">.class</span><span class="si">}</span><span class="s2">.&quot;</span>
+<span class="nb">puts</span> <span class="n">ld</span><span class="nf">.lambda?</span>
+<span class="n">tinggi_badan</span><span class="nf">.each</span> <span class="o">&amp;</span><span class="n">ld</span>
 <span class="nb">puts</span>
 
 <span class="c1"># Membuat method dengan argumen sebuah Proc</span>
-<span class="k">def</span> <span class="nf">kelas_blok</span><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="n">block</span><span class="o">.</span><span class="n">class</span>
-  <span class="nb">puts</span> <span class="n">block</span><span class="o">.</span><span class="n">lambda?</span>
+<span class="k">def </span><span class="nf">kelas_blok</span><span class="p">(</span><span class="o">&amp;</span><span class="n">block</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="n">block</span><span class="nf">.class</span>
+  <span class="nb">puts</span> <span class="n">block</span><span class="nf">.lambda?</span>
 <span class="k">end</span>
 
 <span class="nb">puts</span> <span class="n">kelas_blok</span> <span class="p">{</span> <span class="o">|</span><span class="n">tinggi</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">&quot;Tinggi badanku </span><span class="si">#{</span><span class="n">tinggi</span><span class="si">}</span><span class="s2">cm.&quot;</span> <span class="p">}</span>
 <span class="nb">puts</span> <span class="n">kelas_blok</span> <span class="o">&amp;</span><span class="p">(</span><span class="nb">lambda</span> <span class="p">{</span> <span class="o">|</span><span class="n">tinggi</span><span class="o">|</span> <span class="nb">puts</span> <span class="s2">&quot;Tinggi badanku </span><span class="si">#{</span><span class="n">tinggi</span><span class="si">}</span><span class="s2">cm.&quot;</span> <span class="p">})</span>
-<span class="nb">puts</span> <span class="n">kelas_blok</span> <span class="o">&amp;-&gt;</span><span class="p">(</span><span class="n">tinggi</span><span class="p">)</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;Tinggi badanku </span><span class="si">#{</span><span class="n">tinggi</span><span class="si">}</span><span class="s2">cm.&quot;</span> <span class="p">}</span>
-</pre></div> <h3 id=perbedaan-block-dan-lambda>Perbedaan block dan lambda</h3> <p>block dan lambda terlihat seperti saudara kembar, walaupun secara syntax memang sudah terlihat berbeda. Pada dasarnya, lambda lebih bersifat seperti method, dan block lebih bersifat seperti snippet. Kamu juga perlu tahu 2 perbedaan besar antara keduanya.</p> <ol> <li>lambda cek jumlah argumen (arity), proc tidak. <div class=highlight><pre><span class="k">def</span> <span class="nf">jual_baju</span><span class="p">(</span><span class="n">handler</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">kelas_blok</span> <span class="o">&amp;-&gt;</span><span class="p">(</span><span class="n">tinggi</span><span class="p">)</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;Tinggi badanku </span><span class="si">#{</span><span class="n">tinggi</span><span class="si">}</span><span class="s2">cm.&quot;</span> <span class="p">}</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=perbedaan-block-dan-lambda>Perbedaan block dan lambda</h3> <p>block dan lambda terlihat seperti saudara kembar, walaupun secara syntax memang sudah terlihat berbeda. Pada dasarnya, lambda lebih bersifat seperti method, dan block lebih bersifat seperti snippet. Kamu juga perlu tahu 2 perbedaan besar antara keduanya.</p> <ol> <li>lambda cek jumlah argumen (arity), proc tidak. <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">def </span><span class="nf">jual_baju</span><span class="p">(</span><span class="n">handler</span><span class="p">)</span>
   <span class="n">harga</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">99900</span><span class="p">,</span> <span class="mi">10</span>
-  <span class="n">handler</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">harga</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+  <span class="n">handler</span><span class="nf">.call</span><span class="p">(</span><span class="n">harga</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
 <span class="k">end</span>
 
 <span class="n">jual_baju</span> <span class="nb">proc</span> <span class="p">{</span> <span class="o">|</span><span class="n">harga</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">nama_penjaga_kasir</span><span class="o">|</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Saya beli </span><span class="si">#{</span><span class="n">n</span><span class="si">}</span><span class="s2"> baju dengan harga Rp </span><span class="si">#{</span><span class="n">harga</span><span class="si">}</span><span class="s2"> per baju. Yang jaga kasir: </span><span class="si">#{</span><span class="n">nama_penjaga_kasir</span><span class="o">.</span><span class="n">inspect</span><span class="si">}</span><span class="s2">&quot;</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Saya beli </span><span class="si">#{</span><span class="n">n</span><span class="si">}</span><span class="s2"> baju dengan harga Rp </span><span class="si">#{</span><span class="n">harga</span><span class="si">}</span><span class="s2"> per baju. Yang jaga kasir: </span><span class="si">#{</span><span class="n">nama_penjaga_kasir</span><span class="nf">.inspect</span><span class="si">}</span><span class="s2">&quot;</span>
 <span class="p">}</span>
 
 <span class="c1"># error</span>
 <span class="n">jual_baju</span> <span class="o">-&gt;</span><span class="p">(</span><span class="n">harga</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">nama_penjaga_kasir</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nb">puts</span> <span class="s2">&quot;Saya beli </span><span class="si">#{</span><span class="n">n</span><span class="si">}</span><span class="s2"> baju dengan harga Rp </span><span class="si">#{</span><span class="n">harga</span><span class="si">}</span><span class="s2"> per baju. Yang jaga kasir: </span><span class="si">#{</span><span class="n">nama_penjaga_kasir</span><span class="o">.</span><span class="n">inspect</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="p">}</span>
-</pre></div> </li> <li>Jika ada return di dalam lambda, maka return akan terjadi di dalam lambda itu. Jika return ada di block, maka return akan terjadi di dalam block itu dan juga method yang memanggilnya. <div class=highlight><pre><span class="k">def</span> <span class="nf">proc_return</span>
-  <span class="nb">proc</span> <span class="p">{</span> <span class="k">return</span> <span class="s2">&quot;proc&quot;</span><span class="p">}</span><span class="o">.</span><span class="n">call</span>
+  <span class="nb">puts</span> <span class="s2">&quot;Saya beli </span><span class="si">#{</span><span class="n">n</span><span class="si">}</span><span class="s2"> baju dengan harga Rp </span><span class="si">#{</span><span class="n">harga</span><span class="si">}</span><span class="s2"> per baju. Yang jaga kasir: </span><span class="si">#{</span><span class="n">nama_penjaga_kasir</span><span class="nf">.inspect</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="p">}</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> </li> <li>Jika ada return di dalam lambda, maka return akan terjadi di dalam lambda itu. Jika return ada di block, maka return akan terjadi di dalam block itu dan juga method yang memanggilnya. <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">def </span><span class="nf">proc_return</span>
+  <span class="nb">proc</span> <span class="p">{</span> <span class="k">return</span> <span class="s2">&quot;proc&quot;</span><span class="p">}</span><span class="nf">.call</span>
   <span class="k">return</span> <span class="s2">&quot;proc_return selesai&quot;</span>
 <span class="k">end</span>
 
-<span class="k">def</span> <span class="nf">lambda_return</span>
-  <span class="nb">lambda</span> <span class="p">{</span> <span class="k">return</span> <span class="s2">&quot;lambda&quot;</span> <span class="p">}</span><span class="o">.</span><span class="n">call</span>
+<span class="k">def </span><span class="nf">lambda_return</span>
+  <span class="nb">lambda</span> <span class="p">{</span> <span class="k">return</span> <span class="s2">&quot;lambda&quot;</span> <span class="p">}</span><span class="nf">.call</span>
   <span class="k">return</span> <span class="s2">&quot;lambda_return selesai&quot;</span>
 <span class="k">end</span>
 
 <span class="nb">puts</span> <span class="n">proc_return</span>
 <span class="nb">puts</span> <span class="n">lambda_return</span><span class="p">;</span> <span class="nb">puts</span>
 
-<span class="k">def</span> <span class="nf">iterasi_array_dengan_proc</span>
-  <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">17</span><span class="o">].</span><span class="n">each</span> <span class="p">{</span> <span class="o">|</span><span class="n">tanggal_libur</span><span class="o">|</span>
+<span class="k">def </span><span class="nf">iterasi_array_dengan_proc</span>
+  <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">17</span><span class="o">]</span><span class="nf">.each</span> <span class="p">{</span> <span class="o">|</span><span class="n">tanggal_libur</span><span class="o">|</span>
     <span class="nb">puts</span> <span class="s2">&quot;Tanggal </span><span class="si">#{</span><span class="n">tanggal_libur</span><span class="si">}</span><span class="s2"> libur!!&quot;</span>
     <span class="k">return</span> <span class="s2">&quot;Udah ah liburannya&quot;</span> <span class="k">if</span> <span class="n">tanggal_libur</span> <span class="o">==</span> <span class="mi">1</span>
   <span class="p">}</span>
 <span class="k">end</span>
 
-<span class="k">def</span> <span class="nf">iterasi_array_dengan_lambda</span>
-  <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">17</span><span class="o">].</span><span class="n">each</span> <span class="o">&amp;-&gt;</span><span class="p">(</span><span class="n">tanggal_libur</span><span class="p">)</span> <span class="p">{</span>
+<span class="k">def </span><span class="nf">iterasi_array_dengan_lambda</span>
+  <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">17</span><span class="o">]</span><span class="nf">.each</span> <span class="o">&amp;-&gt;</span><span class="p">(</span><span class="n">tanggal_libur</span><span class="p">)</span> <span class="p">{</span>
     <span class="nb">puts</span> <span class="s2">&quot;Tanggal </span><span class="si">#{</span><span class="n">tanggal_libur</span><span class="si">}</span><span class="s2"> libur!!&quot;</span>
     <span class="k">return</span> <span class="s2">&quot;Udah ah liburannya&quot;</span> <span class="k">if</span> <span class="n">tanggal_libur</span> <span class="o">==</span> <span class="mi">1</span>
   <span class="p">}</span>
 <span class="k">end</span>
 
-<span class="nb">puts</span> <span class="n">iterasi_array_dengan_lambda</span><span class="o">.</span><span class="n">inspect</span><span class="p">;</span> <span class="nb">puts</span>
-<span class="nb">puts</span> <span class="n">iterasi_array_dengan_proc</span><span class="o">.</span><span class="n">inspect</span>
-</pre></div> </li> </ol> <h3 id=mengenal-kemiripan-block-dan-lambda>Mengenal Kemiripan block dan lambda</h3> <p>Pada umumnya, yang bisa kamu lakukan pada block dapat kamu lakukan juga pada lambda. Berikut ini beberapa contoh di mana cara kerja lambda dan proc sama saja.</p> <div class=highlight><pre><span class="nb">puts</span> <span class="s2">&quot;Method yang memiliki argument sebuah Proc&quot;</span>
-<span class="k">def</span> <span class="nf">punya_proc</span>
+<span class="nb">puts</span> <span class="n">iterasi_array_dengan_lambda</span><span class="nf">.inspect</span><span class="p">;</span> <span class="nb">puts</span>
+<span class="nb">puts</span> <span class="n">iterasi_array_dengan_proc</span><span class="nf">.inspect</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> </li> </ol> <h3 id=mengenal-kemiripan-block-dan-lambda>Mengenal Kemiripan block dan lambda</h3> <p>Pada umumnya, yang bisa kamu lakukan pada block dapat kamu lakukan juga pada lambda. Berikut ini beberapa contoh di mana cara kerja lambda dan proc sama saja.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="nb">puts</span> <span class="s2">&quot;Method yang memiliki argument sebuah Proc&quot;</span>
+<span class="k">def </span><span class="nf">punya_proc</span>
   <span class="k">yield</span>
 <span class="k">end</span>
 
 <span class="n">punya_proc</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;yield proc&quot;</span> <span class="p">}</span>
 <span class="n">punya_proc</span> <span class="o">&amp;-&gt;</span><span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;yield lambda&quot;</span> <span class="p">}</span>
 
-<span class="k">def</span> <span class="nf">punya_proc</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ada_proc</span><span class="p">)</span>
-  <span class="n">ada_proc</span><span class="o">.</span><span class="n">call</span>
+<span class="k">def </span><span class="nf">punya_proc</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ada_proc</span><span class="p">)</span>
+  <span class="n">ada_proc</span><span class="nf">.call</span>
 <span class="k">end</span>
 
 <span class="n">punya_proc</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;call &amp;proc&quot;</span> <span class="p">}</span>
 <span class="n">punya_proc</span> <span class="o">&amp;-&gt;</span><span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;call &amp;lambda&quot;</span> <span class="p">}</span>
 
-<span class="k">def</span> <span class="nf">punya_proc</span><span class="p">(</span><span class="n">ada_proc</span><span class="p">)</span>
-  <span class="n">ada_proc</span><span class="o">.</span><span class="n">call</span>
+<span class="k">def </span><span class="nf">punya_proc</span><span class="p">(</span><span class="n">ada_proc</span><span class="p">)</span>
+  <span class="n">ada_proc</span><span class="nf">.call</span>
 <span class="k">end</span>
 
 <span class="n">punya_proc</span> <span class="nb">proc</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;call proc&quot;</span> <span class="p">}</span>
@@ -485,9 +469,9 @@
 
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;Method yang memiliki lebih dari satu Proc&quot;</span>
 
-<span class="k">def</span> <span class="nf">punya_banyak_proc</span><span class="p">(</span><span class="n">proc1</span><span class="p">,</span> <span class="n">proc2</span><span class="p">)</span>
-  <span class="n">proc1</span><span class="o">.</span><span class="n">call</span>
-  <span class="n">proc2</span><span class="o">.</span><span class="n">call</span>
+<span class="k">def </span><span class="nf">punya_banyak_proc</span><span class="p">(</span><span class="n">proc1</span><span class="p">,</span> <span class="n">proc2</span><span class="p">)</span>
+  <span class="n">proc1</span><span class="nf">.call</span>
+  <span class="n">proc2</span><span class="nf">.call</span>
 <span class="k">end</span>
 
 <span class="n">punya_banyak_proc</span> <span class="nb">proc</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;call proc1&quot;</span> <span class="p">},</span> <span class="nb">proc</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;call proc2&quot;</span> <span class="p">}</span>
@@ -495,112 +479,110 @@
 
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;Default nilai parameter untuk argumen Proc&quot;</span>
 
-<span class="k">def</span> <span class="nf">kasih_default</span>
+<span class="k">def </span><span class="nf">kasih_default</span>
   <span class="k">yield</span>
   <span class="k">yield</span><span class="p">(</span><span class="s2">&quot;hihihi&quot;</span><span class="p">)</span>
 <span class="k">end</span>
 <span class="n">kasih_default</span> <span class="p">{</span> <span class="o">|</span><span class="n">ini</span><span class="o">=</span><span class="s2">&quot;default lho&quot;</span><span class="o">|</span> <span class="nb">puts</span> <span class="n">ini</span> <span class="p">}</span>
-<span class="n">kasih_default</span> <span class="o">&amp;-&gt;</span><span class="p">(</span><span class="n">ini</span><span class="o">=</span><span class="s2">&quot;default lho&quot;</span><span class="p">){</span> <span class="nb">puts</span> <span class="n">ini</span> <span class="p">}</span>
-</pre></div> <h3 id=mari-bermain-bersama-proc>Mari Bermain Bersama Proc!</h3> <div class=highlight><pre><span class="n">angka</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="o">]</span>
-<span class="n">angka</span><span class="o">.</span><span class="n">collect!</span> <span class="p">{</span> <span class="o">|</span><span class="n">n</span><span class="o">|</span> <span class="n">n</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">}</span>
-<span class="nb">puts</span> <span class="n">angka</span><span class="o">.</span><span class="n">inspect</span><span class="p">;</span> <span class="nb">puts</span>
+<span class="n">kasih_default</span> <span class="o">&amp;-&gt;</span><span class="p">(</span><span class="n">ini</span><span class="o">=</span><span class="s2">&quot;default lho&quot;</span><span class="p">){</span> <span class="nb">puts</span> <span class="n">ini</span> <span class="p">}</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=mari-bermain-bersama-proc>Mari Bermain Bersama Proc!</h3> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="n">angka</span> <span class="o">=</span> <span class="o">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="o">]</span>
+<span class="n">angka</span><span class="nf">.collect!</span> <span class="p">{</span> <span class="o">|</span><span class="n">n</span><span class="o">|</span> <span class="n">n</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">}</span>
+<span class="nb">puts</span> <span class="n">angka</span><span class="nf">.inspect</span><span class="p">;</span> <span class="nb">puts</span>
 
 <span class="nb">puts</span> <span class="s2">&quot;Memanggil Proc dengan yield&quot;</span>
-<span class="k">class</span> <span class="nc">Array</span> <span class="c1"># Patch Array</span>
-  <span class="k">def</span> <span class="nf">comot!</span>
-    <span class="nb">self</span><span class="o">.</span><span class="n">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="o">|</span>
+<span class="k">class </span><span class="nc">Array</span> <span class="c1"># Patch Array</span>
+  <span class="k">def </span><span class="nf">comot!</span>
+    <span class="nb">self</span><span class="nf">.each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="o">|</span>
       <span class="nb">self</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="k">yield</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
     <span class="k">end</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="n">angka</span><span class="o">.</span><span class="n">comot!</span> <span class="p">{</span> <span class="o">|</span><span class="n">n</span><span class="o">|</span> <span class="n">n</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">}</span>
-<span class="nb">puts</span> <span class="n">angka</span><span class="o">.</span><span class="n">inspect</span><span class="p">;</span> <span class="nb">puts</span>
+<span class="n">angka</span><span class="nf">.comot!</span> <span class="p">{</span> <span class="o">|</span><span class="n">n</span><span class="o">|</span> <span class="n">n</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">}</span>
+<span class="nb">puts</span> <span class="n">angka</span><span class="nf">.inspect</span><span class="p">;</span> <span class="nb">puts</span>
 
 <span class="nb">puts</span> <span class="s2">&quot;Memanggil Proc dengan .call&quot;</span>
-<span class="k">class</span> <span class="nc">Array</span>
-  <span class="k">def</span> <span class="nf">comot!</span><span class="p">(</span><span class="o">&amp;</span><span class="n">code</span><span class="p">)</span>
-    <span class="nb">self</span><span class="o">.</span><span class="n">each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="o">|</span>
-      <span class="nb">self</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">code</span><span class="o">.</span><span class="n">call</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+<span class="k">class </span><span class="nc">Array</span>
+  <span class="k">def </span><span class="nf">comot!</span><span class="p">(</span><span class="o">&amp;</span><span class="n">code</span><span class="p">)</span>
+    <span class="nb">self</span><span class="nf">.each_with_index</span> <span class="k">do</span> <span class="o">|</span><span class="n">n</span><span class="p">,</span> <span class="n">i</span><span class="o">|</span>
+      <span class="nb">self</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="n">code</span><span class="nf">.call</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
     <span class="k">end</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="n">angka</span><span class="o">.</span><span class="n">comot!</span> <span class="o">&amp;-&gt;</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">{</span> <span class="n">n</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">}</span>
-<span class="nb">puts</span> <span class="n">angka</span><span class="o">.</span><span class="n">inspect</span><span class="p">;</span> <span class="nb">puts</span>
+<span class="n">angka</span><span class="nf">.comot!</span> <span class="o">&amp;-&gt;</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="p">{</span> <span class="n">n</span> <span class="o">**</span> <span class="mi">2</span> <span class="p">}</span>
+<span class="nb">puts</span> <span class="n">angka</span><span class="nf">.inspect</span><span class="p">;</span> <span class="nb">puts</span>
 
 <span class="nb">puts</span> <span class="s2">&quot;Membuat method dengan callback&quot;</span>
-<span class="k">def</span> <span class="nf">jual_baju</span><span class="p">(</span><span class="n">callback</span><span class="p">)</span>
-  <span class="n">callback</span><span class="o">[</span><span class="ss">:mulai</span><span class="o">].</span><span class="n">call</span>
+<span class="k">def </span><span class="nf">jual_baju</span><span class="p">(</span><span class="n">callback</span><span class="p">)</span>
+  <span class="n">callback</span><span class="o">[</span><span class="ss">:mulai</span><span class="o">]</span><span class="nf">.call</span>
   <span class="nb">puts</span> <span class="s2">&quot;Jualan Baju...&quot;</span>
-  <span class="n">callback</span><span class="o">[</span><span class="ss">:selesai</span><span class="o">].</span><span class="n">call</span>
+  <span class="n">callback</span><span class="o">[</span><span class="ss">:selesai</span><span class="o">]</span><span class="nf">.call</span>
 <span class="k">end</span>
 
-<span class="n">jual_baju</span><span class="p">(</span><span class="ss">mulai</span><span class="p">:</span> <span class="nb">lambda</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;Buka Toko Baju&quot;</span> <span class="p">},</span>
-          <span class="ss">selesai</span><span class="p">:</span> <span class="nb">lambda</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;Tutup Toko Baju&quot;</span> <span class="p">})</span>
-</pre></div> <p>Sumber-sumber:</p> <ul> <li><a href="//www.robertsosinski.com/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/" target=_blank>Understanding Ruby Blocks, Procs and Lambdas</a></li> <li><a href="//www.skorks.com/2010/05/ruby-procs-and-lambdas-and-the-difference-between-them/">SKORKS: Ruby Procs And Lambdas (And The Difference Between Them)</a></li> <li><a href="//stackoverflow.com/questions/1740046/whats-the-difference-between-a-proc-and-a-lambda-in-ruby">StackOverflow: What's the difference between a proc and a lambda in Ruby?</a></li> <li><a href="//www.ruby-doc.org/core/Proc.html" target=_blank>Dokumentasi Proc</a></li> </ul> <h2 id=class>Class</h2> <p>Ruby biasanya cukup object oriented, walaupun functional dan yang lain juga bisa. Ruby punya garbage collector, jadi tidak perlu atur2 alokasi seperti pada C/C++.</p> <h3>Deklarasi, Setter dan Getter</h3> <div class=highlight><pre><span class="k">class</span> <span class="nc">Baju</span>
-  <span class="no">BAHAN_DEFAULT</span> <span class="o">=</span> <span class="s2">&quot;Bulu&quot;</span> <span class="c1"># konstanta kelas</span>
+<span class="n">jual_baju</span><span class="p">(</span><span class="ss">mulai: </span><span class="nb">lambda</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;Buka Toko Baju&quot;</span> <span class="p">},</span>
+          <span class="ss">selesai: </span><span class="nb">lambda</span> <span class="p">{</span> <span class="nb">puts</span> <span class="s2">&quot;Tutup Toko Baju&quot;</span> <span class="p">})</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Sumber-sumber:</p> <ul> <li><a href="//www.robertsosinski.com/2008/12/21/understanding-ruby-blocks-procs-and-lambdas/" target=_blank>Understanding Ruby Blocks, Procs and Lambdas</a></li> <li><a href="//www.skorks.com/2010/05/ruby-procs-and-lambdas-and-the-difference-between-them/">SKORKS: Ruby Procs And Lambdas (And The Difference Between Them)</a></li> <li><a href="//stackoverflow.com/questions/1740046/whats-the-difference-between-a-proc-and-a-lambda-in-ruby">StackOverflow: What's the difference between a proc and a lambda in Ruby?</a></li> <li><a href="//www.ruby-doc.org/core/Proc.html" target=_blank>Dokumentasi Proc</a></li> </ul> <h2 id=class>Class</h2> <p>Ruby biasanya cukup object oriented, walaupun functional dan yang lain juga bisa. Ruby punya garbage collector, jadi tidak perlu atur2 alokasi seperti pada C/C++.</p> <h3>Deklarasi, Setter dan Getter</h3> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">class </span><span class="nc">Baju</span>
+  <span class="nc">BAHAN_DEFAULT</span> <span class="o">=</span> <span class="s2">&quot;Bulu&quot;</span> <span class="c1"># konstanta kelas</span>
 
   <span class="kp">attr_accessor</span> <span class="ss">:merek</span> <span class="c1"># buat setter dan getter untuk instance variable @merek</span>
   <span class="kp">attr_reader</span> <span class="ss">:tahun_desain</span> <span class="c1"># buat getter untuk instance variable @tahun_desain</span>
   <span class="kp">attr_writer</span> <span class="ss">:ada_stock</span> <span class="c1"># buat setter untuk instance variable @ada_stock</span>
 
-  <span class="k">def</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">merek</span><span class="o">=</span><span class="kp">nil</span><span class="p">)</span> <span class="c1"># method spesial yang dipanggil pada saat class baju diinisialisasi</span>
+  <span class="k">def </span><span class="nf">initialize</span><span class="p">(</span><span class="n">merek</span><span class="o">=</span><span class="kp">nil</span><span class="p">)</span> <span class="c1"># method spesial yang dipanggil pada saat class baju diinisialisasi</span>
     <span class="vi">@merek</span> <span class="o">=</span> <span class="n">merek</span>
     <span class="nb">puts</span> <span class="s2">&quot;merek: </span><span class="si">#{</span><span class="n">merek</span><span class="si">}</span><span class="s2">&quot;</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nf">ada_stock?</span> <span class="c1"># tanda tanya biasanya untuk method yang return Boolean</span>
+  <span class="k">def </span><span class="nf">ada_stock?</span> <span class="c1"># tanda tanya biasanya untuk method yang return Boolean</span>
     <span class="vi">@ada_stock</span>
   <span class="k">end</span>
 
   <span class="c1"># membuat getter dan setter sendiri</span>
-  <span class="k">def</span> <span class="nf">desainer</span> <span class="c1"># getter</span>
+  <span class="k">def </span><span class="nf">desainer</span> <span class="c1"># getter</span>
     <span class="vi">@desainer</span> <span class="p">?</span> <span class="vi">@desainer</span> <span class="p">:</span> <span class="s2">&quot;Belum Tahu&quot;</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nf">desainer</span><span class="o">=</span><span class="p">(</span><span class="n">desainer</span><span class="p">)</span> <span class="c1"># setter</span>
+  <span class="k">def </span><span class="nf">desainer</span><span class="o">=</span><span class="p">(</span><span class="n">desainer</span><span class="p">)</span> <span class="c1"># setter</span>
     <span class="vi">@desainer</span> <span class="o">=</span> <span class="n">desainer</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">nama_item</span> <span class="c1"># class method</span>
+  <span class="k">def </span><span class="nc">self</span><span class="o">.</span><span class="nf">nama_item</span> <span class="c1"># class method</span>
     <span class="s2">&quot;Baju Bagus&quot;</span>
   <span class="k">end</span>
 
-  <span class="k">class</span> <span class="o">&lt;&lt;</span> <span class="nb">self</span>
-    <span class="k">def</span> <span class="nf">nomor_rak</span> <span class="c1"># class method juga</span>
+  <span class="k">class </span><span class="o">&lt;&lt;</span> <span class="nb">self</span>
+    <span class="k">def </span><span class="nf">nomor_rak</span> <span class="c1"># class method juga</span>
       <span class="mi">48953</span>
     <span class="k">end</span>
   <span class="k">end</span>
 
-  <span class="k">class</span> <span class="nc">Kain</span> <span class="c1"># nested class</span>
-    <span class="k">def</span> <span class="nf">nama</span>
+  <span class="k">class </span><span class="nc">Kain</span> <span class="c1"># nested class</span>
+    <span class="k">def </span><span class="nf">nama</span>
       <span class="s2">&quot;Katun&quot;</span>
     <span class="k">end</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="o">.</span><span class="n">new</span>
-<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&quot;Batique&quot;</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">desainer</span>
-<span class="n">baju</span><span class="o">.</span><span class="n">desainer</span> <span class="o">=</span> <span class="s2">&quot;XYZ&quot;</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">desainer</span>
-<span class="nb">puts</span> <span class="no">Baju</span><span class="o">.</span><span class="n">nama_item</span>
-<span class="nb">puts</span> <span class="no">Baju</span><span class="o">.</span><span class="n">nomor_rak</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">class</span><span class="o">.</span><span class="n">nama_item</span>
-<span class="nb">puts</span> <span class="ss">Baju</span><span class="p">:</span><span class="ss">:BAHAN_DEFAULT</span>
+<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="nf">.new</span>
+<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="nf">.new</span><span class="p">(</span><span class="s2">&quot;Batique&quot;</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.desainer</span>
+<span class="n">baju</span><span class="nf">.desainer</span> <span class="o">=</span> <span class="s2">&quot;XYZ&quot;</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.desainer</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="nf">.nama_item</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="nf">.nomor_rak</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.class.nama_item</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="o">::</span><span class="no">BAHAN_DEFAULT</span>
 
-<span class="n">kain</span> <span class="o">=</span> <span class="ss">Baju</span><span class="p">:</span><span class="ss">:Kain</span><span class="o">.</span><span class="n">new</span>
-<span class="nb">puts</span> <span class="n">kain</span><span class="o">.</span><span class="n">nama</span>
-</pre></div> <h3 id=access-modifiers>Access Modifiers</h3> <p>Secara default, semua method public dan instance variable protected. Kamu bisa mengubah method menjadi <code>private</code> atau <code>protected</code>, tetapi kamu tidak bisa mengubah instance variable seperti itu.</p> <div class=highlight><pre><span class="k">class</span> <span class="nc">Baju</span>
+<span class="n">kain</span> <span class="o">=</span> <span class="no">Baju</span><span class="o">::</span><span class="no">Kain</span><span class="nf">.new</span>
+<span class="nb">puts</span> <span class="n">kain</span><span class="nf">.nama</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=access-modifiers>Access Modifiers</h3> <p>Secara default, semua method public dan instance variable protected. Kamu bisa mengubah method menjadi <code>private</code> atau <code>protected</code>, tetapi kamu tidak bisa mengubah instance variable seperti itu.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">class </span><span class="nc">Baju</span>
   <span class="kp">attr_accessor</span> <span class="ss">:merek</span><span class="p">,</span> <span class="ss">:ukuran</span>
   <span class="kp">attr_reader</span> <span class="ss">:tahun_desain</span>
 
-  <span class="k">def</span> <span class="nf">desainer</span> <span class="c1"># getter</span>
+  <span class="k">def </span><span class="nf">desainer</span> <span class="c1"># getter</span>
     <span class="vi">@desainer</span> <span class="p">?</span> <span class="vi">@desainer</span> <span class="p">:</span> <span class="s2">&quot;Belum Tahu&quot;</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nf">desainer</span><span class="o">=</span><span class="p">(</span><span class="n">desainer</span><span class="p">)</span> <span class="c1"># setter</span>
+  <span class="k">def </span><span class="nf">desainer</span><span class="o">=</span><span class="p">(</span><span class="n">desainer</span><span class="p">)</span> <span class="c1"># setter</span>
     <span class="vi">@desainer</span> <span class="o">=</span> <span class="n">desainer</span>
   <span class="k">end</span>
 
@@ -611,46 +593,45 @@
 
   <span class="kp">attr_accessor</span> <span class="ss">:barcode</span> <span class="c1"># getter dan setter rating menjadi protected</span>
 
-  <span class="k">def</span> <span class="nf">rating</span> <span class="c1"># method ini menjadi protected</span>
+  <span class="k">def </span><span class="nf">rating</span> <span class="c1"># method ini menjadi protected</span>
     <span class="mi">5</span>
   <span class="k">end</span>
 
   <span class="kp">private</span> <span class="c1"># yang di bawah ini menjadi private</span>
 
-  <span class="k">def</span> <span class="nf">warna</span>
+  <span class="k">def </span><span class="nf">warna</span>
     <span class="vi">@warna</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="o">.</span><span class="n">new</span>
+<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="nf">.new</span>
 <span class="c1"># baju.warna # error karena private</span>
 <span class="c1"># baju.rating # error karena protected</span>
 <span class="c1"># baju.merek # error karena private</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">desainer</span><span class="p">;</span> <span class="nb">puts</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.desainer</span><span class="p">;</span> <span class="nb">puts</span>
 <span class="c1"># baju.desainer = &quot;Orang Keren&quot; # error karena protected</span>
 
-<span class="k">class</span> <span class="nc">KostumBadut</span> <span class="o">&lt;</span> <span class="no">Baju</span>
-  <span class="k">def</span> <span class="nf">bagus?</span>
-    <span class="nb">puts</span> <span class="nb">self</span><span class="o">.</span><span class="n">rating</span> <span class="c1"># subclass bisa akses yang protected</span>
+<span class="k">class </span><span class="nc">KostumBadut</span> <span class="o">&lt;</span> <span class="no">Baju</span>
+  <span class="k">def </span><span class="nf">bagus?</span>
+    <span class="nb">puts</span> <span class="nb">self</span><span class="nf">.rating</span> <span class="c1"># subclass bisa akses yang protected</span>
     <span class="n">rating</span> <span class="o">&gt;=</span> <span class="mi">3</span>
   <span class="k">end</span>
   
-  <span class="k">def</span> <span class="nf">warni</span>
+  <span class="k">def </span><span class="nf">warni</span>
     <span class="vi">@warna</span> <span class="o">=</span> <span class="s2">&quot;Pelangi&quot;</span>
-    <span class="nb">puts</span> <span class="n">warna</span><span class="o">.</span><span class="n">inspect</span>
-    <span class="nb">self</span><span class="o">.</span><span class="n">warna</span> <span class="c1"># tidak bisa karena private</span>
+    <span class="nb">puts</span> <span class="n">warna</span><span class="nf">.inspect</span>
+    <span class="nb">self</span><span class="nf">.warna</span> <span class="c1"># tidak bisa karena private</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="n">kostum_badut</span> <span class="o">=</span> <span class="no">KostumBadut</span><span class="o">.</span><span class="n">new</span>
-<span class="nb">puts</span> <span class="s2">&quot;Kostum badutnya bagus? </span><span class="si">#{</span><span class="n">kostum_badut</span><span class="o">.</span><span class="n">bagus?</span><span class="si">}</span><span class="s2">&quot;</span>
-<span class="nb">puts</span> <span class="n">kostum_badut</span><span class="o">.</span><span class="n">warni</span>
-</pre></div> <h3 id=inheritance>Inheritance</h3> <div class=highlight><pre><span class="k">class</span> <span class="nc">Baju</span>
-  <span class="k">def</span> <span class="nf">desainer</span> <span class="c1"># getter</span>
+<span class="n">kostum_badut</span> <span class="o">=</span> <span class="no">KostumBadut</span><span class="nf">.new</span>
+<span class="nb">puts</span> <span class="s2">&quot;Kostum badutnya bagus? </span><span class="si">#{</span><span class="n">kostum_badut</span><span class="nf">.bagus?</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="nb">puts</span> <span class="n">kostum_badut</span><span class="nf">.warni</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=inheritance>Inheritance</h3> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">class </span><span class="nc">Baju</span>
+  <span class="k">def </span><span class="nf">desainer</span> <span class="c1"># getter</span>
     <span class="vi">@desainer</span> <span class="p">?</span> <span class="vi">@desainer</span> <span class="p">:</span> <span class="s2">&quot;Belum Tahu&quot;</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nf">desainer</span><span class="o">=</span><span class="p">(</span><span class="n">desainer</span><span class="p">)</span> <span class="c1"># setter</span>
+  <span class="k">def </span><span class="nf">desainer</span><span class="o">=</span><span class="p">(</span><span class="n">desainer</span><span class="p">)</span> <span class="c1"># setter</span>
     <span class="vi">@desainer</span> <span class="o">=</span> <span class="n">desainer</span>
   <span class="k">end</span>
 
@@ -658,49 +639,48 @@
 
   <span class="kp">attr_accessor</span> <span class="ss">:barcode</span> <span class="c1"># getter dan setter rating menjadi protected</span>
 
-  <span class="k">def</span> <span class="nf">rating</span> <span class="c1"># method ini menjadi protected</span>
+  <span class="k">def </span><span class="nf">rating</span> <span class="c1"># method ini menjadi protected</span>
     <span class="mi">5</span>
   <span class="k">end</span>
 
   <span class="kp">private</span> <span class="c1"># yang di bawah ini menjadi private</span>
 
-  <span class="k">def</span> <span class="nf">warna</span>
+  <span class="k">def </span><span class="nf">warna</span>
     <span class="vi">@warna</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="k">class</span> <span class="nc">LongSleeve</span> <span class="o">&lt;</span> <span class="no">Baju</span>
+<span class="k">class </span><span class="nc">LongSleeve</span> <span class="o">&lt;</span> <span class="no">Baju</span>
   <span class="kp">attr_accessor</span> <span class="ss">:panjang_lengan</span>
 <span class="k">end</span>
 
-<span class="n">baju</span> <span class="o">=</span> <span class="no">LongSleeve</span><span class="o">.</span><span class="n">new</span>
-<span class="n">baju</span><span class="o">.</span><span class="n">panjang_lengan</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">panjang_lengan</span>
+<span class="n">baju</span> <span class="o">=</span> <span class="no">LongSleeve</span><span class="nf">.new</span>
+<span class="n">baju</span><span class="nf">.panjang_lengan</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.panjang_lengan</span>
 
-<span class="n">baju</span><span class="o">.</span><span class="n">desainer</span> <span class="o">=</span> <span class="s2">&quot;Siapa ya&quot;</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">desainer</span>
+<span class="n">baju</span><span class="nf">.desainer</span> <span class="o">=</span> <span class="s2">&quot;Siapa ya&quot;</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.desainer</span>
 
 <span class="c1"># puts baju.rating # error</span>
-<span class="c1"># puts baju.warna # error</span>
-</pre></div> <h3 id=class-callback>Callback</h3> <div class=highlight><pre><span class="c1"># self.inherited</span>
-<span class="k">class</span> <span class="nc">Kendaraan</span>
-  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">inherited</span><span class="p">(</span><span class="n">subclass</span><span class="p">)</span>
+<span class="c1"># puts baju.warna # error</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=class-callback>Callback</h3> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="c1"># self.inherited</span>
+<span class="k">class </span><span class="nc">Kendaraan</span>
+  <span class="k">def </span><span class="nc">self</span><span class="o">.</span><span class="nf">inherited</span><span class="p">(</span><span class="n">subclass</span><span class="p">)</span>
     <span class="nb">puts</span> <span class="s2">&quot;Subclass baru: </span><span class="si">#{</span><span class="n">subclass</span><span class="si">}</span><span class="s2">&quot;</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="k">class</span> <span class="nc">Mobil</span> <span class="o">&lt;</span> <span class="no">Kendaraan</span>
+<span class="k">class </span><span class="nc">Mobil</span> <span class="o">&lt;</span> <span class="no">Kendaraan</span>
 <span class="k">end</span>
 
-<span class="k">class</span> <span class="nc">Motor</span> <span class="o">&lt;</span> <span class="no">Kendaraan</span>
+<span class="k">class </span><span class="nc">Motor</span> <span class="o">&lt;</span> <span class="no">Kendaraan</span>
 <span class="k">end</span>
-</pre></div> <h3 id=patching>Patching</h3> <p>Kamu bisa ubah-ubah kelas yang sudah define. Teknik ini disebut juga monkey patching.</p> <div class=highlight><pre><span class="c1"># alias</span>
-<span class="k">class</span> <span class="nc">Rubyist</span>
-  <span class="k">def</span> <span class="nf">say!</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=patching>Patching</h3> <p>Kamu bisa ubah-ubah kelas yang sudah define. Teknik ini disebut juga monkey patching.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="c1"># alias</span>
+<span class="k">class </span><span class="nc">Rubyist</span>
+  <span class="k">def </span><span class="nf">say!</span>
     <span class="nb">puts</span> <span class="s1">&#39;hello&#39;</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nf">say_with_log!</span>
+  <span class="k">def </span><span class="nf">say_with_log!</span>
     <span class="nb">puts</span> <span class="s2">&quot;Calling method...&quot;</span>
     <span class="nb">puts</span> <span class="s2">&quot;hello&quot;</span>
     <span class="nb">puts</span> <span class="s2">&quot;...Method called&quot;</span>
@@ -708,9 +688,8 @@
 
   <span class="n">alias_method</span> <span class="ss">:say_without_log!</span><span class="p">,</span> <span class="ss">:say!</span>
   <span class="n">alias_method</span> <span class="ss">:say!</span><span class="p">,</span> <span class="ss">:say_with_log!</span>
-<span class="k">end</span>
-</pre></div> <p>Untuk mengenal Class lebih jauh, kunjungi <a href="//www.ruby-doc.org/core/Class.html" target=_blank>dokumentasi Class</a> dan <a href="//www.ruby-doc.org/core/Object.html">Object</a>.</p> <h2 id=module>Module</h2> <p>Module merupakan kumpulan methods dan konstanta. Module mirip class, hanya saja dia bisa di-include atau di-extend ke modul atau kelas lain.</p> <div class=highlight><pre><span class="k">module</span> <span class="nn">DapatDipanggil</span>
-  <span class="k">def</span> <span class="nf">panggilan</span>
+<span class="k">end</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Untuk mengenal Class lebih jauh, kunjungi <a href="//www.ruby-doc.org/core/Class.html" target=_blank>dokumentasi Class</a> dan <a href="//www.ruby-doc.org/core/Object.html">Object</a>.</p> <h2 id=module>Module</h2> <p>Module merupakan kumpulan methods dan konstanta. Module mirip class, hanya saja dia bisa di-include atau di-extend ke modul atau kelas lain.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">module</span> <span class="nn">DapatDipanggil</span>
+  <span class="k">def </span><span class="nf">panggilan</span>
     <span class="k">case</span> <span class="vi">@jenis_kelamin</span>
     <span class="k">when</span> <span class="ss">:pria</span>
       <span class="s2">&quot;Mr&quot;</span>
@@ -723,78 +702,77 @@
 <span class="k">end</span>
 
 <span class="k">module</span> <span class="nn">PakaiSeragam</span>
-  <span class="k">def</span> <span class="nf">seragam</span>
+  <span class="k">def </span><span class="nf">seragam</span>
     <span class="nb">puts</span> <span class="s2">&quot;Seragam kotak-kotak&quot;</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="k">class</span> <span class="nc">Pegawai</span>
+<span class="k">class </span><span class="nc">Pegawai</span>
   <span class="kp">include</span> <span class="no">DapatDipanggil</span> <span class="c1"># method di dlm modul DapatDipanggil menjadi instance methods Pegawai</span>
   <span class="kp">extend</span> <span class="no">PakaiSeragam</span> <span class="c1"># method di dlm modul PakaiSergam menjadi class methods Pegawai</span>
 
   <span class="kp">attr_accessor</span> <span class="ss">:jenis_kelamin</span><span class="p">,</span> <span class="ss">:nama</span>
 
-  <span class="k">def</span> <span class="nf">nama_lengkap</span>
+  <span class="k">def </span><span class="nf">nama_lengkap</span>
     <span class="s2">&quot;</span><span class="si">#{</span><span class="n">panggilan</span><span class="si">}</span><span class="s2">. </span><span class="si">#{</span><span class="n">nama</span><span class="si">}</span><span class="s2">&quot;</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="no">Pegawai</span><span class="o">.</span><span class="n">seragam</span>
-<span class="n">pegawai</span> <span class="o">=</span> <span class="no">Pegawai</span><span class="o">.</span><span class="n">new</span>
-<span class="n">pegawai</span><span class="o">.</span><span class="n">jenis_kelamin</span> <span class="o">=</span> <span class="ss">:wanita</span>
-<span class="n">pegawai</span><span class="o">.</span><span class="n">nama</span> <span class="o">=</span> <span class="s2">&quot;Jeni&quot;</span>
-<span class="nb">puts</span> <span class="n">pegawai</span><span class="o">.</span><span class="n">nama_lengkap</span>
-</pre></div> <h3 id=module-callback>Callback</h3> <div class=highlight><pre><span class="c1"># self.included dan self.extended</span>
+<span class="no">Pegawai</span><span class="nf">.seragam</span>
+<span class="n">pegawai</span> <span class="o">=</span> <span class="no">Pegawai</span><span class="nf">.new</span>
+<span class="n">pegawai</span><span class="nf">.jenis_kelamin</span> <span class="o">=</span> <span class="ss">:wanita</span>
+<span class="n">pegawai</span><span class="nf">.nama</span> <span class="o">=</span> <span class="s2">&quot;Jeni&quot;</span>
+<span class="nb">puts</span> <span class="n">pegawai</span><span class="nf">.nama_lengkap</span></pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=module-callback>Callback</h3> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="c1"># self.included dan self.extended</span>
 <span class="k">module</span> <span class="nn">PakaiSeragam</span>
-  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">included</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+  <span class="k">def </span><span class="nc">self</span><span class="o">.</span><span class="nf">included</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
     <span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="nb">self</span><span class="si">}</span><span class="s2"> included di </span><span class="si">#{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span>
   <span class="k">end</span>
-  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">extended</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+  <span class="k">def </span><span class="nc">self</span><span class="o">.</span><span class="nf">extended</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
     <span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="nb">self</span><span class="si">}</span><span class="s2"> extended di </span><span class="si">#{</span><span class="n">a</span><span class="si">}</span><span class="s2">&quot;</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="k">class</span> <span class="nc">Murid</span>
+<span class="k">class </span><span class="nc">Murid</span>
   <span class="kp">extend</span> <span class="no">PakaiSeragam</span>
   <span class="kp">include</span> <span class="no">PakaiSeragam</span>
 <span class="k">end</span>
-</pre></div> <p>Sebagai info, trik di atas dipermudah jika menggunakan <a href="//api.rubyonrails.org/classes/ActiveSupport/Concern.html" target=_blank>ActiveSupport::Concern</a>. Lihat contoh pada <a href="//api.rubyonrails.org/classes/ActiveSupport/Concern.html" target=_blank>dokumentasinya</a> untuk mengetahui lebih lanjut.</p> <div class=highlight><pre><span class="c1"># self.method_removed dan self.method_added</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Sebagai info, trik di atas dipermudah jika menggunakan <a href="//api.rubyonrails.org/classes/ActiveSupport/Concern.html" target=_blank>ActiveSupport::Concern</a>. Lihat contoh pada <a href="//api.rubyonrails.org/classes/ActiveSupport/Concern.html" target=_blank>dokumentasinya</a> untuk mengetahui lebih lanjut.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="c1"># self.method_removed dan self.method_added</span>
 <span class="k">module</span> <span class="nn">PakaiSeragam</span>
-  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">method_removed</span><span class="p">(</span><span class="n">method_name</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="s2">&quot;Hapus method </span><span class="si">#{</span><span class="n">method_name</span><span class="o">.</span><span class="n">inspect</span><span class="si">}</span><span class="s2">&quot;</span>
+  <span class="k">def </span><span class="nc">self</span><span class="o">.</span><span class="nf">method_removed</span><span class="p">(</span><span class="n">method_name</span><span class="p">)</span>
+    <span class="nb">puts</span> <span class="s2">&quot;Hapus method </span><span class="si">#{</span><span class="n">method_name</span><span class="nf">.inspect</span><span class="si">}</span><span class="s2">&quot;</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">method_added</span><span class="p">(</span><span class="n">method_name</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="s2">&quot;Tambah method </span><span class="si">#{</span><span class="n">method_name</span><span class="o">.</span><span class="n">inspect</span><span class="si">}</span><span class="s2">&quot;</span>
+  <span class="k">def </span><span class="nc">self</span><span class="o">.</span><span class="nf">method_added</span><span class="p">(</span><span class="n">method_name</span><span class="p">)</span>
+    <span class="nb">puts</span> <span class="s2">&quot;Tambah method </span><span class="si">#{</span><span class="n">method_name</span><span class="nf">.inspect</span><span class="si">}</span><span class="s2">&quot;</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">some_class_method</span><span class="p">()</span> <span class="k">end</span>
+  <span class="k">def </span><span class="nc">self</span><span class="o">.</span><span class="nf">some_class_method</span><span class="p">()</span> <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nf">some_instance_method</span><span class="p">()</span> <span class="k">end</span>
-  <span class="k">class</span> <span class="o">&lt;&lt;</span> <span class="nb">self</span>
+  <span class="k">def </span><span class="nf">some_instance_method</span><span class="p">()</span> <span class="k">end</span>
+  <span class="k">class </span><span class="o">&lt;&lt;</span> <span class="nb">self</span>
     <span class="n">remove_method</span> <span class="ss">:some_class_method</span>
   <span class="k">end</span>
   <span class="n">remove_method</span> <span class="ss">:some_instance_method</span>
 <span class="k">end</span>
-</pre></div> <h3 id=patching>Patching</h3> <p>Seperti Class, kamu bisa monkey patch module yang sudah define.</p> <div class=highlight><pre><span class="k">module</span> <span class="nn">PakaiSeragam</span>
-  <span class="k">def</span> <span class="nf">warna</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=patching>Patching</h3> <p>Seperti Class, kamu bisa monkey patch module yang sudah define.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">module</span> <span class="nn">PakaiSeragam</span>
+  <span class="k">def </span><span class="nf">warna</span>
     <span class="nb">puts</span> <span class="s2">&quot;Hijau&quot;</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
 <span class="k">module</span> <span class="nn">PakaiSeragam</span>
-  <span class="k">def</span> <span class="nf">motif</span>
+  <span class="k">def </span><span class="nf">motif</span>
     <span class="nb">puts</span> <span class="s2">&quot;Kotak-kotak&quot;</span>
   <span class="k">end</span>
 <span class="k">end</span>
-</pre></div> <p>Untuk mengenal Module lebih jauh, kunjungi <a href="//www.ruby-doc.org/core/Module.html" target=_blank>dokumentasinya</a>.</p> <h2 id=exceptions>Exceptions</h2> <div class=highlight><pre><span class="k">class</span> <span class="nc">MyException</span> <span class="o">&lt;</span> <span class="no">Exception</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Untuk mengenal Module lebih jauh, kunjungi <a href="//www.ruby-doc.org/core/Module.html" target=_blank>dokumentasinya</a>.</p> <h2 id=exceptions>Exceptions</h2> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">class </span><span class="nc">MyException</span> <span class="o">&lt;</span> <span class="no">Exception</span>
 <span class="k">end</span>
 
 <span class="k">begin</span>
-  <span class="k">raise</span> <span class="no">MyException</span><span class="o">.</span><span class="n">new</span>
+  <span class="k">raise</span> <span class="no">MyException</span><span class="nf">.new</span>
   <span class="k">raise</span> <span class="no">Exception</span>
 <span class="k">rescue</span> <span class="no">MyException</span> <span class="o">=&gt;</span> <span class="n">e1</span>
-  <span class="nb">puts</span> <span class="n">e1</span><span class="o">.</span><span class="n">inspect</span>
+  <span class="nb">puts</span> <span class="n">e1</span><span class="nf">.inspect</span>
 <span class="k">rescue</span> <span class="no">Exception</span>
   <span class="nb">puts</span> <span class="s2">&quot;Dapat Exception&quot;</span>
 <span class="k">else</span>
@@ -802,13 +780,13 @@
 <span class="k">ensure</span>
   <span class="nb">puts</span> <span class="s2">&quot;Ensure&quot;</span>
 <span class="k">end</span>
-</pre></div> <p>Untuk mengenal Exception lebih jauh, kunjungi <a href="//www.ruby-doc.org/core/Exception.html" target=_blank>dokumentasinya</a>.</p> <h2 id=throw-dan-catch>Throw dan Catch</h2> <p>Throw dan Catch pada Ruby bukanlah untuk exceptions. Mereka adalah cara untuk memberhentikan eksekusi program terlebih dahulu ketika program tidak perlu berjalan lagi.</p> <div class=highlight><pre><span class="kp">catch</span> <span class="ss">:stop</span> <span class="k">do</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Untuk mengenal Exception lebih jauh, kunjungi <a href="//www.ruby-doc.org/core/Exception.html" target=_blank>dokumentasinya</a>.</p> <h2 id=throw-dan-catch>Throw dan Catch</h2> <p>Throw dan Catch pada Ruby bukanlah untuk exceptions. Mereka adalah cara untuk memberhentikan eksekusi program terlebih dahulu ketika program tidak perlu berjalan lagi.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="kp">catch</span> <span class="ss">:stop</span> <span class="k">do</span>
   <span class="nb">puts</span> <span class="s2">&quot;Aku mau jalan&quot;</span>
   <span class="kp">throw</span> <span class="ss">:stop</span>
 <span class="k">end</span>
 
-<span class="k">def</span> <span class="nf">udahan</span>
-  <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="p">(</span><span class="mi">1</span><span class="o">.</span><span class="n">.</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">def </span><span class="nf">udahan</span>
+  <span class="k">for</span> <span class="n">i</span> <span class="k">in</span> <span class="p">(</span><span class="mi">1</span><span class="nf">..</span><span class="mi">10</span><span class="p">)</span>
     <span class="nb">print</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="n">i</span><span class="si">}</span><span class="s2"> &quot;</span>
     <span class="kp">throw</span> <span class="ss">:udahan</span> <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">8</span>
   <span class="k">end</span>
@@ -820,108 +798,110 @@
 <span class="nb">puts</span>
 
 <span class="kp">throw</span> <span class="ss">:halo</span>
-</pre></div> <p>Sumber-sumber:</p> <ul> <li><a href="//rubylearning.com/blog/2011/07/12/throw-catch-raise-rescue-im-so-confused/">RubyLearning Blog: Throw, Catch, Raise, Rescue… I’m so confused!</a></li> </ul> <h2 id=mengenal-metaprogramming>Mengenal Metaprogramming</h2> <p>Metaprogramming adalah membuat program yang dapat membuat code dalam runtime. Metaprogramming mudah dilakukan pada Ruby, sehingga menjadi saat umum dipakai.</p> <h3 id=eval>Eval</h3> <p>Ada 3 macam method untuk meng-evaluate sebuah snippet pada Ruby secara dinamis, yakni <code>Kernel#eval</code>, <code>Object#instance_eval</code>, dan <code>Module#class_eval</code>.</p> <h4 id=kernel-eval>Kernel#eval</h4> <p>Kamu bisa evaluate Ruby dengan menggunakan Kernel#eval walaupun kamu cuma kasih String. Fitur ini biasanya ada pada bahasa yang tidak perlu dicompile seperti PHP.</p> <div class=highlight><pre><span class="nb">eval</span> <span class="s2">&quot;puts &#39;Halo Ruby!&#39;&quot;</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Sumber-sumber:</p> <ul> <li><a href="//rubylearning.com/blog/2011/07/12/throw-catch-raise-rescue-im-so-confused/">RubyLearning Blog: Throw, Catch, Raise, Rescue… I’m so confused!</a></li> </ul> <h2 id=mengenal-metaprogramming>Mengenal Metaprogramming</h2> <p>Metaprogramming adalah membuat program yang dapat membuat code dalam runtime. Metaprogramming mudah dilakukan pada Ruby, sehingga menjadi saat umum dipakai.</p> <h3 id=eval>Eval</h3> <p>Ada 3 macam method untuk meng-evaluate sebuah snippet pada Ruby secara dinamis, yakni <code>Kernel#eval</code>, <code>Object#instance_eval</code>, dan <code>Module#class_eval</code>.</p> <h4 id=kernel-eval>Kernel#eval</h4> <p>Kamu bisa evaluate Ruby dengan menggunakan Kernel#eval walaupun kamu cuma kasih String. Fitur ini biasanya ada pada bahasa yang tidak perlu dicompile seperti PHP.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="nb">eval</span> <span class="s2">&quot;puts &#39;Halo Ruby!&#39;&quot;</span>
 <span class="n">a</span> <span class="o">=</span> <span class="nb">eval</span> <span class="s2">&quot;8943 + 4278932&quot;</span>
 <span class="nb">puts</span> <span class="n">a</span>
-</pre></div> <h4 id=object-instance_eval>Object#instance_eval</h4> <p>Dengan instance_eval, kamu bisa menambah method atau variabel instance sendiri. Ini sangat mirip dengan patching, tetapi instance_eval cukup umum digunakan untuk membuat Domain-Specific Language (DSL).</p> <div class=highlight><pre><span class="k">class</span> <span class="nc">Baju</span>
-  <span class="k">def</span> <span class="nf">nama</span><span class="p">(</span><span class="n">nama</span><span class="p">)</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h4 id=object-instance_eval>Object#instance_eval</h4> <p>Dengan instance_eval, kamu bisa menambah method atau variabel instance sendiri. Ini sangat mirip dengan patching, tetapi instance_eval cukup umum digunakan untuk membuat Domain-Specific Language (DSL).</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">class </span><span class="nc">Baju</span>
+  <span class="k">def </span><span class="nf">nama</span><span class="p">(</span><span class="n">nama</span><span class="p">)</span>
     <span class="vi">@nama</span> <span class="o">=</span> <span class="n">nama</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nf">deskripsi</span>
+  <span class="k">def </span><span class="nf">deskripsi</span>
     <span class="s2">&quot;Nama baju ini adalah </span><span class="si">#{</span><span class="vi">@nama</span><span class="si">}</span><span class="s2">&quot;</span>
   <span class="k">end</span>
   
-  <span class="k">def</span> <span class="nc">self</span><span class="o">.</span><span class="nf">buat</span><span class="p">(</span><span class="o">&amp;</span><span class="n">blok</span><span class="p">)</span>
-    <span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="o">.</span><span class="n">new</span>
-    <span class="n">baju</span><span class="o">.</span><span class="n">instance_eval</span> <span class="o">&amp;</span><span class="n">blok</span> <span class="c1"># Untuk membuat Domain-Specific Language (DSL)</span>
+  <span class="k">def </span><span class="nc">self</span><span class="o">.</span><span class="nf">buat</span><span class="p">(</span><span class="o">&amp;</span><span class="n">blok</span><span class="p">)</span>
+    <span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="nf">.new</span>
+    <span class="n">baju</span><span class="nf">.instance_eval</span> <span class="o">&amp;</span><span class="n">blok</span> <span class="c1"># Untuk membuat Domain-Specific Language (DSL)</span>
     <span class="n">baju</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="no">Baju</span><span class="o">.</span><span class="n">instance_eval</span> <span class="k">do</span>
-  <span class="k">def</span> <span class="nf">nomor_rak</span>
+<span class="no">Baju</span><span class="nf">.instance_eval</span> <span class="k">do</span>
+  <span class="k">def </span><span class="nf">nomor_rak</span>
     <span class="nb">puts</span> <span class="s2">&quot;Baju adalah instance dari Class, karena itu di sini kita menambah method class&quot;</span>
     <span class="mi">10</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="nb">puts</span> <span class="no">Baju</span><span class="o">.</span><span class="n">nomor_rak</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="nf">.nomor_rak</span>
 
-<span class="nb">puts</span> <span class="o">&lt;&lt;-</span><span class="no">EOL</span>
+<span class="nb">puts</span> <span class="o">&lt;&lt;-</span><span class="no">EOL</span><span class="sh">
 
-<span class="sh">Kamu bisa buat DSL sendiri hanya dengan instance_eval.</span>
-<span class="sh">Cukup panggil instance_eval pada sebuah object yang sudah diinisialisasi, dan</span>
-<span class="sh">kamu dapat akses ke method instance pada object itu.</span>
-<span class="sh">===</span>
-<span class="no">EOL</span>
-<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="o">.</span><span class="n">buat</span> <span class="k">do</span>
+Kamu bisa buat DSL sendiri hanya dengan instance_eval.
+Cukup panggil instance_eval pada sebuah object yang sudah diinisialisasi, dan
+kamu dapat akses ke method instance pada object itu.
+===
+</span><span class="no">EOL</span>
+<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="nf">.buat</span> <span class="k">do</span>
   <span class="nb">puts</span> <span class="s2">&quot;Kamu bisa mengakses method dan variabel instance di sini.</span><span class="se">\n</span><span class="s2">---&quot;</span>
   <span class="n">nama</span> <span class="s2">&quot;Kostum Badut&quot;</span>
 <span class="k">end</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">deskripsi</span>
-</pre></div> <h4 id=module-class_eval>Module#class_eval</h4> <p><code>class_eval</code> hampir sama dengan <code>instance_eval</code>, hanya saja <code>class_eval</code> hanya dapat digunakan pada class atau module saja. Dengan <code>class_eval</code> kamu bisa menambah method atau variabel instance. Ini juga sangat mirip dengan patching.</p> <div class=highlight><pre><span class="k">class</span> <span class="nc">Baju</span>
-  <span class="k">def</span> <span class="nf">nama</span><span class="p">(</span><span class="n">nama</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.deskripsi</span>
+
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h4 id=module-class_eval>Module#class_eval</h4> <p><code>class_eval</code> hampir sama dengan <code>instance_eval</code>, hanya saja <code>class_eval</code> hanya dapat digunakan pada class atau module saja. Dengan <code>class_eval</code> kamu bisa menambah method atau variabel instance. Ini juga sangat mirip dengan patching.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">class </span><span class="nc">Baju</span>
+  <span class="k">def </span><span class="nf">nama</span><span class="p">(</span><span class="n">nama</span><span class="p">)</span>
     <span class="vi">@nama</span> <span class="o">=</span> <span class="n">nama</span>
   <span class="k">end</span>
 
-  <span class="k">def</span> <span class="nf">deskripsi</span>
+  <span class="k">def </span><span class="nf">deskripsi</span>
     <span class="s2">&quot;Nama baju ini adalah </span><span class="si">#{</span><span class="vi">@nama</span><span class="si">}</span><span class="s2">&quot;</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="no">Baju</span><span class="o">.</span><span class="n">class_eval</span> <span class="k">do</span>
+<span class="no">Baju</span><span class="nf">.class_eval</span> <span class="k">do</span>
   <span class="kp">attr_accessor</span> <span class="ss">:ukuran</span>
 
-  <span class="k">def</span> <span class="nf">gambaran</span>
-    <span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="nb">self</span><span class="o">.</span><span class="n">deskripsi</span><span class="si">}</span><span class="s2">. Ukurannya </span><span class="si">#{</span><span class="n">ukuran</span><span class="si">}</span><span class="s2">&quot;</span>
+  <span class="k">def </span><span class="nf">gambaran</span>
+    <span class="nb">puts</span> <span class="s2">&quot;</span><span class="si">#{</span><span class="nb">self</span><span class="nf">.deskripsi</span><span class="si">}</span><span class="s2">. Ukurannya </span><span class="si">#{</span><span class="n">ukuran</span><span class="si">}</span><span class="s2">&quot;</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="o">.</span><span class="n">new</span>
-<span class="n">baju</span><span class="o">.</span><span class="n">nama</span> <span class="s2">&quot;Kostum Badut&quot;</span>
-<span class="n">baju</span><span class="o">.</span><span class="n">ukuran</span> <span class="o">=</span> <span class="s2">&quot;XL&quot;</span>
-<span class="n">baju</span><span class="o">.</span><span class="n">gambaran</span><span class="p">;</span> <span class="nb">puts</span>
+<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="nf">.new</span>
+<span class="n">baju</span><span class="nf">.nama</span> <span class="s2">&quot;Kostum Badut&quot;</span>
+<span class="n">baju</span><span class="nf">.ukuran</span> <span class="o">=</span> <span class="s2">&quot;XL&quot;</span>
+<span class="n">baju</span><span class="nf">.gambaran</span><span class="p">;</span> <span class="nb">puts</span>
 
-<span class="n">baju</span><span class="o">.</span><span class="n">class_eval</span> <span class="k">do</span>
-  <span class="k">def</span> <span class="nf">ups_gagal</span>
+<span class="n">baju</span><span class="nf">.class_eval</span> <span class="k">do</span>
+  <span class="k">def </span><span class="nf">ups_gagal</span>
     <span class="nb">puts</span> <span class="s2">&quot;Jadi error deh&quot;</span>
   <span class="k">end</span>
 <span class="k">end</span>
-</pre></div> <h3 id=mp-variabel-instance>Variabel Instance</h3> <p>Kamu dapat dengan mudah mengakses, mengubah, atau mendefine variabel instance secara dinamis.</p> <div class=highlight><pre><span class="k">class</span> <span class="nc">Baju</span>
+
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=mp-variabel-instance>Variabel Instance</h3> <p>Kamu dapat dengan mudah mengakses, mengubah, atau mendefine variabel instance secara dinamis.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">class </span><span class="nc">Baju</span>
 <span class="k">end</span>
 
-<span class="nb">puts</span> <span class="no">Baju</span><span class="o">.</span><span class="n">instance_variables</span><span class="o">.</span><span class="n">inspect</span>
-<span class="no">Baju</span><span class="o">.</span><span class="n">instance_variable_set</span><span class="p">(</span><span class="ss">:@kode</span><span class="p">,</span> <span class="s2">&quot;BJ&quot;</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="no">Baju</span><span class="o">.</span><span class="n">instance_variable_get</span><span class="p">(</span><span class="ss">:@kode</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="no">Baju</span><span class="o">.</span><span class="n">instance_variables</span><span class="o">.</span><span class="n">inspect</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="nf">.instance_variables.inspect</span>
+<span class="no">Baju</span><span class="nf">.instance_variable_set</span><span class="p">(</span><span class="ss">:@kode</span><span class="p">,</span> <span class="s2">&quot;BJ&quot;</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="nf">.instance_variable_get</span><span class="p">(</span><span class="ss">:@kode</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="nf">.instance_variables.inspect</span>
 <span class="nb">puts</span> <span class="s2">&quot;---&quot;</span>
-<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="o">.</span><span class="n">new</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">instance_variables</span><span class="o">.</span><span class="n">inspect</span>
-<span class="n">baju</span><span class="o">.</span><span class="n">instance_variable_set</span><span class="p">(</span><span class="ss">:@nama</span><span class="p">,</span> <span class="s2">&quot;Kostum Badut&quot;</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">instance_variable_get</span><span class="p">(</span><span class="ss">:@nama</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">instance_variables</span><span class="o">.</span><span class="n">inspect</span>
-</pre></div> <h3 id=mp-variabel-class>Variabel Class</h3> <p>Kamu dapat dengan mudah mengakses, mengubah, atau mendefine variabel class secara dinamis.</p> <div class=highlight><pre><span class="k">class</span> <span class="nc">Baju</span>
+<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="nf">.new</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.instance_variables.inspect</span>
+<span class="n">baju</span><span class="nf">.instance_variable_set</span><span class="p">(</span><span class="ss">:@nama</span><span class="p">,</span> <span class="s2">&quot;Kostum Badut&quot;</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.instance_variable_get</span><span class="p">(</span><span class="ss">:@nama</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.instance_variables.inspect</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=mp-variabel-class>Variabel Class</h3> <p>Kamu dapat dengan mudah mengakses, mengubah, atau mendefine variabel class secara dinamis.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">class </span><span class="nc">Baju</span>
 <span class="k">end</span>
 
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;Ubah variabel class&quot;</span>
-<span class="nb">puts</span> <span class="no">Baju</span><span class="o">.</span><span class="n">class_variables</span><span class="o">.</span><span class="n">inspect</span>
-<span class="no">Baju</span><span class="o">.</span><span class="n">class_variable_set</span><span class="p">(</span><span class="ss">:@@kode</span><span class="p">,</span> <span class="s2">&quot;BJ&quot;</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="no">Baju</span><span class="o">.</span><span class="n">class_variable_get</span><span class="p">(</span><span class="ss">:@@kode</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="no">Baju</span><span class="o">.</span><span class="n">class_variables</span><span class="o">.</span><span class="n">inspect</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="nf">.class_variables.inspect</span>
+<span class="no">Baju</span><span class="nf">.class_variable_set</span><span class="p">(</span><span class="ss">:@@kode</span><span class="p">,</span> <span class="s2">&quot;BJ&quot;</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="nf">.class_variable_get</span><span class="p">(</span><span class="ss">:@@kode</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="nf">.class_variables.inspect</span>
 
-<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="o">.</span><span class="n">new</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">class_variables</span> <span class="c1"># error</span>
-</pre></div> <h3 id=mp-konstanta>Konstanta</h3> <p>Kamu juga bisa dengan mudah mengakses, mengubah, atau mendefine konstanta secara dinamis.</p> <div class=highlight><pre><span class="k">class</span> <span class="nc">Baju</span>
+<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="nf">.new</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.class_variables</span> <span class="c1"># error</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=mp-konstanta>Konstanta</h3> <p>Kamu juga bisa dengan mudah mengakses, mengubah, atau mendefine konstanta secara dinamis.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">class </span><span class="nc">Baju</span>
 <span class="k">end</span>
 
-<span class="no">Baju</span><span class="o">.</span><span class="n">const_set</span><span class="p">(</span><span class="ss">:WARNA_DEFAULT</span><span class="p">,</span> <span class="s2">&quot;Hitam&quot;</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="no">Baju</span><span class="o">.</span><span class="n">const_get</span><span class="p">(</span><span class="ss">:WARNA_DEFAULT</span><span class="p">)</span>
-<span class="nb">puts</span> <span class="no">Baju</span><span class="o">.</span><span class="n">constants</span><span class="o">.</span><span class="n">inspect</span>
+<span class="no">Baju</span><span class="nf">.const_set</span><span class="p">(</span><span class="ss">:WARNA_DEFAULT</span><span class="p">,</span> <span class="s2">&quot;Hitam&quot;</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="nf">.const_get</span><span class="p">(</span><span class="ss">:WARNA_DEFAULT</span><span class="p">)</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="nf">.constants.inspect</span>
 
-<span class="nb">puts</span> <span class="no">Baju</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">constants</span><span class="o">.</span><span class="n">inspect</span> <span class="c1"># error</span>
-</pre></div> <h3 id=mp-method>Method</h3> <p>Kamu juga dapat dengan mudah mengakses, mengubah, atau mendefine method secara dinamis.</p> <div class=highlight><pre><span class="k">class</span> <span class="nc">Baju</span>
-  <span class="k">def</span> <span class="nf">warna</span>
+<span class="nb">puts</span> <span class="no">Baju</span><span class="nf">.new.constants.inspect</span> <span class="c1"># error</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <h3 id=mp-method>Method</h3> <p>Kamu juga dapat dengan mudah mengakses, mengubah, atau mendefine method secara dinamis.</p> <div> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> <pre class="highlight ruby"><span class="k">class </span><span class="nc">Baju</span>
+  <span class="k">def </span><span class="nf">warna</span>
     <span class="vi">@warna</span> <span class="o">||</span> <span class="s2">&quot;Hitam&quot;</span>
   <span class="k">end</span>
   
@@ -931,52 +911,48 @@
   
   <span class="kp">private</span>
 
-  <span class="k">def</span> <span class="nf">kain</span>
+  <span class="k">def </span><span class="nf">kain</span>
     <span class="s2">&quot;Katun&quot;</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="no">Baju</span><span class="o">.</span><span class="n">class_eval</span> <span class="k">do</span>
+<span class="no">Baju</span><span class="nf">.class_eval</span> <span class="k">do</span>
   <span class="n">define_method</span><span class="p">(</span><span class="ss">:jual</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">harga</span><span class="o">|</span>
     <span class="nb">puts</span> <span class="s2">&quot;Jual baju dengan harga Rp </span><span class="si">#{</span><span class="n">harga</span><span class="si">}</span><span class="s2">&quot;</span>
   <span class="k">end</span>
   
   <span class="n">define_method</span><span class="p">(</span><span class="ss">:warna</span><span class="o">=</span><span class="p">)</span> <span class="k">do</span> <span class="o">|</span><span class="n">warna</span><span class="o">=</span><span class="s2">&quot;Hitam&quot;</span><span class="o">|</span>
-    <span class="nb">puts</span> <span class="s2">&quot;Warna baju </span><span class="si">#{</span><span class="n">warna</span><span class="o">.</span><span class="n">inspect</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="nb">puts</span> <span class="s2">&quot;Warna baju </span><span class="si">#{</span><span class="n">warna</span><span class="nf">.inspect</span><span class="si">}</span><span class="s2">&quot;</span>
     <span class="vi">@warna</span> <span class="o">=</span> <span class="n">warna</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
-<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="o">.</span><span class="n">new</span>
+<span class="n">baju</span> <span class="o">=</span> <span class="no">Baju</span><span class="nf">.new</span>
 <span class="c1"># puts baju.kain # tidak bisa panggil method yang private</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="ss">:kain</span><span class="p">)</span>
-<span class="n">baju</span><span class="o">.</span><span class="n">warna</span> <span class="o">=</span> <span class="c1"># default warna hitam</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">warna</span><span class="o">.</span><span class="n">inspect</span>
-<span class="n">baju</span><span class="o">.</span><span class="n">warna</span> <span class="o">=</span> <span class="s2">&quot;Putih&quot;</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">warna</span><span class="o">.</span><span class="n">inspect</span>
-<span class="n">baju</span><span class="o">.</span><span class="n">jual</span> <span class="mi">399900</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.send</span><span class="p">(</span><span class="ss">:kain</span><span class="p">)</span>
+<span class="n">baju</span><span class="nf">.warna</span> <span class="o">=</span> <span class="c1"># default warna hitam</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.warna.inspect</span>
+<span class="n">baju</span><span class="nf">.warna</span> <span class="o">=</span> <span class="s2">&quot;Putih&quot;</span>
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.warna.inspect</span>
+<span class="n">baju</span><span class="nf">.jual</span> <span class="mi">399900</span>
 
-<span class="no">Baju</span><span class="o">.</span><span class="n">class_eval</span> <span class="k">do</span>
+<span class="no">Baju</span><span class="nf">.class_eval</span> <span class="k">do</span>
   <span class="n">remove_method</span><span class="p">(</span><span class="ss">:warna</span><span class="p">)</span>
   <span class="n">undef_method</span><span class="p">(</span><span class="ss">:beli</span><span class="p">)</span>
 <span class="k">end</span>
 <span class="c1"># baju.warna # error</span>
 <span class="c1"># puts baju.beli # error</span>
 
-<span class="k">class</span> <span class="nc">Baju</span>
-  <span class="k">def</span> <span class="nf">method_missing</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
-    <span class="nb">puts</span> <span class="s2">&quot;Oalah methodnya ngga ada: </span><span class="si">#{</span><span class="n">args</span><span class="o">.</span><span class="n">inspect</span><span class="si">}</span><span class="s2">&quot;</span>
+<span class="k">class </span><span class="nc">Baju</span>
+  <span class="k">def </span><span class="nf">method_missing</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">)</span>
+    <span class="nb">puts</span> <span class="s2">&quot;Oalah methodnya ngga ada: </span><span class="si">#{</span><span class="n">args</span><span class="nf">.inspect</span><span class="si">}</span><span class="s2">&quot;</span>
   <span class="k">end</span>
 <span class="k">end</span>
 
 <span class="nb">puts</span><span class="p">;</span> <span class="nb">puts</span> <span class="s2">&quot;Panggil method yang ga ada&quot;</span>
-<span class="nb">puts</span> <span class="n">baju</span><span class="o">.</span><span class="n">ngasal</span>
-</pre></div> <p>Perbedaan dari undef_method dan remove_method sangat sedikit. undef_method menghapus method dari class yang bersangkutan. Apabila method yang dihapus dipanggil, exception NoMethodError akan muncul. remove_method juga menghapus method dari class yang bersangkutan. Hanya saja, jika method yang dihapus dipangx gil, Ruby akan mencari superclass yang mengimplementasi method itu dan memanggilnya.</p> <p>Sumber-sumber:</p> <ul> <li><a href="//ruby-metaprogramming.rubylearning.com/" target=_blank>Ruby Metaprogramming</a></li> <li><a href="//www.jimmycuadra.com/posts/metaprogramming-ruby-class-eval-and-instance-eval" target=_blank>Metaprogramming Ruby: class_eval and instance_eval</a></li> <li><a href="//gdakram.com/past/2010/11/20/simple_academia_dsl_in_ruby_tutorial/" target=_blank>musings on intarwebz: Simple Academia DSL in Ruby Tutorial</a></li> <li><a href="//reference.jumpingmonkey.org/programming_languages/ruby/ruby-metaprogramming.html" target=_blank>Ruby Metaprogramming</a></li> <li><a href="//yonkeltron.com/blog/2010/05/13/creating-a-ruby-dsl/" target=_blank>yonkeltron.com: Creating a Ruby DSL</a></li> <li><a href="//www.nach-vorne.de/2008/2/28/undef_method-remove_method/index.html" target=_blank>The Ruby Ahead: undef_method != remove_method</a></li> </ul> <hr/> <p><a class=next-chapter-button href="coba-coba-sendiri.html">>> Bab selanjutnya -- Bagian 2: Coba-Coba Sendiri</a></p> </div> <div id=fixed-menu> <div class=wide><a href="." class=logo></a><a href="javascript:void(0);" class="fixed-menu-item toggle-fixed-toc">Daftar Isi</a><a href="javascript:void(0);" class="fixed-menu-item toggle-snippet-runner">Coba Ruby</a><a href="coba-coba-sendiri.html" class=fixed-menu-item>Install Ruby</a><a href="kontak.html" class=fixed-menu-item>Kontak</a></div> <div class=narrow><a href="." class=logo></a><a href="javascript:void(0);" class="fixed-menu-item toggle-fixed-toc">Daftar Isi</a><a href="javascript:void(0);" class="fixed-menu-item toggle-snippet-runner">Coba</a><a href="coba-coba-sendiri.html" class=fixed-menu-item>Install</a><a href="kontak.html" class=fixed-menu-item>@</a></div> </div> <div id=toc> <h2>Daftar Isi</h2> <ol> <li> <a href=".">Bagian 1: Dasar-Dasar Pemrograman Ruby</a> <ul> <li><a href=".#sekilas-ruby">Sekilas Ruby</a></li> <li><a href=".#konstanta-dan-variabel">Konstanta dan Variabel</a></li> <li><a href=".#tipe-dan-struktur-data">Tipe dan Struktur Data</a></li> <li><a href=".#operasi-logika-dan-matematika">Operasi Logika dan Aritmatika</a></li> <li><a href=".#statement-controls">Statement Controls (if, elsif, else, while)</a></li> <li><a href=".#methods">Methods</a></li> <li><a href=".#proc">Proc</a></li> <li><a href=".#class">Class</a></li> <li><a href=".#module">Module</a></li> <li><a href=".#exceptions">Exceptions</a></li> <li><a href=".#throw-dan-catch">Throw dan Catch</a></li> <li><a href=".#mengenal-metaprogramming">Mengenal Metaprogramming</a></li> </ul> </li> <li> <a href="coba-coba-sendiri.html">Bagian 2: Coba-Coba Sendiri</a> <ul> <li><a href="coba-coba-sendiri.html#install-ruby">Install Ruby</a></li> <li><a href="coba-coba-sendiri.html#menggunakan-ruby-di-terminal">Menggunakan Ruby di Terminal</a></li> <li><a href="coba-coba-sendiri.html#mengenal-rubygems-ruby-dependency-manager">Mengenal RubyGems: Ruby Dependency Manager</a></li> <li><a href="coba-coba-sendiri.html#coba-di-terminal">Coba di Terminal</a> <ul> <li><a href="coba-coba-sendiri.html#tulis-baca-file">Tulis/Baca File</a></li> <li><a href="coba-coba-sendiri.html#waktu-dan-tanggal">Waktu dan Tanggal</a></li> <li><a href="coba-coba-sendiri.html#membuat-permintaan-http-dan-memparse-respons-http">Membuat Permintaan HTTP dan Memparse Respons HTTP</a></li> <li><a href="coba-coba-sendiri.html#membuat-domain-specific-language">Membuat Domain-Specific Language</li> </ul> </li> </ul> </li> <li> <a href="appendix.html">Appendix</a> <ul> <li><a href="appendix.html#terus-ruby-buat-apa">Terus Ruby Buat Apa?</a></li> <li><a href="appendix.html#install-ruby-multiversi">Install Ruby Multiversi</a></li> <li><a href="appendix.html#tempat-lain-untuk-belajar-ruby">Tempat Lain untuk Belajar Ruby</a></li> <li><a href="appendix.html#ruby-2">Ruby 2.0</a></li> </ul> </li> </ol> </div> <div id=snippet-runner> <div id=snippet-runner-code-content class=snippet-runner-code-content>puts "Halo Ruby!"</div> <div class=snippet-runner-code-actions> <a href='javascript:void(0);' class='snippet-runner-code-action snippet-runner-code-action-run'>Jalankan</a> </div> <div class=snippet-runner-output-container> <h3>Output</h3> <div id=snippet-runner-running-indicator></div> <pre class=snippet-runner-output><!---->
-						</pre> </div> </div> <script type="text/html" id=snippet-actions-template>
-					<div class='snippet-actions'>
-						<a class='snippet-action-run' href='javascript:void(0);'>Jalankan</a>
-					</div>
-				</script> <script type="text/plain" id=snippet-request-error-template>Ups! Maaf, lagi error... Coba lagi nanti, atau
+<span class="nb">puts</span> <span class="n">baju</span><span class="nf">.ngasal</span>
+</pre> <div class=snippet-actions> <a class=snippet-action-run href='javascript:void(0);'>Jalankan</a> </div> </div> <p>Perbedaan dari undef_method dan remove_method sangat sedikit. undef_method menghapus method dari class yang bersangkutan. Apabila method yang dihapus dipanggil, exception NoMethodError akan muncul. remove_method juga menghapus method dari class yang bersangkutan. Hanya saja, jika method yang dihapus dipangx gil, Ruby akan mencari superclass yang mengimplementasi method itu dan memanggilnya.</p> <p>Sumber-sumber:</p> <ul> <li><a href="//ruby-metaprogramming.rubylearning.com/" target=_blank>Ruby Metaprogramming</a></li> <li><a href="//www.jimmycuadra.com/posts/metaprogramming-ruby-class-eval-and-instance-eval" target=_blank>Metaprogramming Ruby: class_eval and instance_eval</a></li> <li><a href="//gdakram.com/past/2010/11/20/simple_academia_dsl_in_ruby_tutorial/" target=_blank>musings on intarwebz: Simple Academia DSL in Ruby Tutorial</a></li> <li><a href="//reference.jumpingmonkey.org/programming_languages/ruby/ruby-metaprogramming.html" target=_blank>Ruby Metaprogramming</a></li> <li><a href="//yonkeltron.com/blog/2010/05/13/creating-a-ruby-dsl/" target=_blank>yonkeltron.com: Creating a Ruby DSL</a></li> <li><a href="//www.nach-vorne.de/2008/2/28/undef_method-remove_method/index.html" target=_blank>The Ruby Ahead: undef_method != remove_method</a></li> </ul> <hr/> <p><a class=next-chapter-button href="coba-coba-sendiri.html">>> Bab selanjutnya -- Bagian 2: Coba-Coba Sendiri</a></p> </div> <div id=fixed-menu> <div class=wide><a href="." class=logo></a><a href="javascript:void(0);" class="fixed-menu-item toggle-fixed-toc">Daftar Isi</a><a href="javascript:void(0);" class="fixed-menu-item toggle-snippet-runner">Coba Ruby</a><a href="coba-coba-sendiri.html" class=fixed-menu-item>Install Ruby</a><a href="kontak.html" class=fixed-menu-item>Kontak</a></div> <div class=narrow><a href="." class=logo></a><a href="javascript:void(0);" class="fixed-menu-item toggle-fixed-toc">Daftar Isi</a><a href="javascript:void(0);" class="fixed-menu-item toggle-snippet-runner">Coba</a><a href="coba-coba-sendiri.html" class=fixed-menu-item>Install</a><a href="kontak.html" class=fixed-menu-item>@</a></div> </div> <div id=toc> <h2>Daftar Isi</h2> <ol> <li> <a href=".">Bagian 1: Dasar-Dasar Pemrograman Ruby</a> <ul> <li><a href=".#sekilas-ruby">Sekilas Ruby</a></li> <li><a href=".#konstanta-dan-variabel">Konstanta dan Variabel</a></li> <li><a href=".#tipe-dan-struktur-data">Tipe dan Struktur Data</a></li> <li><a href=".#operasi-logika-dan-matematika">Operasi Logika dan Aritmatika</a></li> <li><a href=".#statement-controls">Statement Controls (if, elsif, else, while)</a></li> <li><a href=".#methods">Methods</a></li> <li><a href=".#proc">Proc</a></li> <li><a href=".#class">Class</a></li> <li><a href=".#module">Module</a></li> <li><a href=".#exceptions">Exceptions</a></li> <li><a href=".#throw-dan-catch">Throw dan Catch</a></li> <li><a href=".#mengenal-metaprogramming">Mengenal Metaprogramming</a></li> </ul> </li> <li> <a href="coba-coba-sendiri.html">Bagian 2: Coba-Coba Sendiri</a> <ul> <li><a href="coba-coba-sendiri.html#install-ruby">Install Ruby</a></li> <li><a href="coba-coba-sendiri.html#menggunakan-ruby-di-terminal">Menggunakan Ruby di Terminal</a></li> <li><a href="coba-coba-sendiri.html#mengenal-rubygems-ruby-dependency-manager">Mengenal RubyGems: Ruby Dependency Manager</a></li> <li><a href="coba-coba-sendiri.html#coba-di-terminal">Coba di Terminal</a> <ul> <li><a href="coba-coba-sendiri.html#tulis-baca-file">Tulis/Baca File</a></li> <li><a href="coba-coba-sendiri.html#waktu-dan-tanggal">Waktu dan Tanggal</a></li> <li><a href="coba-coba-sendiri.html#membuat-permintaan-http-dan-memparse-respons-http">Membuat Permintaan HTTP dan Memparse Respons HTTP</a></li> <li><a href="coba-coba-sendiri.html#membuat-domain-specific-language">Membuat Domain-Specific Language</li> </ul> </li> </ul> </li> <li> <a href="appendix.html">Appendix</a> <ul> <li><a href="appendix.html#terus-ruby-buat-apa">Terus Ruby Buat Apa?</a></li> <li><a href="appendix.html#install-ruby-multiversi">Install Ruby Multiversi</a></li> <li><a href="appendix.html#tempat-lain-untuk-belajar-ruby">Tempat Lain untuk Belajar Ruby</a></li> <li><a href="appendix.html#ruby-2">Ruby 2.0</a></li> </ul> </li> </ol> </div> <div id=snippet-runner> <div id=snippet-runner-code-content class=snippet-runner-code-content>puts "Halo Ruby!"</div> <div class=snippet-runner-code-actions> <a href='javascript:void(0);' class='snippet-runner-code-action snippet-runner-code-action-run'>Jalankan</a> </div> <div class=snippet-runner-output-container> <h3>Output</h3> <div id=snippet-runner-running-indicator></div> <pre class=snippet-runner-output><!---->
+						</pre> </div> </div> <script type="text/plain" id=snippet-request-error-template>Ups! Maaf, lagi error... Coba lagi nanti, atau
 kontak thecatcyborg+jpruby@gmail.com melalui email.
 Terima kasih!</script> <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')</script> <script src="js/vendor/editor/ace.js" charset=utf-8></script> <script src="js/main.js"></script> <script>
           var _gaq = _gaq || [];
